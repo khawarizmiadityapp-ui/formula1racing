@@ -1,0 +1,43 @@
+VBCSCompilerPreWarmer: watching VBCSCompiler (PID 31360)
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 30228)
+VBCSCompiler prewarm took 58.87 ms
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.6/staging' branch; Version is '6000.6.6f1 (d20c9ac777da) revision 13765786'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-khawarizmi" at "2026-10-16T14:30:38.6623227Z"
+OS: 'Windows 11  (10.0.26200) CoreSingleLanguage' Language: 'en' Physical Memory: 16201 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-16T14:30:38Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 7000, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              9caeecaab7c249a9bdb989f9c781e48e
+  Correlation Id:          7cdb493d4a6ab63745f8cac832e8e7f6
+  External correlation Id: 3710446938996889459
+  Machine Id:              GH+MFfSu6lmoygpQmGZVvfgofdM=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-khawarizmi" (connect: 0.00s, validation: 0.00s, handshake: 0.13s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-khawarizmi-notifications" at "2026-10-16T14:30:38.7926656Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 18968522328279-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.14s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.6.6f1\Editor\Unity.exe
+-batchmode
+-quit
+-projectPath
+D:\game buatan sendiri\FormulaRacingMobile
+-logFile
+D:\game buatan sendiri\FormulaRacingMobile\Logs\BatchRun.log
+Successfully changed project path to: D:\game buatan sendiri\FormulaRacingMobile
+D:/game buatan sendiri/FormulaRacingMobile
+[ExitDontLaunchBugReporter] Exiting without the bug reporter. Application will exit with return code 1

@@ -1,0 +1,64 @@
+{
+  "zip": "/mnt/data/Racing_V12_Full_Unity_Pack.zip",
+  "zip_bytes": 2568163,
+  "models": {
+    "Apex_Formula_Wheel_Assembly.obj": 26951,
+    "Apex_Circuit_Environment.obj": 86395,
+    "Apex_Circuit_Road.obj": 24147,
+    "Apex_Circuit_Details.obj": 189409,
+    "Apex_V12_Formula_Car.obj": 27461,
+    "Apex_Circuit_Ground.obj": 367
+  },
+  "audio": {
+    "Turbo_Wastegate_Hiss.wav": {
+      "seconds": 0.85,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bytes": 75014
+    },
+    "Tire_Scrub_Squeal.wav": {
+      "seconds": 1.8,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bytes": 158804
+    },
+    "V12_Engine_Mid_Loop.wav": {
+      "seconds": 6.0,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bytes": 529244
+    },
+    "V12_Turbo_Rev_Up.wav": {
+      "seconds": 7.0,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bytes": 617444
+    },
+    "V12_Engine_High_Loop.wav": {
+      "seconds": 6.0,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bytes": 529244
+    },
+    "V12_Engine_Idle_Loop.wav": {
+      "seconds": 6.0,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bytes": 529244
+    },
+    "Gear_Shift_Click.wav": {
+      "seconds": 0.48,
+      "sample_rate": 44100,
+      "channels": 1,
+      "bytes": 42380
+    }
+  },
+  "scripts": [
+    "RacingCameraFollow.cs",
+    "FormulaWheelVisuals.cs",
+    "FormulaCarArcadeController.cs",
+    "V12EngineAudio.cs"
+  ],
+  "circuit_points": 300,
+  "preview": "/mnt/data/Racing_V12_FullPack_Preview.png"
+}

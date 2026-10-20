@@ -1,0 +1,297 @@
+newmtl RacingBlue
+Ka 0.0053 0.0300 0.1230
+Kd 0.0350 0.2000 0.8200
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl DeepBlue
+Ka 0.0027 0.0097 0.0330
+Kd 0.0180 0.0650 0.2200
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl White
+Ka 0.1380 0.1410 0.1440
+Kd 0.9200 0.9400 0.9600
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl Orange
+Ka 0.1500 0.0390 0.0053
+Kd 1.0000 0.2600 0.0350
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl Black
+Ka 0.0027 0.0034 0.0053
+Kd 0.0180 0.0230 0.0350
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl TireRubber
+Ka 0.0037 0.0040 0.0048
+Kd 0.0250 0.0270 0.0320
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl Carbon
+Ka 0.0112 0.0128 0.0150
+Kd 0.0750 0.0850 0.1000
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl Metal
+Ka 0.0510 0.0585 0.0645
+Kd 0.3400 0.3900 0.4300
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl WheelGunmetal
+Ka 0.0225 0.0255 0.0300
+Kd 0.1500 0.1700 0.2000
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl Yellow
+Ka 0.1500 0.1080 0.0030
+Kd 1.0000 0.7200 0.0200
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl Glass
+Ka 0.0067 0.0510 0.0675
+Kd 0.0450 0.3400 0.4500
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl Asphalt
+Ka 0.0180 0.0203 0.0225
+Kd 0.1200 0.1350 0.1500
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl AsphaltLight
+Ka 0.0300 0.0323 0.0345
+Kd 0.2000 0.2150 0.2300
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl CurbRed
+Ka 0.1275 0.0053 0.0067
+Kd 0.8500 0.0350 0.0450
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl CurbWhite
+Ka 0.1380 0.1365 0.1290
+Kd 0.9200 0.9100 0.8600
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl Barrier
+Ka 0.1170 0.1200 0.1215
+Kd 0.7800 0.8000 0.8100
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl BarrierDark
+Ka 0.0270 0.0330 0.0390
+Kd 0.1800 0.2200 0.2600
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl Grass
+Ka 0.0150 0.0480 0.0225
+Kd 0.1000 0.3200 0.1500
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl Concrete
+Ka 0.0495 0.0540 0.0570
+Kd 0.3300 0.3600 0.3800
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl BuildingWhite
+Ka 0.1170 0.1230 0.1275
+Kd 0.7800 0.8200 0.8500
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl BuildingBlue
+Ka 0.0053 0.0180 0.0420
+Kd 0.0350 0.1200 0.2800
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl Window
+Ka 0.0060 0.0360 0.0510
+Kd 0.0400 0.2400 0.3400
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl SeatRed
+Ka 0.1080 0.0053 0.0060
+Kd 0.7200 0.0350 0.0400
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl Tree
+Ka 0.0120 0.0405 0.0150
+Kd 0.0800 0.2700 0.1000
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl TreeLight
+Ka 0.0225 0.0600 0.0180
+Kd 0.1500 0.4000 0.1200
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl GridBlack
+Ka 0.0030 0.0030 0.0030
+Kd 0.0200 0.0200 0.0200
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl GridWhite
+Ka 0.1425 0.1425 0.1350
+Kd 0.9500 0.9500 0.9000
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl LEDRed
+Ka 0.1500 0.0030 0.0030
+Kd 1.0000 0.0200 0.0200
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl LEDYellow
+Ka 0.1500 0.0900 0.0022
+Kd 1.0000 0.6000 0.0150
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+newmtl LEDGreen
+Ka 0.0030 0.1125 0.0135
+Kd 0.0200 0.7500 0.0900
+Ks 0.18 0.18 0.18
+Ns 32.0
+d 1.0
+illum 2
+
+
+# Mercedes-inspired fictional fan-game livery materials
+newmtl AMGBlack
+Ka 0.0040 0.0045 0.0055
+Kd 0.0250 0.0300 0.0380
+Ks 0.30 0.32 0.34
+Ns 70.0
+d 1.0
+illum 2
+
+newmtl AMGDark
+Ka 0.0090 0.0105 0.0120
+Kd 0.0600 0.0700 0.0800
+Ks 0.25 0.26 0.28
+Ns 50.0
+d 1.0
+illum 2
+
+newmtl PetronasTeal
+Ka 0.0000 0.0400 0.0330
+Kd 0.0000 0.6200 0.5300
+Ks 0.35 0.38 0.38
+Ns 64.0
+d 1.0
+illum 2
+
+newmtl TealBright
+Ka 0.0000 0.0550 0.0450
+Kd 0.0000 0.8500 0.7000
+Ks 0.30 0.35 0.35
+Ns 55.0
+d 1.0
+illum 2
+
+newmtl Silver
+Ka 0.0550 0.0580 0.0600
+Kd 0.7600 0.7900 0.8100
+Ks 0.40 0.42 0.44
+Ns 90.0
+d 1.0
+illum 2
+
+newmtl SilverMetal
+Ka 0.0300 0.0350 0.0400
+Kd 0.4200 0.4900 0.5300
+Ks 0.45 0.46 0.48
+Ns 80.0
+d 1.0
+illum 2
+
+newmtl DarkWheel
+Ka 0.0100 0.0120 0.0140
+Kd 0.0800 0.0950 0.1100
+Ks 0.30 0.32 0.34
+Ns 56.0
+d 1.0
+illum 2

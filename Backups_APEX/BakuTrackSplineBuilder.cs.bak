@@ -1,0 +1,1207 @@
+using System.Collections.Generic;
+using System.IO;
+using UnityEngine;
+
+/// <summary>
+/// Procedural Spline Track & Environment Builder for Baku City Circuit (Azerbaijan),
+/// specifically recreating the iconic "Castle Corner" (Turn 8 - Turn 10 around Icherisheher)
+/// and full circuit street layout.
+/// 
+/// Generates:
+/// 1. Narrowing street circuit road with uphill elevation (7.6m bottleneck width at Castle apex)
+/// 2. Inside Red-White-Yellow FIA kerbs with rumble profile
+/// 3. Outside white concrete barriers with sponsor logos & curved high catch-fencing
+/// 4. Ancient Icherisheher medieval fortress walls, crenelated cylindrical towers & arched gate
+/// 5. Classical Eastern European Baku neoclassical buildings, spectator grandstands & trees
+/// 6. Fully drivable with physics MeshColliders for F1 racing
+/// 7. Automatically saves persistent mesh assets to disk so they persist across scene saves & Play Mode!
+/// </summary>
+[ExecuteAlways]
+[SelectionBase]
+public class BakuTrackSplineBuilder : MonoBehaviour
+{
+    #region ──── DATA STRUCTURES ────
+
+    [System.Serializable]
+    public class TrackWayPoint
+    {
+        public Vector3 position;
+        public float trackWidth = 11.0f; // Track width at this point
+        public float bankingAngle = 0f;  // Camber/banking in degrees
+        public bool hasInnerKerb = false;
+        public bool hasOuterBarrier = true;
+        public bool hasCastleWall = false;
+
+        public TrackWayPoint(Vector3 pos, float width, float banking = 0f, bool innerKerb = false, bool outerBarrier = true, bool castleWall = false)
+        {
+            position = pos;
+            trackWidth = width;
+            bankingAngle = banking;
+            hasInnerKerb = innerKerb;
+            hasOuterBarrier = outerBarrier;
+            hasCastleWall = castleWall;
+        }
+    }
+
+    #endregion
+
+    #region ──── INSPECTOR FIELDS ────
+
+    [Header("═══ BAKU CASTLE CORNER WAYPOINTS ═══")]
+    [Tooltip("Control points defining the Baku Turn 8 bottleneck section")]
+    [SerializeField] private List<TrackWayPoint> waypoints = new List<TrackWayPoint>();
+
+    [Header("═══ SPLINE SETTINGS ═══")]
+    [SerializeField] private bool isClosedLoop = true;
+    [Range(4, 24)]
+    [SerializeField] private int subdivisionsPerSegment = 12;
+    [SerializeField] private float roadHeightOffset = 0.06f;
+
+    [Header("═══ ROAD & KERBS ═══")]
+    [SerializeField] private Material asphaltMaterial;
+    [SerializeField] private Material racingLineMaterial;
+    [SerializeField] private Material curbRedMaterial;
+    [SerializeField] private Material curbWhiteMaterial;
+    [SerializeField] private Material curbYellowMaterial;
+    [SerializeField] private float kerbWidth = 0.90f;
+    [SerializeField] private float kerbHeight = 0.08f;
+
+    [Header("═══ BARRIERS & CATCH FENCE ═══")]
+    [SerializeField] private Material concreteBarrierMaterial;
+    [SerializeField] private Material catchFenceMaterial;
+    [SerializeField] private Material sponsorBannerMaterial;
+    [SerializeField] private float barrierHeight = 1.25f;
+    [SerializeField] private float barrierThickness = 0.45f;
+    [SerializeField] private float fenceHeight = 3.6f;
+    [SerializeField] private float fenceOverhangAngle = 35f;
+
+    [Header("═══ ICHERISHEHER CASTLE FORTRESS ═══")]
+    [SerializeField] private Material castleStoneMaterial;
+    [SerializeField] private float castleWallHeight = 9.5f;
+    [SerializeField] private float castleWallThickness = 2.2f;
+    [SerializeField] private float towerRadius = 3.8f;
+    [SerializeField] private float towerHeight = 14.5f;
+    [SerializeField] private int towerCrenelations = 10;
+
+    [Header("═══ CITY ARCHITECTURE & PROPS ═══")]
+    [SerializeField] private Material buildingFacadeMaterial;
+    [SerializeField] private Material grandstandMaterial;
+    [SerializeField] private Material treeFoliageMaterial;
+
+    [Header("═══ GENERATED OBJECT REFERENCES ═══")]
+    [SerializeField] private GameObject generatedTrackRoot;
+
+    #endregion
+
+    #region ──── LIFECYCLE ────
+
+    private void Reset()
+    {
+        InitializeBakuCastleWaypoints();
+    }
+
+    private void OnEnable()
+    {
+        EnsureTrackBuilt();
+    }
+
+    private void Awake()
+    {
+        EnsureTrackBuilt();
+    }
+
+    private void Start()
+    {
+        EnsureTrackBuilt();
+    }
+
+    public void EnsureTrackBuilt()
+    {
+        bool needsBuild = false;
+
+        if (generatedTrackRoot == null || generatedTrackRoot.transform.childCount == 0)
+        {
+            needsBuild = true;
+        }
+        else
+        {
+            // Verify if any MeshFilter has lost its mesh
+            var filters = generatedTrackRoot.GetComponentsInChildren<MeshFilter>(true);
+            if (filters.Length == 0)
+            {
+                needsBuild = true;
+            }
+            else
+            {
+                foreach (var mf in filters)
+                {
+                    if (mf.sharedMesh == null)
+                    {
+                        needsBuild = true;
+                        break;
+                    }
+                }
+            }
+        }
+
+        if (needsBuild)
+        {
+            if (waypoints == null || waypoints.Count < 3)
+            {
+                InitializeBakuCastleWaypoints();
+            }
+            BuildBakuTrack();
+        }
+
+        // Adjust ground plane below road so asphalt is never submerged
+        GameObject groundGo = GameObject.Find("Baku_City_Ground");
+        if (groundGo != null)
+        {
+            Vector3 gPos = groundGo.transform.position;
+            if (gPos.y > -0.2f)
+            {
+                gPos.y = -0.35f;
+                groundGo.transform.position = gPos;
+            }
+        }
+
+#if UNITY_EDITOR
+        // Auto-configure PlayerCar position, soft tires, and Racing HUD
+        GameObject playerCar = GameObject.Find("PlayerCar");
+        if (playerCar != null)
+        {
+            // If car is far off track or below ground, place on Aziz Aliyev approach straight facing Castle Corner
+            if (playerCar.transform.position.z < -80f || playerCar.transform.position.z > 200f || playerCar.transform.position.y < 0f)
+            {
+                playerCar.transform.position = new Vector3(0f, 0.12f, -60f);
+                playerCar.transform.rotation = Quaternion.identity;
+            }
+
+            // Ensure soft red tire material on wheels
+            Material softMat = UnityEditor.AssetDatabase.LoadAssetAtPath<Material>("Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/TireRubber_SoftRed.mat");
+            if (softMat != null)
+            {
+                foreach (var r in playerCar.GetComponentsInChildren<Renderer>(true))
+                {
+                    var mats = r.sharedMaterials;
+                    for (int m = 0; m < mats.Length; m++)
+                    {
+                        if (mats[m] != null && mats[m].name.Contains("TireRubber")) mats[m] = softMat;
+                    }
+                    r.sharedMaterials = mats;
+                }
+            }
+
+            // Ensure Racing HUD exists and is wired
+            var existingHud = Object.FindFirstObjectByType<RacingHUD>();
+            if (existingHud == null)
+            {
+                var setupType = System.Type.GetType("ApexV12Setup, Assembly-CSharp-Editor");
+                if (setupType != null)
+                {
+                    var buildMethod = setupType.GetMethod("BuildRacingHUD", System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Static);
+                    buildMethod?.Invoke(null, new object[] { playerCar });
+                }
+            }
+        }
+#endif
+    }
+
+    #endregion
+
+    #region ──── DEFAULT BAKU CIRCUIT LAYOUT ────
+
+    /// <summary>
+    /// Populates waypoints accurately representing Baku City Circuit:
+    /// Aziz Aliyev Street straight -> braking zone -> 7.6m Castle Corner bottleneck (Turn 8) ->
+    /// Turn 9 S-curve past castle ramparts -> Maiden Tower descent -> Neftchilar Avenue flat-out DRS straight ->
+    /// Turns 1-4 boulevard sweeps -> Turn 7 right turn returning to Aziz Aliyev straight.
+    /// </summary>
+    public void InitializeBakuCastleWaypoints()
+    {
+        waypoints.Clear();
+
+        // 1. Approach straight along Aziz Aliyev Street (Starting grid, Speed ~240 km/h, width 12.5m)
+        waypoints.Add(new TrackWayPoint(new Vector3(0f, 0f, -80f), 12.5f, 0f, false, true, false));
+        waypoints.Add(new TrackWayPoint(new Vector3(0f, 0f, -20f), 12.5f, 0f, false, true, false));
+        waypoints.Add(new TrackWayPoint(new Vector3(0f, 0.4f, 35f), 12.0f, 0f, false, true, false));
+        waypoints.Add(new TrackWayPoint(new Vector3(-1.5f, 1.0f, 65f), 11.0f, 0f, false, true, false));
+
+        // 2. Bottleneck Entrance - Uphill climb begins, street narrows sharply between historical buildings
+        waypoints.Add(new TrackWayPoint(new Vector3(-4.5f, 1.8f, 92f), 9.6f, 1.0f, false, true, true));
+        waypoints.Add(new TrackWayPoint(new Vector3(-9.2f, 2.7f, 114f), 8.4f, 1.5f, false, true, true));
+
+        // 3. The Iconic Turn 8 Apex - Narrowest section in Formula 1 (only 7.6m wide!), climbing +8% uphill
+        // The ancient stone castle tower is directly on the left apex!
+        waypoints.Add(new TrackWayPoint(new Vector3(-16.0f, 3.8f, 131f), 7.6f, 2.5f, true, true, true));
+        waypoints.Add(new TrackWayPoint(new Vector3(-24.5f, 4.8f, 142f), 7.6f, 3.0f, true, true, true));
+
+        // 4. Turn 9 S-twist past the fortress ramparts
+        waypoints.Add(new TrackWayPoint(new Vector3(-34.5f, 5.7f, 146f), 8.0f, 2.0f, true, true, true));
+        waypoints.Add(new TrackWayPoint(new Vector3(-45.0f, 6.4f, 143f), 8.8f, 1.0f, true, true, true));
+
+        // 5. Turn 10 & 11 Exit towards Kichik Qala Street / Maiden Tower descent
+        waypoints.Add(new TrackWayPoint(new Vector3(-60.0f, 6.8f, 134f), 9.8f, 0f, false, true, false));
+        waypoints.Add(new TrackWayPoint(new Vector3(-80.0f, 5.5f, 112f), 10.5f, 0f, false, true, false));
+        waypoints.Add(new TrackWayPoint(new Vector3(-105.0f, 3.8f, 75f), 11.5f, 0f, false, true, false));
+        waypoints.Add(new TrackWayPoint(new Vector3(-120.0f, 1.8f, 25f), 12.5f, 0f, false, true, false));
+
+        // 6. Turn 12 / Azadliq Square chicane heading towards the coast
+        waypoints.Add(new TrackWayPoint(new Vector3(-120.0f, 0.2f, -35f), 13.0f, 0f, true, true, false));
+        waypoints.Add(new TrackWayPoint(new Vector3(-85.0f, 0.0f, -80f), 13.5f, 0f, false, true, false));
+        waypoints.Add(new TrackWayPoint(new Vector3(-30.0f, 0.0f, -115f), 14.0f, 0f, false, true, false));
+
+        // 7. Neftchilar Avenue - Flat out 340+ km/h DRS Straight along Caspian Sea
+        waypoints.Add(new TrackWayPoint(new Vector3(35.0f, 0.0f, -135f), 14.0f, 0f, false, true, false));
+        waypoints.Add(new TrackWayPoint(new Vector3(115.0f, 0.0f, -135f), 14.0f, 0f, false, true, false));
+        waypoints.Add(new TrackWayPoint(new Vector3(185.0f, 0.0f, -130f), 14.0f, 0f, false, true, false));
+
+        // 8. Turn 1 & 2 - Heavy braking zone from 340 to 110 km/h, 90-degree lefts
+        waypoints.Add(new TrackWayPoint(new Vector3(220.0f, 0.0f, -95f), 13.0f, 0f, true, true, false));
+        waypoints.Add(new TrackWayPoint(new Vector3(210.0f, 0.0f, -30f), 12.5f, 0f, false, true, false));
+
+        // 9. Turn 3 & 4 Boulevard chicane
+        waypoints.Add(new TrackWayPoint(new Vector3(165.0f, 0.0f, 10f), 12.0f, 0f, true, true, false));
+        waypoints.Add(new TrackWayPoint(new Vector3(105.0f, 0.0f, 5f), 12.0f, 0f, false, true, false));
+
+        // 10. Turn 7 - Right turn back into Aziz Aliyev street
+        waypoints.Add(new TrackWayPoint(new Vector3(45.0f, 0.0f, -35f), 12.0f, 0f, true, true, false));
+        waypoints.Add(new TrackWayPoint(new Vector3(15.0f, 0.0f, -65f), 12.5f, 0f, false, true, false));
+    }
+
+    #endregion
+
+    #region ──── SPLINE MATH ────
+
+    public struct SplineSample
+    {
+        public Vector3 position;
+        public Vector3 forward;
+        public Vector3 right;
+        public Vector3 up;
+        public float width;
+        public float banking;
+        public bool innerKerb;
+        public bool outerBarrier;
+        public bool castleWall;
+        public float distanceAlongTrack;
+    }
+
+    public List<SplineSample> GenerateSplineSamples()
+    {
+        var samples = new List<SplineSample>();
+        if (waypoints == null || waypoints.Count < 3) return samples;
+
+        float accumulatedDist = 0f;
+        Vector3 prevPos = waypoints[0].position;
+
+        int segmentCount = isClosedLoop ? waypoints.Count : (waypoints.Count - 1);
+
+        for (int i = 0; i < segmentCount; i++)
+        {
+            int i0 = isClosedLoop ? ((i - 1 + waypoints.Count) % waypoints.Count) : (i > 0 ? i - 1 : i);
+            int i1 = i;
+            int i2 = (i + 1) % waypoints.Count;
+            int i3 = isClosedLoop ? ((i + 2) % waypoints.Count) : ((i + 2 < waypoints.Count) ? i + 2 : i2);
+
+            Vector3 p0 = waypoints[i0].position;
+            Vector3 p1 = waypoints[i1].position;
+            Vector3 p2 = waypoints[i2].position;
+            Vector3 p3 = waypoints[i3].position;
+
+            TrackWayPoint wpA = waypoints[i1];
+            TrackWayPoint wpB = waypoints[i2];
+
+            for (int s = 0; s < subdivisionsPerSegment; s++)
+            {
+                float t = (float)s / subdivisionsPerSegment;
+                Vector3 pos = EvaluateCatmullRom(p0, p1, p2, p3, t);
+                Vector3 tangent = EvaluateCatmullRomDerivative(p0, p1, p2, p3, t).normalized;
+                if (tangent == Vector3.zero) tangent = Vector3.forward;
+
+                float width = Mathf.Lerp(wpA.trackWidth, wpB.trackWidth, t);
+                float banking = Mathf.Lerp(wpA.bankingAngle, wpB.bankingAngle, t);
+                bool innerKerb = t < 0.5f ? wpA.hasInnerKerb : wpB.hasInnerKerb;
+                bool outerBarrier = t < 0.5f ? wpA.hasOuterBarrier : wpB.hasOuterBarrier;
+                bool castleWall = t < 0.5f ? wpA.hasCastleWall : wpB.hasCastleWall;
+
+                // Banking rotation around tangent
+                Quaternion bankRot = Quaternion.AngleAxis(banking, tangent);
+                Vector3 baseUp = Vector3.up;
+                Vector3 right = bankRot * Vector3.Cross(baseUp, tangent).normalized;
+                Vector3 up = Vector3.Cross(tangent, right).normalized;
+
+                accumulatedDist += Vector3.Distance(prevPos, pos);
+                prevPos = pos;
+
+                samples.Add(new SplineSample
+                {
+                    position = pos,
+                    forward = tangent,
+                    right = right,
+                    up = up,
+                    width = width,
+                    banking = banking,
+                    innerKerb = innerKerb,
+                    outerBarrier = outerBarrier,
+                    castleWall = castleWall,
+                    distanceAlongTrack = accumulatedDist
+                });
+            }
+        }
+
+        if (!isClosedLoop)
+        {
+            var lastWp = waypoints[waypoints.Count - 1];
+            Vector3 lastTangent = (lastWp.position - waypoints[waypoints.Count - 2].position).normalized;
+            Vector3 lastRight = Vector3.Cross(Vector3.up, lastTangent).normalized;
+            samples.Add(new SplineSample
+            {
+                position = lastWp.position,
+                forward = lastTangent,
+                right = lastRight,
+                up = Vector3.up,
+                width = lastWp.trackWidth,
+                banking = lastWp.bankingAngle,
+                innerKerb = lastWp.hasInnerKerb,
+                outerBarrier = lastWp.hasOuterBarrier,
+                castleWall = lastWp.hasCastleWall,
+                distanceAlongTrack = accumulatedDist + Vector3.Distance(prevPos, lastWp.position)
+            });
+        }
+
+        return samples;
+    }
+
+    private static Vector3 EvaluateCatmullRom(Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3, float t)
+    {
+        float t2 = t * t;
+        float t3 = t2 * t;
+        return 0.5f * (
+            (2.0f * p1) +
+            (-p0 + p2) * t +
+            (2.0f * p0 - 5.0f * p1 + 4.0f * p2 - p3) * t2 +
+            (-p0 + 3.0f * p1 - 3.0f * p2 + p3) * t3
+        );
+    }
+
+    private static Vector3 EvaluateCatmullRomDerivative(Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3, float t)
+    {
+        float t2 = t * t;
+        return 0.5f * (
+            (-p0 + p2) +
+            2.0f * (2.0f * p0 - 5.0f * p1 + 4.0f * p2 - p3) * t +
+            3.0f * (-p0 + 3.0f * p1 - 3.0f * p2 + p3) * t2
+        );
+    }
+
+    #endregion
+
+    #region ──── MESH ASSET PERSISTENCE ────
+
+    private Mesh SaveOrUpdateMeshAsset(Mesh mesh, string assetName)
+    {
+#if UNITY_EDITOR
+        if (!Application.isPlaying)
+        {
+            string folder = "Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Models/Generated";
+            if (!Directory.Exists(folder))
+            {
+                Directory.CreateDirectory(folder);
+            }
+            string path = $"{folder}/{assetName}.asset";
+            Mesh existing = UnityEditor.AssetDatabase.LoadAssetAtPath<Mesh>(path);
+            if (existing != null)
+            {
+                existing.Clear();
+                UnityEditor.EditorUtility.CopySerialized(mesh, existing);
+                UnityEditor.AssetDatabase.SaveAssets();
+                return existing;
+            }
+            else
+            {
+                UnityEditor.AssetDatabase.CreateAsset(mesh, path);
+                UnityEditor.AssetDatabase.SaveAssets();
+                return mesh;
+            }
+        }
+#endif
+        return mesh;
+    }
+
+    #endregion
+
+    #region ──── GENERATION ORCHESTRATOR ────
+
+    /// <summary>
+    /// Generates the complete 3D Baku Castle Corner environment:
+    /// - Spline Road Surface with dynamic width & MeshCollider
+    /// - Inside Kerbs (Red-White-Yellow)
+    /// - Concrete Barriers & Curved Catch Fences
+    /// - Medieval Icherisheher Castle Walls, Cylindrical Towers & Gate
+    /// - Neoclassical City Buildings, Spectator Grandstands & Trees
+    /// </summary>
+    public void BuildBakuTrack()
+    {
+        ResolveMaterials();
+
+        // Clean existing
+        if (generatedTrackRoot != null)
+        {
+            if (Application.isPlaying) Destroy(generatedTrackRoot);
+            else DestroyImmediate(generatedTrackRoot);
+        }
+
+        generatedTrackRoot = new GameObject("Baku_CastleCorner_Track");
+        generatedTrackRoot.transform.SetParent(transform, false);
+
+        var samples = GenerateSplineSamples();
+        if (samples.Count < 2) return;
+
+        // 1. Build Drivable Road Surface
+        BuildRoadMesh(samples, generatedTrackRoot.transform);
+
+        // 2. Build Inside Kerbs
+        BuildKerbsMesh(samples, generatedTrackRoot.transform);
+
+        // 3. Build Concrete Barriers & FIA Catch Fences
+        BuildBarriersAndFences(samples, generatedTrackRoot.transform);
+
+        // 4. Build Ancient Icherisheher Castle Fortress & Towers
+        BuildIcherisheherFortress(samples, generatedTrackRoot.transform);
+
+        // 5. Build City Buildings & Grandstands
+        BuildCityAndEnvironment(samples, generatedTrackRoot.transform);
+
+        Debug.Log($"<color=#00D2BE><b>[Baku Track] Successfully generated Castle Corner with {samples.Count} spline nodes!</b></color>");
+    }
+
+    private void ResolveMaterials()
+    {
+        const string matDir = "Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials";
+
+#if UNITY_EDITOR
+        if (asphaltMaterial == null) asphaltMaterial = UnityEditor.AssetDatabase.LoadAssetAtPath<Material>($"{matDir}/Asphalt.mat");
+        if (racingLineMaterial == null) racingLineMaterial = UnityEditor.AssetDatabase.LoadAssetAtPath<Material>($"{matDir}/Asphalt_RacingLine.mat");
+        if (curbRedMaterial == null) curbRedMaterial = UnityEditor.AssetDatabase.LoadAssetAtPath<Material>($"{matDir}/CurbRed.mat");
+        if (curbWhiteMaterial == null) curbWhiteMaterial = UnityEditor.AssetDatabase.LoadAssetAtPath<Material>($"{matDir}/CurbWhite.mat");
+        if (curbYellowMaterial == null) curbYellowMaterial = UnityEditor.AssetDatabase.LoadAssetAtPath<Material>($"{matDir}/CurbYellow.mat");
+        if (concreteBarrierMaterial == null) concreteBarrierMaterial = UnityEditor.AssetDatabase.LoadAssetAtPath<Material>($"{matDir}/SponsorBarrier_Red.mat") ?? UnityEditor.AssetDatabase.LoadAssetAtPath<Material>($"{matDir}/Barrier.mat");
+        if (catchFenceMaterial == null) catchFenceMaterial = UnityEditor.AssetDatabase.LoadAssetAtPath<Material>($"{matDir}/BarrierDark.mat");
+        if (sponsorBannerMaterial == null) sponsorBannerMaterial = UnityEditor.AssetDatabase.LoadAssetAtPath<Material>($"{matDir}/SponsorBarrier_Red.mat") ?? UnityEditor.AssetDatabase.LoadAssetAtPath<Material>($"{matDir}/PetronasTeal.mat");
+        if (castleStoneMaterial == null) castleStoneMaterial = UnityEditor.AssetDatabase.LoadAssetAtPath<Material>($"{matDir}/CastleStone.mat") ?? UnityEditor.AssetDatabase.LoadAssetAtPath<Material>($"{matDir}/Concrete.mat");
+        if (buildingFacadeMaterial == null) buildingFacadeMaterial = UnityEditor.AssetDatabase.LoadAssetAtPath<Material>($"{matDir}/BuildingWhite.mat");
+        if (grandstandMaterial == null) grandstandMaterial = UnityEditor.AssetDatabase.LoadAssetAtPath<Material>($"{matDir}/SeatRed.mat");
+        if (treeFoliageMaterial == null) treeFoliageMaterial = UnityEditor.AssetDatabase.LoadAssetAtPath<Material>($"{matDir}/Tree.mat");
+#endif
+    }
+
+    #endregion
+
+    #region ──── 1. ROAD MESH GENERATION ────
+
+    private void BuildRoadMesh(List<SplineSample> samples, Transform parent)
+    {
+        GameObject roadGo = new GameObject("Road_Asphalt");
+        roadGo.transform.SetParent(parent, false);
+
+        var vertices = new List<Vector3>();
+        var normals = new List<Vector3>();
+        var uvs = new List<Vector2>();
+        var triangles = new List<int>();
+
+        // Cross-section: Left Edge, Center-Left, Center, Center-Right, Right Edge
+        for (int i = 0; i < samples.Count; i++)
+        {
+            var s = samples[i];
+            float halfW = s.width * 0.5f;
+            float v = s.distanceAlongTrack * 0.25f; // UV tiling along track
+
+            Vector3 leftPos = s.position - s.right * halfW + s.up * roadHeightOffset;
+            Vector3 midPos = s.position + s.up * roadHeightOffset;
+            Vector3 rightPos = s.position + s.right * halfW + s.up * roadHeightOffset;
+
+            int baseIdx = vertices.Count;
+
+            vertices.Add(leftPos);
+            vertices.Add(midPos);
+            vertices.Add(rightPos);
+
+            normals.Add(s.up);
+            normals.Add(s.up);
+            normals.Add(s.up);
+
+            uvs.Add(new Vector2(0f, v));
+            uvs.Add(new Vector2(0.5f, v));
+            uvs.Add(new Vector2(1f, v));
+
+            if (i > 0)
+            {
+                int prevBase = baseIdx - 3;
+
+                // Left half quad
+                triangles.Add(prevBase);
+                triangles.Add(prevBase + 1);
+                triangles.Add(baseIdx);
+
+                triangles.Add(baseIdx);
+                triangles.Add(prevBase + 1);
+                triangles.Add(baseIdx + 1);
+
+                // Right half quad
+                triangles.Add(prevBase + 1);
+                triangles.Add(prevBase + 2);
+                triangles.Add(baseIdx + 1);
+
+                triangles.Add(baseIdx + 1);
+                triangles.Add(prevBase + 2);
+                triangles.Add(baseIdx + 2);
+            }
+        }
+
+        // Connect loop if closed
+        if (isClosedLoop && samples.Count > 2)
+        {
+            int lastBase = (samples.Count - 1) * 3;
+            int firstBase = 0;
+
+            triangles.Add(lastBase);
+            triangles.Add(lastBase + 1);
+            triangles.Add(firstBase);
+
+            triangles.Add(firstBase);
+            triangles.Add(lastBase + 1);
+            triangles.Add(firstBase + 1);
+
+            triangles.Add(lastBase + 1);
+            triangles.Add(lastBase + 2);
+            triangles.Add(firstBase + 1);
+
+            triangles.Add(firstBase + 1);
+            triangles.Add(lastBase + 2);
+            triangles.Add(firstBase + 2);
+        }
+
+        Mesh mesh = new Mesh { name = "Mesh_BakuRoad" };
+        mesh.SetVertices(vertices);
+        mesh.SetNormals(normals);
+        mesh.SetUVs(0, uvs);
+        mesh.SetTriangles(triangles, 0);
+        mesh.RecalculateTangents();
+        mesh.RecalculateBounds();
+
+        Mesh savedMesh = SaveOrUpdateMeshAsset(mesh, "Mesh_BakuRoad");
+
+        MeshFilter mf = roadGo.AddComponent<MeshFilter>();
+        mf.sharedMesh = savedMesh;
+
+        MeshRenderer mr = roadGo.AddComponent<MeshRenderer>();
+        mr.sharedMaterial = asphaltMaterial != null ? asphaltMaterial : new Material(Shader.Find("Universal Render Pipeline/Lit"));
+
+        MeshCollider mc = roadGo.AddComponent<MeshCollider>();
+        mc.sharedMesh = savedMesh;
+    }
+
+    #endregion
+
+    #region ──── 2. KERBS GENERATION (RED-WHITE-YELLOW) ────
+
+    private void BuildKerbsMesh(List<SplineSample> samples, Transform parent)
+    {
+        GameObject kerbsGo = new GameObject("Kerbs_InnerApex");
+        kerbsGo.transform.SetParent(parent, false);
+
+        var vertices = new List<Vector3>();
+        var normals = new List<Vector3>();
+        var uvs = new List<Vector2>();
+        var triangles = new List<int>();
+
+        for (int i = 0; i < samples.Count; i++)
+        {
+            var s = samples[i];
+            if (!s.innerKerb) continue;
+
+            float halfW = s.width * 0.5f;
+            Vector3 roadEdge = s.position - s.right * halfW + s.up * roadHeightOffset;
+            Vector3 kerbRidge = roadEdge - s.right * (kerbWidth * 0.5f) + s.up * kerbHeight;
+            Vector3 kerbBack = roadEdge - s.right * kerbWidth + s.up * (kerbHeight * 0.2f);
+
+            int baseIdx = vertices.Count;
+
+            vertices.Add(roadEdge);
+            vertices.Add(kerbRidge);
+            vertices.Add(kerbBack);
+
+            Vector3 kerbUp = (s.up + -s.right * 0.3f).normalized;
+            normals.Add(kerbUp);
+            normals.Add(kerbUp);
+            normals.Add(s.up);
+
+            float v = s.distanceAlongTrack * 0.8f; // Kerb striped pattern frequency
+            uvs.Add(new Vector2(0f, v));
+            uvs.Add(new Vector2(0.5f, v));
+            uvs.Add(new Vector2(1f, v));
+
+            // Connect to previous sample if contiguous
+            if (i > 0 && samples[i - 1].innerKerb && baseIdx >= 3)
+            {
+                int prevBase = baseIdx - 3;
+
+                triangles.Add(prevBase);
+                triangles.Add(prevBase + 1);
+                triangles.Add(baseIdx);
+
+                triangles.Add(baseIdx);
+                triangles.Add(prevBase + 1);
+                triangles.Add(baseIdx + 1);
+
+                triangles.Add(prevBase + 1);
+                triangles.Add(prevBase + 2);
+                triangles.Add(baseIdx + 1);
+
+                triangles.Add(baseIdx + 1);
+                triangles.Add(prevBase + 2);
+                triangles.Add(baseIdx + 2);
+            }
+        }
+
+        if (vertices.Count >= 3)
+        {
+            Mesh mesh = new Mesh { name = "Mesh_BakuKerbs" };
+            mesh.SetVertices(vertices);
+            mesh.SetNormals(normals);
+            mesh.SetUVs(0, uvs);
+            mesh.SetTriangles(triangles, 0);
+            mesh.RecalculateTangents();
+            mesh.RecalculateBounds();
+
+            Mesh savedMesh = SaveOrUpdateMeshAsset(mesh, "Mesh_BakuKerbs");
+
+            MeshFilter mf = kerbsGo.AddComponent<MeshFilter>();
+            mf.sharedMesh = savedMesh;
+
+            MeshRenderer mr = kerbsGo.AddComponent<MeshRenderer>();
+            mr.sharedMaterial = curbYellowMaterial != null ? curbYellowMaterial : (curbRedMaterial != null ? curbRedMaterial : asphaltMaterial);
+
+            MeshCollider mc = kerbsGo.AddComponent<MeshCollider>();
+            mc.sharedMesh = savedMesh;
+        }
+    }
+
+    #endregion
+
+    #region ──── 3. BARRIERS & FIA CURVED CATCH FENCE ────
+
+    private void BuildBarriersAndFences(List<SplineSample> samples, Transform parent)
+    {
+        GameObject barriersRoot = new GameObject("Barriers_And_CatchFences");
+        barriersRoot.transform.SetParent(parent, false);
+
+        var bVerts = new List<Vector3>();
+        var bNorms = new List<Vector3>();
+        var bUVs = new List<Vector2>();
+        var bTris = new List<int>();
+
+        var fVerts = new List<Vector3>();
+        var fNorms = new List<Vector3>();
+        var fUVs = new List<Vector2>();
+        var fTris = new List<int>();
+
+        // Outer Barriers along the perimeter with 3D thickness (front, top, back faces)
+        for (int i = 0; i < samples.Count; i++)
+        {
+            var s = samples[i];
+            if (!s.outerBarrier) continue;
+
+            float halfW = s.width * 0.5f;
+            Vector3 barrierBase = s.position + s.right * halfW;
+            Vector3 barrierTop = barrierBase + s.up * barrierHeight;
+            Vector3 barrierBackBase = barrierBase + s.right * barrierThickness;
+            Vector3 barrierBackTop = barrierTop + s.right * barrierThickness;
+
+            // Curved fence top (angles towards the track per FIA safety spec)
+            Vector3 fenceCurvedOffset = (s.up * Mathf.Cos(fenceOverhangAngle * Mathf.Deg2Rad) -
+                                        s.right * Mathf.Sin(fenceOverhangAngle * Mathf.Deg2Rad)) * (fenceHeight - barrierHeight);
+            Vector3 fenceTop = barrierTop + fenceCurvedOffset;
+
+            int bIdx = bVerts.Count;
+            int fIdx = fVerts.Count;
+
+            // 1. Barrier Front Face (facing track - sponsor banner)
+            bVerts.Add(barrierBase);
+            bVerts.Add(barrierTop);
+            bNorms.Add(-s.right);
+            bNorms.Add(-s.right);
+
+            // 2. Barrier Top Face
+            bVerts.Add(barrierBackTop);
+            bNorms.Add(s.up);
+
+            // 3. Barrier Back Face
+            bVerts.Add(barrierBackBase);
+            bNorms.Add(s.right);
+
+            float bv = s.distanceAlongTrack * 0.2f;
+            bUVs.Add(new Vector2(0f, bv));
+            bUVs.Add(new Vector2(1f, bv));
+            bUVs.Add(new Vector2(1.2f, bv));
+            bUVs.Add(new Vector2(2f, bv));
+
+            // Catch Fence mesh
+            fVerts.Add(barrierTop);
+            fVerts.Add(fenceTop);
+            fNorms.Add(-s.right);
+            fNorms.Add(-s.right);
+
+            float fv = s.distanceAlongTrack * 0.5f;
+            fUVs.Add(new Vector2(0f, fv));
+            fUVs.Add(new Vector2(1f, fv));
+
+            if (i > 0 && samples[i - 1].outerBarrier && bIdx >= 4)
+            {
+                int bPrev = bIdx - 4;
+
+                // Front quad
+                bTris.Add(bPrev);
+                bTris.Add(bPrev + 1);
+                bTris.Add(bIdx);
+
+                bTris.Add(bIdx);
+                bTris.Add(bPrev + 1);
+                bTris.Add(bIdx + 1);
+
+                // Top quad
+                bTris.Add(bPrev + 1);
+                bTris.Add(bPrev + 2);
+                bTris.Add(bIdx + 1);
+
+                bTris.Add(bIdx + 1);
+                bTris.Add(bPrev + 2);
+                bTris.Add(bIdx + 2);
+
+                // Back quad
+                bTris.Add(bPrev + 2);
+                bTris.Add(bPrev + 3);
+                bTris.Add(bIdx + 2);
+
+                bTris.Add(bIdx + 2);
+                bTris.Add(bPrev + 3);
+                bTris.Add(bIdx + 3);
+
+                // Catch fence quad
+                int fPrev = fIdx - 2;
+                fTris.Add(fPrev);
+                fTris.Add(fPrev + 1);
+                fTris.Add(fIdx);
+
+                fTris.Add(fIdx);
+                fTris.Add(fPrev + 1);
+                fTris.Add(fIdx + 1);
+            }
+        }
+
+        // Concrete Barrier GameObject
+        if (bVerts.Count >= 4)
+        {
+            GameObject bGo = new GameObject("Concrete_Barriers_Outer");
+            bGo.transform.SetParent(barriersRoot.transform, false);
+
+            Mesh bMesh = new Mesh { name = "Mesh_BakuBarriers" };
+            bMesh.SetVertices(bVerts);
+            bMesh.SetNormals(bNorms);
+            bMesh.SetUVs(0, bUVs);
+            bMesh.SetTriangles(bTris, 0);
+
+            Mesh savedBMesh = SaveOrUpdateMeshAsset(bMesh, "Mesh_BakuBarriers");
+
+            MeshFilter mf = bGo.AddComponent<MeshFilter>();
+            mf.sharedMesh = savedBMesh;
+
+            MeshRenderer mr = bGo.AddComponent<MeshRenderer>();
+            mr.sharedMaterial = concreteBarrierMaterial != null ? concreteBarrierMaterial : new Material(Shader.Find("Universal Render Pipeline/Lit"));
+
+            MeshCollider mc = bGo.AddComponent<MeshCollider>();
+            mc.sharedMesh = savedBMesh;
+        }
+
+        // Catch Fence GameObject
+        if (fVerts.Count >= 2)
+        {
+            GameObject fGo = new GameObject("Catch_Fence_High");
+            fGo.transform.SetParent(barriersRoot.transform, false);
+
+            Mesh fMesh = new Mesh { name = "Mesh_BakuCatchFences" };
+            fMesh.SetVertices(fVerts);
+            fMesh.SetNormals(fNorms);
+            fMesh.SetUVs(0, fUVs);
+            fMesh.SetTriangles(fTris, 0);
+
+            Mesh savedFMesh = SaveOrUpdateMeshAsset(fMesh, "Mesh_BakuCatchFences");
+
+            MeshFilter mf = fGo.AddComponent<MeshFilter>();
+            mf.sharedMesh = savedFMesh;
+
+            MeshRenderer mr = fGo.AddComponent<MeshRenderer>();
+            mr.sharedMaterial = catchFenceMaterial != null ? catchFenceMaterial : new Material(Shader.Find("Universal Render Pipeline/Lit"));
+        }
+    }
+
+    #endregion
+
+    #region ──── 4. ICHERISHEHER FORTRESS WALL & CYLINDRICAL TOWERS ────
+
+    private void BuildIcherisheherFortress(List<SplineSample> samples, Transform parent)
+    {
+        GameObject castleRoot = new GameObject("Icherisheher_Ancient_Fortress");
+        castleRoot.transform.SetParent(parent, false);
+
+        var wallVerts = new List<Vector3>();
+        var wallNorms = new List<Vector3>();
+        var wallUVs = new List<Vector2>();
+        var wallTris = new List<int>();
+
+        Vector3 towerTurn8Position = Vector3.zero;
+        Vector3 towerTurn9Position = Vector3.zero;
+        bool foundT8 = false, foundT9 = false;
+
+        // Castle Wall follows the inner curve on the left side
+        for (int i = 0; i < samples.Count; i++)
+        {
+            var s = samples[i];
+            if (!s.castleWall) continue;
+
+            float halfW = s.width * 0.5f;
+            Vector3 wallBase = s.position - s.right * (halfW + 0.35f); // Hugs the left apex closely
+            Vector3 wallTop = wallBase + s.up * castleWallHeight;
+
+            // Locate Turn 8 Apex for primary tower
+            if (!foundT8 && s.innerKerb && s.width <= 7.8f)
+            {
+                towerTurn8Position = wallBase - s.right * (towerRadius * 0.8f);
+                foundT8 = true;
+            }
+
+            // Locate Turn 9 Apex for secondary tower
+            if (foundT8 && !foundT9 && s.distanceAlongTrack > 140f)
+            {
+                towerTurn9Position = wallBase - s.right * (towerRadius * 0.8f);
+                foundT9 = true;
+            }
+
+            int wIdx = wallVerts.Count;
+            wallVerts.Add(wallBase);
+            wallVerts.Add(wallTop);
+
+            wallNorms.Add(s.right); // Faces towards the track
+            wallNorms.Add(s.right);
+
+            float wv = s.distanceAlongTrack * 0.15f;
+            wallUVs.Add(new Vector2(0f, wv));
+            wallUVs.Add(new Vector2(1f, wv));
+
+            if (wallVerts.Count >= 4 && i > 0 && samples[i - 1].castleWall)
+            {
+                int wPrev = wIdx - 2;
+                wallTris.Add(wPrev);
+                wallTris.Add(wIdx);
+                wallTris.Add(wPrev + 1);
+
+                wallTris.Add(wIdx);
+                wallTris.Add(wIdx + 1);
+                wallTris.Add(wPrev + 1);
+            }
+        }
+
+        // Build Wall Mesh
+        if (wallVerts.Count >= 2)
+        {
+            GameObject wallGo = new GameObject("Castle_Rampart_Wall");
+            wallGo.transform.SetParent(castleRoot.transform, false);
+
+            Mesh wMesh = new Mesh { name = "Mesh_CastleWall" };
+            wMesh.SetVertices(wallVerts);
+            wMesh.SetNormals(wallNorms);
+            wMesh.SetUVs(0, wallUVs);
+            wMesh.SetTriangles(wallTris, 0);
+
+            Mesh savedWMesh = SaveOrUpdateMeshAsset(wMesh, "Mesh_CastleWall");
+
+            MeshFilter mf = wallGo.AddComponent<MeshFilter>();
+            mf.sharedMesh = savedWMesh;
+
+            MeshRenderer mr = wallGo.AddComponent<MeshRenderer>();
+            mr.sharedMaterial = castleStoneMaterial != null ? castleStoneMaterial : new Material(Shader.Find("Universal Render Pipeline/Lit"));
+
+            MeshCollider mc = wallGo.AddComponent<MeshCollider>();
+            mc.sharedMesh = savedWMesh;
+        }
+
+        // Build Turn 8 Iconic Cylindrical Tower with crenelations
+        if (foundT8)
+        {
+            BuildCylindricalCastleTower("Turn8_Iconic_Tower", towerTurn8Position, towerHeight, towerRadius, castleRoot.transform);
+        }
+
+        if (foundT9)
+        {
+            BuildCylindricalCastleTower("Turn9_Bastion_Tower", towerTurn9Position, towerHeight * 0.9f, towerRadius * 0.85f, castleRoot.transform);
+        }
+
+        // Build Ancient Arched Gate
+        if (foundT8)
+        {
+            Vector3 gatePos = towerTurn8Position - Vector3.forward * 12f;
+            BuildArchedFortressGate("Icherisheher_Old_City_Gate", gatePos, Vector3.right, castleRoot.transform);
+        }
+    }
+
+    private void BuildCylindricalCastleTower(string name, Vector3 basePos, float height, float radius, Transform parent)
+    {
+        GameObject towerGo = new GameObject(name);
+        towerGo.transform.SetParent(parent, false);
+        towerGo.transform.position = basePos;
+
+        int segments = 24;
+        var verts = new List<Vector3>();
+        var norms = new List<Vector3>();
+        var uvs = new List<Vector2>();
+        var tris = new List<int>();
+
+        // Cylinder body
+        for (int i = 0; i <= segments; i++)
+        {
+            float angle = (float)i / segments * Mathf.PI * 2f;
+            float cos = Mathf.Cos(angle);
+            float sin = Mathf.Sin(angle);
+
+            Vector3 norm = new Vector3(cos, 0f, sin);
+            Vector3 bPos = norm * radius;
+            Vector3 tPos = bPos + Vector3.up * height;
+
+            int idx = verts.Count;
+            verts.Add(bPos);
+            verts.Add(tPos);
+
+            norms.Add(norm);
+            norms.Add(norm);
+
+            float u = (float)i / segments * 3f;
+            uvs.Add(new Vector2(u, 0f));
+            uvs.Add(new Vector2(u, 4f));
+
+            if (i > 0)
+            {
+                int prev = idx - 2;
+                tris.Add(prev);
+                tris.Add(idx);
+                tris.Add(prev + 1);
+
+                tris.Add(idx);
+                tris.Add(idx + 1);
+                tris.Add(prev + 1);
+            }
+        }
+
+        // Crenelated battlements on top (gigi-gigi menara benteng)
+        float battlementH = 1.4f;
+        float battlementR = radius * 1.08f;
+        for (int b = 0; b < towerCrenelations; b++)
+        {
+            float a0 = (float)b / towerCrenelations * Mathf.PI * 2f;
+            float a1 = a0 + (Mathf.PI * 2f / towerCrenelations) * 0.55f; // Gap between teeth
+
+            Vector3 p0 = new Vector3(Mathf.Cos(a0), 0f, Mathf.Sin(a0)) * battlementR + Vector3.up * height;
+            Vector3 p1 = new Vector3(Mathf.Cos(a1), 0f, Mathf.Sin(a1)) * battlementR + Vector3.up * height;
+            Vector3 p0Top = p0 + Vector3.up * battlementH;
+            Vector3 p1Top = p1 + Vector3.up * battlementH;
+
+            int cIdx = verts.Count;
+            verts.Add(p0);
+            verts.Add(p1);
+            verts.Add(p0Top);
+            verts.Add(p1Top);
+
+            Vector3 cNorm = (p0 + p1).normalized;
+            norms.Add(cNorm); norms.Add(cNorm); norms.Add(cNorm); norms.Add(cNorm);
+            uvs.Add(new Vector2(0f, 0f)); uvs.Add(new Vector2(1f, 0f));
+            uvs.Add(new Vector2(0f, 1f)); uvs.Add(new Vector2(1f, 1f));
+
+            tris.Add(cIdx); tris.Add(cIdx + 2); tris.Add(cIdx + 1);
+            tris.Add(cIdx + 1); tris.Add(cIdx + 2); tris.Add(cIdx + 3);
+        }
+
+        Mesh towerMesh = new Mesh { name = $"Mesh_{name}" };
+        towerMesh.SetVertices(verts);
+        towerMesh.SetNormals(norms);
+        towerMesh.SetUVs(0, uvs);
+        towerMesh.SetTriangles(tris, 0);
+
+        Mesh savedTowerMesh = SaveOrUpdateMeshAsset(towerMesh, $"Mesh_{name}");
+
+        MeshFilter mf = towerGo.AddComponent<MeshFilter>();
+        mf.sharedMesh = savedTowerMesh;
+
+        MeshRenderer mr = towerGo.AddComponent<MeshRenderer>();
+        mr.sharedMaterial = castleStoneMaterial != null ? castleStoneMaterial : new Material(Shader.Find("Universal Render Pipeline/Lit"));
+
+        MeshCollider mc = towerGo.AddComponent<MeshCollider>();
+        mc.sharedMesh = savedTowerMesh;
+    }
+
+    private void BuildArchedFortressGate(string name, Vector3 pos, Vector3 forward, Transform parent)
+    {
+        GameObject gateGo = new GameObject(name);
+        gateGo.transform.SetParent(parent, false);
+        gateGo.transform.position = pos;
+        gateGo.transform.rotation = Quaternion.LookRotation(forward, Vector3.up);
+
+        // Left pillar
+        GameObject pLeft = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        pLeft.name = "Pillar_Left";
+        pLeft.transform.SetParent(gateGo.transform, false);
+        pLeft.transform.localPosition = new Vector3(-2.2f, 3.5f, 0f);
+        pLeft.transform.localScale = new Vector3(1.4f, 7.0f, 1.8f);
+        if (castleStoneMaterial != null) pLeft.GetComponent<Renderer>().sharedMaterial = castleStoneMaterial;
+
+        // Right pillar
+        GameObject pRight = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        pRight.name = "Pillar_Right";
+        pRight.transform.SetParent(gateGo.transform, false);
+        pRight.transform.localPosition = new Vector3(2.2f, 3.5f, 0f);
+        pRight.transform.localScale = new Vector3(1.4f, 7.0f, 1.8f);
+        if (castleStoneMaterial != null) pRight.GetComponent<Renderer>().sharedMaterial = castleStoneMaterial;
+
+        // Arch lintel on top
+        GameObject arch = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        arch.name = "Arch_Top";
+        arch.transform.SetParent(gateGo.transform, false);
+        arch.transform.localPosition = new Vector3(0f, 7.5f, 0f);
+        arch.transform.localScale = new Vector3(5.8f, 1.4f, 2.0f);
+        if (castleStoneMaterial != null) arch.GetComponent<Renderer>().sharedMaterial = castleStoneMaterial;
+    }
+
+    #endregion
+
+    #region ──── 5. CITY BUILDINGS, GRANDSTANDS & TREES ────
+
+    private void BuildCityAndEnvironment(List<SplineSample> samples, Transform parent)
+    {
+        GameObject cityRoot = new GameObject("Baku_City_Buildings_And_Grandstands");
+        cityRoot.transform.SetParent(parent, false);
+
+        // Spawn Neoclassical Baku City Buildings on the right side of the street
+        float[] buildingDistances = { 15f, 55f, 95f, 135f };
+        float[] buildingHeights = { 18f, 22f, 16f, 20f };
+        float[] buildingWidths = { 28f, 32f, 25f, 30f };
+
+        for (int b = 0; b < buildingDistances.Length; b++)
+        {
+            SplineSample sample = GetSampleAtDistance(samples, buildingDistances[b]);
+            Vector3 buildingPos = sample.position + sample.right * (sample.width * 0.5f + 16f);
+            buildingPos.y += buildingHeights[b] * 0.5f;
+
+            GameObject bGo = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            bGo.name = $"Baku_ClassicalBuilding_{b + 1}";
+            bGo.transform.SetParent(cityRoot.transform, false);
+            bGo.transform.position = buildingPos;
+            bGo.transform.rotation = Quaternion.LookRotation(-sample.right, Vector3.up);
+            bGo.transform.localScale = new Vector3(buildingWidths[b], buildingHeights[b], 18f);
+
+            if (buildingFacadeMaterial != null)
+            {
+                bGo.GetComponent<Renderer>().sharedMaterial = buildingFacadeMaterial;
+            }
+        }
+
+        // Spawn Spectator Grandstand on the right side before Turn 8 braking zone
+        SplineSample gSample = GetSampleAtDistance(samples, 60f);
+        Vector3 grandstandPos = gSample.position + gSample.right * (gSample.width * 0.5f + 8.5f);
+        BuildSpectatorGrandstand("Grandstand_AzizAliyev", grandstandPos, -gSample.right, cityRoot.transform);
+
+        // Spawn street trees along the avenue sidewalk
+        float[] treeDistances = { 10f, 25f, 40f, 75f, 110f };
+        for (int t = 0; t < treeDistances.Length; t++)
+        {
+            SplineSample tSample = GetSampleAtDistance(samples, treeDistances[t]);
+            Vector3 treePos = tSample.position + tSample.right * (tSample.width * 0.5f + 2.8f);
+            BuildStreetTree($"Baku_Tree_{t + 1}", treePos, cityRoot.transform);
+        }
+    }
+
+    private void BuildSpectatorGrandstand(string name, Vector3 pos, Vector3 forward, Transform parent)
+    {
+        GameObject standGo = new GameObject(name);
+        standGo.transform.SetParent(parent, false);
+        standGo.transform.position = pos;
+        standGo.transform.rotation = Quaternion.LookRotation(forward, Vector3.up);
+
+        int tiers = 8;
+        float tierWidth = 32f;
+        float tierDepth = 1.1f;
+        float tierHeight = 0.55f;
+
+        for (int t = 0; t < tiers; t++)
+        {
+            GameObject tier = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            tier.name = $"Tier_{t + 1}";
+            tier.transform.SetParent(standGo.transform, false);
+            tier.transform.localPosition = new Vector3(0f, (t + 1) * tierHeight * 0.5f, t * tierDepth);
+            tier.transform.localScale = new Vector3(tierWidth, (t + 1) * tierHeight, tierDepth);
+
+            if (grandstandMaterial != null)
+            {
+                tier.GetComponent<Renderer>().sharedMaterial = grandstandMaterial;
+            }
+        }
+    }
+
+    private void BuildStreetTree(string name, Vector3 pos, Transform parent)
+    {
+        GameObject treeGo = new GameObject(name);
+        treeGo.transform.SetParent(parent, false);
+        treeGo.transform.position = pos;
+
+        // Trunk
+        GameObject trunk = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
+        trunk.name = "Trunk";
+        trunk.transform.SetParent(treeGo.transform, false);
+        trunk.transform.localPosition = new Vector3(0f, 2.0f, 0f);
+        trunk.transform.localScale = new Vector3(0.45f, 2.0f, 0.45f);
+
+        // Foliage Crown
+        GameObject foliage = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+        foliage.name = "Foliage";
+        foliage.transform.SetParent(treeGo.transform, false);
+        foliage.transform.localPosition = new Vector3(0f, 4.8f, 0f);
+        foliage.transform.localScale = new Vector3(3.8f, 3.8f, 3.8f);
+
+        if (treeFoliageMaterial != null)
+        {
+            foliage.GetComponent<Renderer>().sharedMaterial = treeFoliageMaterial;
+        }
+    }
+
+    private SplineSample GetSampleAtDistance(List<SplineSample> samples, float targetDist)
+    {
+        if (samples == null || samples.Count == 0) return default;
+        for (int i = 0; i < samples.Count - 1; i++)
+        {
+            if (samples[i].distanceAlongTrack <= targetDist && samples[i + 1].distanceAlongTrack >= targetDist)
+            {
+                float factor = (targetDist - samples[i].distanceAlongTrack) / Mathf.Max(0.001f, samples[i + 1].distanceAlongTrack - samples[i].distanceAlongTrack);
+                return new SplineSample
+                {
+                    position = Vector3.Lerp(samples[i].position, samples[i + 1].position, factor),
+                    forward = Vector3.Lerp(samples[i].forward, samples[i + 1].forward, factor).normalized,
+                    right = Vector3.Lerp(samples[i].right, samples[i + 1].right, factor).normalized,
+                    up = Vector3.Lerp(samples[i].up, samples[i + 1].up, factor).normalized,
+                    width = Mathf.Lerp(samples[i].width, samples[i + 1].width, factor),
+                    distanceAlongTrack = targetDist
+                };
+            }
+        }
+        return samples[samples.Count - 1];
+    }
+
+    #endregion
+}

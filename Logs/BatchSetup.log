@@ -1,0 +1,1203 @@
+VBCSCompilerPreWarmer: watching VBCSCompiler (PID 3328)
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 29840)
+VBCSCompiler prewarm took 20.80 ms
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.6/staging' branch; Version is '6000.6.6f1 (d20c9ac777da) revision 13765786'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-khawarizmi" at "2026-10-16T14:34:38.90584Z"
+OS: 'Windows 11  (10.0.26200) CoreSingleLanguage' Language: 'en' Physical Memory: 16201 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-16T14:34:38Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 7000, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              60d09e79a42a4283b2e8c2fbbff750a3
+  Correlation Id:          7cdb493d4a6ab63745f8cac832e8e7f6
+  External correlation Id: 2248302816719327898
+  Machine Id:              GH+MFfSu6lmoygpQmGZVvfgofdM=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-khawarizmi" (connect: 0.00s, validation: 0.00s, handshake: 0.05s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-khawarizmi-notifications" at "2026-10-16T14:34:38.9620404Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 18968522328279-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.06s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.6.6f1\Editor\Unity.exe
+-batchmode
+-projectPath
+D:\game buatan sendiri\FormulaRacingMobile
+-executeMethod
+ApexV12Setup.RunFullSetup
+-quit
+-logFile
+D:\game buatan sendiri\FormulaRacingMobile\Logs\BatchSetup.log
+Successfully changed project path to: D:\game buatan sendiri\FormulaRacingMobile
+D:/game buatan sendiri/FormulaRacingMobile
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=1"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.
+Player connection [13392]  Target information:
+
+Player connection [13392]  * "[IP] 172.30.189.56 [Port] 55504 [Flags] 2 [Guid] 160235327 [EditorId] 160235327 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [13392] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [13392] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-24916" after 0.3 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+Launching Unity Data Store - C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/Tools/Unity.DataStore.exe 
+Unity Data Store artifact dir = Library/DataStore, working dir = D:/game buatan sendiri/FormulaRacingMobileUnity Data Store running and initialised
+[Physics::Module] Selected backend (deferred post-plugins).
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.6.6f1 (d20c9ac777da)
+[EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=1048576, entitiesPerBlock=256, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/game buatan sendiri/FormulaRacingMobile/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Vendor:          NVIDIA
+    VRAM:            6023 MB
+    App VRAM Budget: 5255 MB
+    Driver:          30.0.14.9717
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56916
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.005724 seconds.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  1.106 seconds
+Domain Reload Profiling: 1933ms
+	BeginReloadAssembly (189ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (7ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (111ms)
+	LoadAllAssembliesAndSetupDomain (489ms)
+		LoadAssemblies (168ms)
+		TypeCache.Refresh (337ms)
+			TypeCache.ScanAssembly (317ms)
+		AnalyzeDomain (1ms)
+	FinalizeReload (1108ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			BeforeProcessingInitializeOnLoad (166ms)
+			ProcessInitializeOnLoadAttributes (197ms)
+			ProcessInitializeOnLoadMethodAttributes (409ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 56 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.collab-proxy@2.13.6 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.collab-proxy@4628d2ba6ea4)
+    com.unity.ide.rider@3.0.40 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.ide.rider@e4950c6d131b)
+    com.unity.ide.visualstudio@2.0.28 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.ide.visualstudio@b5edea5f33f4)
+    com.unity.inputsystem@1.20.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.inputsystem@7a4e1a2a8194)
+    com.unity.searcher@4.9.5 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.searcher@a463122f2c00)
+    com.unity.profiling.core@1.0.3 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.profiling.core@8a49f7027d06)
+    com.unity.nuget.mono-cecil@1.11.6 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+  Built-in packages:
+    com.unity.render-pipelines.universal@17.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.render-pipelines.universal@9b1eb8be54e0)
+    com.unity.ugui@2.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.ugui@0b1771797efc)
+    com.unity.modules.accessibility@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tetgen@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.tetgen)
+    com.unity.modules.tilemap@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.timelinefoundation@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.timelinefoundation)
+    com.unity.modules.ui@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.render-pipelines.core@17.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.render-pipelines.core@e18bd88df4e3)
+    com.unity.shadergraph@17.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.shadergraph@0de771837e0e)
+    com.unity.render-pipelines.universal-config@17.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.render-pipelines.universal-config@561422b74439)
+    com.unity.test-framework@1.8.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.test-framework@80f691d4262b)
+    com.unity.ext.nunit@2.1.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.ext.nunit@0198eae3b53e)
+    com.unity.graph-authoring@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.graph-authoring@cfd2588851ee)
+    com.unity.burst@2.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.burst@626e66ab421b)
+    com.unity.collections@6.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.collections@10fff0607388)
+    com.unity.test-framework.performance@6.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.test-framework.performance@54c5bd86aedb)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.02 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.6f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: D:/game buatan sendiri/FormulaRacingMobile
+DisplayProgressbar: Compiling Scripts
+ExitCode: 4 Duration: 0s424ms
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aE-inputdata.json
+[634/805    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[635/805    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+*** Tundra requires additional run (0.39 seconds), 2 items updated, 633 evaluated
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.6f1\Editor\Data\DotNetSdk\dotnet.exe "C:\Program Files\Unity\Hub\Editor\6000.6.6f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aE.dag.json" "Library/Bee/1900b0aE-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: D:/game buatan sendiri/FormulaRacingMobile
+ExitCode: 0 Duration: 1s291ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.6f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: D:/game buatan sendiri/FormulaRacingMobile
+ExitCode: 0 Duration: 0s852ms
+Finished compiling graph: 808 nodes, 14976 flattened edges (12796 ToBuild, 118 ToUse), maximum node priority 857
+[462/805    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.rsp
+[635/805    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[798/805    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+[799/805    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll, with 149 defines and 338 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+[800/805    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[801/805    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+[802/805    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 147 defines and 359 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+[803/805    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[804/805    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (0.82 seconds), 9 items updated, 805 evaluated
+AssetDatabase: script compilation time: 3.312020s
+Total cache size 49412748
+Total cache size after purge 49412748, took 00:00:00.1082340
+Begin MonoManager ReloadAssembly
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Importing 'GUID: 0dfcf6b03e2f3b8429549bda2167915d - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor' with importer (DefaultImporter)
+Imported 'GUID: 0dfcf6b03e2f3b8429549bda2167915d' -> (Import Result ID: 'a7eb870b250f3d405112e64d46067894') in 0.032 seconds [static dependencies only]. Details - ImportResultOutputID=c7f1c07a0d95b4c3ac09a8876053cb81 DependenciesID=55c4f130f8b6a45c5f345a52faa9d2c6 StaticDependenciesID=d30c24ac70d0d9e243a291d5a1374686 
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  1.523 seconds
+Domain Reload Profiling: 3351ms
+	BeginReloadAssembly (421ms)
+		DisableScriptedObjects (38ms)
+		CreateAndSetChildDomain (66ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (35ms)
+	initialDomainReloadingComplete (109ms)
+	LoadAllAssembliesAndSetupDomain (1241ms)
+		LoadAssemblies (611ms)
+		TypeCache.Refresh (444ms)
+			TypeCache.ScanAssembly (421ms)
+		AnalyzeDomain (110ms)
+			BuildScriptInfoCaches (100ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1525ms)
+		SetupLoadedEditorAssemblies (0ms)
+			LogAssemblyErrors (8ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			BeforeProcessingInitializeOnLoad (205ms)
+			ProcessInitializeOnLoadAttributes (422ms)
+			ProcessInitializeOnLoadMethodAttributes (129ms)
+			AfterProcessingInitializeOnLoad (15ms)
+		AwakeInstancesAfterBackupRestoration (45ms)
+Starting new worker id: 0 with log in D:/game buatan sendiri/FormulaRacingMobile/Logs/AssetImportWorkerHW0.log
+
+Asset Pipeline Refresh (id=ffec3884dd2aee545b95f92eaaf40c70): Total: 8.156 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=5 ms, native=2176 ms
+		Asset DB Callback time: managed=655 ms, native=27 ms
+		Scripting: domain reloads=1, domain reload time=1912 ms, compile time=3316 ms, other=61 ms
+		Project Asset Count: scripts=1085, non-scripts=2113
+		Asset File Changes: new=0, changed=2, moved=0, deleted=1
+		Scan Filter Count: 0
+	InvokePackagesCallback: 22.567ms
+	ApplyChangesToAssetFolders: 0.708ms
+	Scan: 199.146ms
+	Collect global state as custom dependencies: 26.420ms
+	OnSourceAssetsModified: 0.724ms
+	CategorizeScriptCompilationAssets: 30.151ms
+	ProcessAssetsWithTransientArtifactChanges: 87.978ms
+	CategorizeAssets: 75.075ms
+	CompileScripts: 3315.934ms
+	ImportOutOfDateAssets: 1592.227ms (1531.237ms without children)
+		ImportManagerImport: 39.358ms (7.325ms without children)
+		UnloadImportedAssets: 5.186ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.177ms
+		ImportSchedulerStart: 15.216ms
+	PostProcessAllAssets: 656.613ms
+		VCAutoAddAssetPostprocess 1.942ms
+		XRBuildSystem.XRAssetImported 0.532ms
+		PostProcessCallbackCreateDeferredMaterials 0.104ms
+		MonoPostProcessAllAssets: 652.836ms
+			SyncVS.PostprocessSyncProject 386.880ms
+			AssetPostprocessor.OnPostprocessAllAssets 158.217ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 23.882ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 22.635ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 12.848ms
+			AssetChangedListener.OnPostprocessAllAssets 3.095ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 2.928ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 2.789ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 2.724ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 2.167ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 1.586ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 1.091ms
+			MaterialPostprocessor.OnPostprocessAllAssets 1.028ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.844ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.796ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.786ms
+			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.576ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.559ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.510ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.507ms
+			PostProcessor.OnPostprocessAllAssets 0.478ms
+			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 0.441ms
+			AssetEvents.OnPostprocessAllAssets 0.414ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.399ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.305ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.284ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.256ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.254ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.246ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.230ms
+			ThemePostprocessor.OnPostprocessAllAssets 0.196ms
+			AssetReloadNotifier.OnPostprocessAllAssets 0.169ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.130ms
+	PostAssetChangesProfiler: 5.560ms
+	UnloadStreamsBegin: 2.084ms
+	PersistCurrentRevisions: 0.326ms
+	GenerateScriptTypeHashes: 2.159ms
+	GenerateScriptTypeSerializationHashes: 4.040ms
+	Untracked: 2135.617ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Scanning for USB devices : 2.291ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-FormulaRacingMobile
+Unloading 66 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4664 unused Assets / (10.3 MB). Loaded Objects now: 5603.
+Memory consumption went from 385.9 MB to 375.6 MB.
+Total: 25.280300 ms (FindLiveObjects: 1.204500 ms CreateObjectMapping: 1.023000 ms MarkObjects: 16.354900 ms  DeleteObjects: 6.253300 ms)
+
+Importing 'GUID: 44750676ffe966648b39526a3dd3d104 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Prefabs' with importer (DefaultImporter)
+Imported 'GUID: 44750676ffe966648b39526a3dd3d104' -> (Import Result ID: '12c3657e3da0007579a856a95382e54d') in 0.004 seconds [static dependencies only]. Details - ImportResultOutputID=df1830609bd14f1add76a2f74035587d DependenciesID=6911c34e09ccf777b41e7ec4d65131fa StaticDependenciesID=21ffdb433007a083b4ba54b720f6f03e 
+Importing 'GUID: e95b95c9ea9419f4da5f49a3e0b9506b - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials' with importer (DefaultImporter)
+Imported 'GUID: e95b95c9ea9419f4da5f49a3e0b9506b' -> (Import Result ID: '4c27935a279e9805ac0c0063bb76f1e4') in 0.003 seconds [static dependencies only]. Details - ImportResultOutputID=09e7ee9afd75328fa109847f9f585fca DependenciesID=9085aad3347562ed2a28465388c1d6f0 StaticDependenciesID=16a2b10a0473db4f3d12f81dca47f3c9 
+Refreshing native plugins compatible for Editor in 2.15 ms, found 3 plugins.
+Asset Pipeline Refresh (id=1d114efdbda7f4447ae761b7753c54d4): Total: 0.174 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Importing 'GUID: 9ba69a5645a0c084ca5dd5176505056d - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/AMGBlack.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 9ba69a5645a0c084ca5dd5176505056d' -> (Import Result ID: '56df3c3d9e2ac092d38c153478183886') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=495911aed9c8d82f20e8aae56c9b29cf DependenciesID=e8792e0c75996d7e823049d648556d98 StaticDependenciesID=065e778b29cae9a8e72fb07412b6f677 
+Asset Pipeline Refresh (id=e0ae13d331470174fa32a3a1553f3a39): Total: 0.086 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 8db0f63bd1ddeca4cb8a5392548a8991 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/AMGDark.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 8db0f63bd1ddeca4cb8a5392548a8991' -> (Import Result ID: 'e9d7447396be8f379230d9ccb5edb1c2') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=38ddc2ad043195f81ccf17140ff1a6ca DependenciesID=535559aa0861e9553588618ba97425b0 StaticDependenciesID=94f104652dca6afb89867cffaed35077 
+Refreshing native plugins compatible for Editor in 2.12 ms, found 3 plugins.
+Asset Pipeline Refresh (id=c3788f0ca6288d846be4b4c8dc7d1c7f): Total: 0.066 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: f522074332733a34fb935a3bf11af372 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/PetronasTeal.mat' with importer (NativeFormatImporter)
+Imported 'GUID: f522074332733a34fb935a3bf11af372' -> (Import Result ID: '8c153b5a0c6c81d2071c833a427ac0e1') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=b757052fa5a3a7b37358114de629fd3c DependenciesID=1ce361a6b83d54fb220559dc0aac0262 StaticDependenciesID=aac9e0733e2347bb27cdc960e0167c89 
+Refreshing native plugins compatible for Editor in 2.33 ms, found 3 plugins.
+Asset Pipeline Refresh (id=6885ef444f4134843ad73d2bb3225a1a): Total: 0.075 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: d22af7efb8098204a81f5c3d0ef78c9c - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/TealBright.mat' with importer (NativeFormatImporter)
+Imported 'GUID: d22af7efb8098204a81f5c3d0ef78c9c' -> (Import Result ID: 'ad192ab8deb5df154ba62efca14a7329') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=07ceaa48e714ac93ebdc526707e3dba3 DependenciesID=c2ac4161e45d55c09d48f6fb0127455b StaticDependenciesID=d3a994889d73c5b774cbbb0c669d2e74 
+Asset Pipeline Refresh (id=98c87395a8bdd9641b1a14f4ab843bd7): Total: 0.056 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 11e206f69fac71847ac8b6e99a88bae0 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Silver.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 11e206f69fac71847ac8b6e99a88bae0' -> (Import Result ID: 'dc2d13eb5fc89718ddd6d58b25247e6a') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=fdf998772b3483ad1f7f843239247e12 DependenciesID=b0bc67a4226f50d03342290c6f0d3de4 StaticDependenciesID=14a7ee0fbcb8c0b1ccadc6a0ae5a734d 
+Asset Pipeline Refresh (id=2115ead32e7088d4f9f30728e1026b46): Total: 0.065 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 6f920f35518141242b9c50a513dd7105 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/SilverMetal.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 6f920f35518141242b9c50a513dd7105' -> (Import Result ID: '6a2d7a752a4a353f6256b8a1fc8eaaa2') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=d5f49f30218ccd46597f9a6e90cfcf68 DependenciesID=a82add65c67e5e919c318c46e61b3b91 StaticDependenciesID=cc5dcd1f2c90be9851097f5989a1d67e 
+Refreshing native plugins compatible for Editor in 2.20 ms, found 3 plugins.
+Asset Pipeline Refresh (id=49574dc8c277c6242bb4c387b9b69d4a): Total: 0.072 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 6f2c8125d0f325f41a2300ed830e5029 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Carbon.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 6f2c8125d0f325f41a2300ed830e5029' -> (Import Result ID: '064c710beaccc6c967f00eef12025482') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=844fca2a1d04f8ee355d608ad1774cc9 DependenciesID=c9be9a5a15d08a2cf9d783d8d2278d88 StaticDependenciesID=96c70bb6f5f279d2cd361d9f12638494 
+Asset Pipeline Refresh (id=e53d43f43da261248ba7cd8ef74d80a7): Total: 0.072 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: cb294e621bb5186459b637236e4024ce - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Black.mat' with importer (NativeFormatImporter)
+Imported 'GUID: cb294e621bb5186459b637236e4024ce' -> (Import Result ID: 'b8b7681726941ac8c1f714847b721881') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=db62f526772b92b91815fc74ffb7a45b DependenciesID=5f7794577e23142699ea184302bffca6 StaticDependenciesID=95fb2a0c8fc073240b6f11cb640ef0f2 
+Asset Pipeline Refresh (id=78d0cea64d39d1c43801ade185870559): Total: 0.061 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 6116d60dbb4f36c4782e01d89d9309dd - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/TireRubber.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 6116d60dbb4f36c4782e01d89d9309dd' -> (Import Result ID: '0ade08fc17a2e6e3057b9375a8c834ec') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=c5d4bd331b75ab4b591d5daf8d599adb DependenciesID=b496d0cdf3f863d4bfc80c0801bd5531 StaticDependenciesID=568487f940f28aef18569fba725b9482 
+Refreshing native plugins compatible for Editor in 2.29 ms, found 3 plugins.
+Asset Pipeline Refresh (id=4f39b50c407edef46a2170497715bfa1): Total: 0.060 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: dd04e030e3c6d134fb19c12d5e4eece2 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/DarkWheel.mat' with importer (NativeFormatImporter)
+Imported 'GUID: dd04e030e3c6d134fb19c12d5e4eece2' -> (Import Result ID: '4a32c5bcaf7b07d8b71fcb96b9668fc4') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=3356fb1052b0ec1e2ce118317adc352e DependenciesID=fe2be8ae4e703e9a071492bf3f9604b2 StaticDependenciesID=974bf86b6b919198f08be058f4ab5711 
+Asset Pipeline Refresh (id=d4d8870f14a38c142bf8da0e5db83be5): Total: 0.068 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: e8dd3bf2086dc7049a88bfa8e0c9d432 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/WheelGunmetal.mat' with importer (NativeFormatImporter)
+Imported 'GUID: e8dd3bf2086dc7049a88bfa8e0c9d432' -> (Import Result ID: 'd4f5616a5fc59608c55c8a3c09005db6') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=656d307a23c3fcf68b73ed8595518c2f DependenciesID=c67684ecf10e821a3ae26f314eb1275c StaticDependenciesID=dd68ada3f339ebf09692efad2a9f9ab3 
+Asset Pipeline Refresh (id=361ef6bdc101da6429a8ad77890120e4): Total: 0.070 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 7c7fdb1bd5bc808499a85c5d9d03531e - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Metal.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 7c7fdb1bd5bc808499a85c5d9d03531e' -> (Import Result ID: '27de0464fc8319824ae6530b6870f967') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=fd6a4834aaf576008c73e5ad74b68af0 DependenciesID=fb79cefd5acc35e614d5ec55d82a1563 StaticDependenciesID=f7a07e701eb8be369fda4827903e904d 
+Refreshing native plugins compatible for Editor in 2.10 ms, found 3 plugins.
+Asset Pipeline Refresh (id=6d65a99df5a61cd4caa93e6e10fa9d8c): Total: 0.078 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 1948d1de1aca1124f910011f2f0a589f - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Asphalt.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 1948d1de1aca1124f910011f2f0a589f' -> (Import Result ID: 'b32b1cecc76afc52cfa0e574ba3053f9') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=87c04459021dbbb060ffd8b3c817f984 DependenciesID=1032a7fcf965816c2358e5a3b6cbe2a6 StaticDependenciesID=0d3cfda57e942ebfa7058a29c5b9f281 
+Asset Pipeline Refresh (id=1df174558e5e4ef4ebd2a8a7c4c0fa40): Total: 0.068 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 11c7adfa018a985469ce190eb3bcb706 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/AsphaltLight.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 11c7adfa018a985469ce190eb3bcb706' -> (Import Result ID: 'c31678daa76222e0782fc83cb0e6152f') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=06206c803fcdb1b425630b91ad93bd5e DependenciesID=f70e69e976a3608e6b40dc2d17c7d690 StaticDependenciesID=f20d1a760d17d08b8029549d0dabf27a 
+Asset Pipeline Refresh (id=d69ebd389a71c4c4cb0202ab3d551a9c): Total: 0.053 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: cd96a881dc15500448847db0e395b7c8 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/CurbRed.mat' with importer (NativeFormatImporter)
+Imported 'GUID: cd96a881dc15500448847db0e395b7c8' -> (Import Result ID: '0467c68c515f77350778cfa369b72679') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=f0fbbcc17465ba577c0e9511e55fcb3f DependenciesID=27ba90c7c7d1794f4d81fc3eecd48ac6 StaticDependenciesID=9b01799e4be008b86bfb5fc1ac504c52 
+Asset Pipeline Refresh (id=edc8ee2c87518334094a18e24a13e6d5): Total: 0.055 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 0d1c1ba2ea74c654f93f04a4167265d8 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/CurbWhite.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 0d1c1ba2ea74c654f93f04a4167265d8' -> (Import Result ID: 'cbe9a869c217f25c58f06b92c5c25cce') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=21164887eb009955606b6ae13c641b5d DependenciesID=15dfd189243f97ae2b318da7cf896835 StaticDependenciesID=d6d8eb32575651c5a8eb8556b338c8e2 
+Asset Pipeline Refresh (id=fea2ded5a4496bd4484265f22accfcfa): Total: 0.059 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 189c122e0488f31428933cba4eeca79b - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Barrier.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 189c122e0488f31428933cba4eeca79b' -> (Import Result ID: 'a5b904b5e3fb78b5838c93dddb60bc21') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=365db4373a2ce577d839f35a0ac0a09d DependenciesID=b54c5b7da841063b888024c226736254 StaticDependenciesID=7a6bf07bdacf0d257703998cf6ce5dd5 
+Asset Pipeline Refresh (id=2d45c26d5529dae46a7964d845fde1a3): Total: 0.060 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 355c633f76d068546aabe59f9c7a6cda - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/BarrierDark.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 355c633f76d068546aabe59f9c7a6cda' -> (Import Result ID: '2ed33beb9f0298dc3601601420e3a212') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=bd650327de0b4e9b7fed4865d8dc5297 DependenciesID=d7e294b3f4f6261553cb69615b6f7379 StaticDependenciesID=0949e8138e167c4278e70aa408a6dd25 
+Asset Pipeline Refresh (id=d9a0edb0ee70484478a55bd67b7f2f62): Total: 0.057 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 41fbf7d54531e2e42bab017dde61ae85 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Grass.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 41fbf7d54531e2e42bab017dde61ae85' -> (Import Result ID: '6f8298385feeb1ea07e426c369352f08') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=1e52a00bafe5680d003ee94f00d08488 DependenciesID=e1ccf551e007ee1a021c3ccd40707ba2 StaticDependenciesID=e5118c21c69998d805c72c20ce61498f 
+Asset Pipeline Refresh (id=2f62e29937828374fb8b515515f695d4): Total: 0.055 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 7e384e305b8144544a513b163e37e044 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Concrete.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 7e384e305b8144544a513b163e37e044' -> (Import Result ID: '7bbfe4f93c51949401024984dfe8f9d1') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=9bca9173533626f300998f8d9cd83bc6 DependenciesID=78aed79c39147362c863a0c377cd39e5 StaticDependenciesID=3d2150b252c74b7ce516cfe852f1aa40 
+Asset Pipeline Refresh (id=d60e708851790f04eb761c051e9c39dc): Total: 0.054 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: c8d10d09531bf084f994f1eb4cb3020d - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/BuildingWhite.mat' with importer (NativeFormatImporter)
+Imported 'GUID: c8d10d09531bf084f994f1eb4cb3020d' -> (Import Result ID: 'adae15d749bd1945c97e8679f910f250') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=d3f0d92c2469df1a69908e0aa63f77d3 DependenciesID=056e07b2331d1ab47d422860fe70e8a5 StaticDependenciesID=2f9df198c26cca27dcfbd630db097647 
+Asset Pipeline Refresh (id=b187cb2e57875224fb99ebd40dbe23ee): Total: 0.060 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 2d145346827d9b140abafc867fde8ec0 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/BuildingBlue.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 2d145346827d9b140abafc867fde8ec0' -> (Import Result ID: '472916a8a1a206ae0038ea255068f6e9') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=5eb6c6d6bd7a2f25e85d2713362ea22e DependenciesID=bdb6b7e5fb505ef0b065b90edf057815 StaticDependenciesID=3d564ae2852f8b833f2612d0e8a5d389 
+Asset Pipeline Refresh (id=9f81038a48d6ff74da53cfd51094f21f): Total: 0.061 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 3424ac8cd9e7cba4f9e5d01b0afd6452 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Window.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 3424ac8cd9e7cba4f9e5d01b0afd6452' -> (Import Result ID: 'b21534a29c4028520d964d4ec164e411') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=1f03f7c55d2514cef78a00c427c200a4 DependenciesID=f6e07273be0027726cd745aecfd7d810 StaticDependenciesID=3ad349479e82ed68dae6e0a2be8e950a 
+Asset Pipeline Refresh (id=4e6130e60bbc7184b88fa1171448ab11): Total: 0.067 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 7d2011226bb0fdd449379695ce31c5df - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/SeatRed.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 7d2011226bb0fdd449379695ce31c5df' -> (Import Result ID: '34870ebc4c623894f1ab6634e11124f5') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=81cdbbec522b9c80efd0666b769dc04d DependenciesID=d2618b580e0cedc1b1fc37cfe2b870aa StaticDependenciesID=b3271d2c5e1e77a188938f8afa1e13b8 
+Asset Pipeline Refresh (id=0d852893022381f4aab7890e080ef245): Total: 0.063 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 759bdec78b6525c4d9d778eb99c3414f - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Tree.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 759bdec78b6525c4d9d778eb99c3414f' -> (Import Result ID: '105a0a5c46057be5fa433bbcb2c6bd34') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=62966d50c23a4d6766efbbc95d258ecc DependenciesID=cb4cb484a18cabd4bd7120e1cfd5a4ba StaticDependenciesID=59cfadb875068aea03f4ee93ec1618ca 
+Asset Pipeline Refresh (id=3ff26d279b7b2a9468e030bcda296e7e): Total: 0.058 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: e06026f8530aa8b4bab00e737956aa72 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/TreeLight.mat' with importer (NativeFormatImporter)
+Imported 'GUID: e06026f8530aa8b4bab00e737956aa72' -> (Import Result ID: '1484f776710c4033f7af69a249d00929') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=0d456e84ff5fee2db7b6bbcedb9b6daa DependenciesID=4054d280f897a2043d4e213c45f32700 StaticDependenciesID=3278249a95d8a1be07d8843620a90cc7 
+Asset Pipeline Refresh (id=22deffbe3f1fd3344be733a42d2454a6): Total: 0.061 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Worker ready: AssetImportWorkerHW0 0
+Importing 'GUID: 6d66ceff70542c146ad0f98b4eabcfa6 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/GridBlack.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 6d66ceff70542c146ad0f98b4eabcfa6' -> (Import Result ID: '957f886ff424fd82dc8b38d18fa05d86') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=74cd4769cfca84a9e7d68bb7a0619108 DependenciesID=be920ffd3a4b30ccdeb552b18961c5b9 StaticDependenciesID=fb5bd75b0615ae3bcb032c2da1d45c59 
+Asset Pipeline Refresh (id=a6763a75a79f96e4d9b692c2f630e00c): Total: 0.070 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 6132107ea266cd542a821b4cb5788c50 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/GridWhite.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 6132107ea266cd542a821b4cb5788c50' -> (Import Result ID: '0ab55abf01ede3f7ff98db1d3d818f47') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=ae0e9da51681cc9c08d0c0b99ba9a8ba DependenciesID=ba759889ae6f855bc26ea116645e6d9b StaticDependenciesID=bad7590b79abd8c4836d25ba3e62d64c 
+Asset Pipeline Refresh (id=6a3269e42d0da2a4ab6a6ba125e3779e): Total: 0.048 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 3a9722d7515b0884ca27bc9782df9672 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/White.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 3a9722d7515b0884ca27bc9782df9672' -> (Import Result ID: 'c7c8ad4a589770f39f36643b59bc2c86') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=60d664bac63ac35a70056f19e235fe4c DependenciesID=f4afd7ddde6537eacab2f33df436d48b StaticDependenciesID=e84a2287ea3bc90f3da5be79c138d1c2 
+Asset Pipeline Refresh (id=fb5daa06b55a91c429741c18da55a5dc): Total: 0.043 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: bb884af7bdd7daa4db4a3dd5820f2f95 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/RacingBlue.mat' with importer (NativeFormatImporter)
+Imported 'GUID: bb884af7bdd7daa4db4a3dd5820f2f95' -> (Import Result ID: 'c311e39c496cc38730b96c8ba8b07733') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=a771b52dfeb810158462be08a7e87d55 DependenciesID=988070a1e560903fc0b0cc4a55e912a2 StaticDependenciesID=bb366359b13827c1c15993bce1427f2a 
+Asset Pipeline Refresh (id=d81cb152df0ed1b4a928038c1c092eb8): Total: 0.051 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: aaa68c7bb887ab7409fe1994ea773625 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/LEDRed.mat' with importer (NativeFormatImporter)
+Imported 'GUID: aaa68c7bb887ab7409fe1994ea773625' -> (Import Result ID: '94ae6a0cd80b39484c7d18cccaa0d72e') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=7b7aff61b04bde8634cac4afe27aa9ed DependenciesID=4287aae290a6fcff2cc3ed40debdb785 StaticDependenciesID=1c8c6a18a1014d8ff4e5a72247b8300f 
+Asset Pipeline Refresh (id=6ca7d8a35936c3243a0fbaf94f3d2426): Total: 0.053 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 76176c326e4356140add39da877ef71a - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/LEDYellow.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 76176c326e4356140add39da877ef71a' -> (Import Result ID: '8a182ec5dcd65d3237cba216c3e51c86') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=6e74d89c9c2a5e5451c8ac9a167ef1eb DependenciesID=6a27d9a940cdeaa15b5ddda9ccd30484 StaticDependenciesID=a05b9c5af305c1c2dc753d262a63a35d 
+Asset Pipeline Refresh (id=8f2269b2429b9e441b5cd51832efac4c): Total: 0.059 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 8a65edc12b6cd14488500ec597ff3cc0 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/LEDGreen.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 8a65edc12b6cd14488500ec597ff3cc0' -> (Import Result ID: 'd62e8f936ac6ad7ad60c86f44e96f7e9') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=97565610d70e90efd722aaeed7552a64 DependenciesID=862555d0a0e203519ea0d90db111031f StaticDependenciesID=34d20154c838162a01d06164fb70e95d 
+Asset Pipeline Refresh (id=8b8ff75d16e052946bdd2516ee3004f6): Total: 0.051 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: fae5565c4dbc887409cb4cfa2a532449 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Models/Mercedes_AMG_F1_Inspired_Car.obj' with importer (FBXImporter)
+ImportFBX Warnings:
+Can't import normals, because mesh 'AMGBlack' doesn't have any.
+Can't import normals, because mesh 'AMGDark' doesn't have any.
+Can't import normals, because mesh 'Black' doesn't have any.
+Can't import normals, because mesh 'Carbon' doesn't have any.
+Can't import normals, because mesh 'PetronasTeal' doesn't have any.
+Can't import normals, because mesh 'Silver' doesn't have any.
+Can't import normals, because mesh 'SilverMetal' doesn't have any.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'AMGBlack' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'AMGDark' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'Black' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'Carbon' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'PetronasTeal' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'Silver' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'SilverMetal' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Imported 'GUID: fae5565c4dbc887409cb4cfa2a532449' -> (Import Result ID: '83fa04b6553535070a603c18b727c368') in 0.070 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cb58640f5d453d754bf8b4df67dfa8d1 DependenciesID=817d4982b28f69973a24330bcff44a1a StaticDependenciesID=b22fd82285e2ac8048577253d7e754ee 
+Asset Pipeline Refresh (id=d0dfd7673229db149a84bf51628a6038): Total: 0.136 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 349e7cfe3f9ce374eb0bc4764f233e76 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Models/Mercedes_F1_Livery_Details.obj' with importer (FBXImporter)
+ImportFBX Warnings:
+Can't import normals, because mesh 'AMGBlack' doesn't have any.
+Can't import normals, because mesh 'Silver' doesn't have any.
+Can't import normals, because mesh 'SilverMetal' doesn't have any.
+Can't import normals, because mesh 'TealBright' doesn't have any.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'AMGBlack' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'Silver' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'SilverMetal' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'TealBright' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Imported 'GUID: 349e7cfe3f9ce374eb0bc4764f233e76' -> (Import Result ID: 'bdd5beb08f2ccd2a53982ec220b60ac3') in 0.024 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a22c0fee5510c977f475ded778cecda9 DependenciesID=8c6cd663c28c76c6ea0ea411f8a0b3eb StaticDependenciesID=3e46ae4976784ab104f2ca521960a481 
+Asset Pipeline Refresh (id=634c707955d9020438a641f6533f300b): Total: 0.077 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 53d0e25d27a2b08459d6a3d05ee39e9c - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Models/Mercedes_F1_Wheel_Assembly.obj' with importer (FBXImporter)
+ImportFBX Warnings:
+Can't import normals, because mesh 'Black' doesn't have any.
+Can't import normals, because mesh 'DarkWheel' doesn't have any.
+Can't import normals, because mesh 'SilverMetal' doesn't have any.
+Can't import normals, because mesh 'TealBright' doesn't have any.
+Can't import normals, because mesh 'TireRubber' doesn't have any.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'Black' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'DarkWheel' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'SilverMetal' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'TealBright' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'TireRubber' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Imported 'GUID: 53d0e25d27a2b08459d6a3d05ee39e9c' -> (Import Result ID: '9b930e0ad885d1b1bba029a5d6f4c16b') in 0.025 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6d21e5269ce9aa0d7e26e0601a0667f5 DependenciesID=f7f746477bcebeb59069b313d7a33f6b StaticDependenciesID=4b693ef8d2c2bb63cc3e3b5eb734c3e7 
+Asset Pipeline Refresh (id=626d2dff5ec7bbf4481195e3148fa86d): Total: 0.074 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 9feea252b8d1e3f409200f1478c3f805 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Models/Apex_Circuit_Road.obj' with importer (FBXImporter)
+ImportFBX Warnings:
+Can't import normals, because mesh 'Asphalt' doesn't have any.
+Can't import normals, because mesh 'AsphaltLight' doesn't have any.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'Asphalt' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'AsphaltLight' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Imported 'GUID: 9feea252b8d1e3f409200f1478c3f805' -> (Import Result ID: '8c45d7af2c6f15daa222b637f26d802f') in 0.017 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ed66c2eea63ba8e5ffd031dd945615f8 DependenciesID=a4f25c4671ff5ac9032b9b2a1fe89ed2 StaticDependenciesID=0666cf9149602755e0672fd5c98cbaca 
+Asset Pipeline Refresh (id=1f7e943e61834de40a90bd54ba242693): Total: 0.071 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 8e9fb612440398347a819aeed7d43687 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Models/Apex_Circuit_Ground.obj' with importer (FBXImporter)
+ImportFBX Warnings:
+Can't import normals, because mesh 'Grass' doesn't have any.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'Grass' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Imported 'GUID: 8e9fb612440398347a819aeed7d43687' -> (Import Result ID: '314cdeee69cff8f83666d7f90647a16c') in 0.016 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ec86a3a6db3a9d3a4bfd1d7a46967ccf DependenciesID=81d1e2c0aaeab960b8026d2f08ef56eb StaticDependenciesID=d16dcaacd7d8879da42b178cb7c27fbe 
+Asset Pipeline Refresh (id=580c948e113ad494c910d230822a5953): Total: 0.064 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 69e60c0505786b8449bb301a4dc34993 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Models/Apex_Circuit_Details.obj' with importer (FBXImporter)
+ImportFBX Warnings:
+Can't import normals, because mesh 'Barrier' doesn't have any.
+Can't import normals, because mesh 'BarrierDark' doesn't have any.
+Can't import normals, because mesh 'CurbRed' doesn't have any.
+Can't import normals, because mesh 'CurbWhite' doesn't have any.
+Can't import normals, because mesh 'GridBlack' doesn't have any.
+Can't import normals, because mesh 'GridWhite' doesn't have any.
+Can't import normals, because mesh 'RacingBlue' doesn't have any.
+Can't import normals, because mesh 'TireRubber' doesn't have any.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'Barrier' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'BarrierDark' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'CurbRed' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'CurbWhite' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'GridBlack' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'GridWhite' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'RacingBlue' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'TireRubber' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Imported 'GUID: 69e60c0505786b8449bb301a4dc34993' -> (Import Result ID: '031464977153aac1d5c0e5bede10df2f') in 0.045 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9c1a008356144dd90b104a31c5074909 DependenciesID=3526868acc577664e30e144d74821abc StaticDependenciesID=e531fb510992f0f48c32865b9283150a 
+Asset Pipeline Refresh (id=e39a56e9ea9255b4ebeec59dccb65837): Total: 0.102 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 83a0a6cb3352e424ba106ccaf209d0e8 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Models/Apex_Circuit_Environment.obj' with importer (FBXImporter)
+ImportFBX Warnings:
+Can't import normals, because mesh 'BarrierDark' doesn't have any.
+Can't import normals, because mesh 'BuildingBlue' doesn't have any.
+Can't import normals, because mesh 'BuildingWhite' doesn't have any.
+Can't import normals, because mesh 'Carbon' doesn't have any.
+Can't import normals, because mesh 'Concrete' doesn't have any.
+Can't import normals, because mesh 'LEDRed' doesn't have any.
+Can't import normals, because mesh 'LEDYellow' doesn't have any.
+Can't import normals, because mesh 'Metal' doesn't have any.
+Can't import normals, because mesh 'RacingBlue' doesn't have any.
+Can't import normals, because mesh 'SeatRed' doesn't have any.
+Can't import normals, because mesh 'Tree' doesn't have any.
+Can't import normals, because mesh 'TreeLight' doesn't have any.
+Can't import normals, because mesh 'White' doesn't have any.
+Can't import normals, because mesh 'Window' doesn't have any.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'BarrierDark' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'BuildingBlue' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'BuildingWhite' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'Carbon' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'Concrete' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'LEDRed' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'LEDYellow' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'Metal' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'RacingBlue' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'SeatRed' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'Tree' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'TreeLight' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'White' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Mesh 'Window' has no normals. Recalculating normals.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+ApexV12Setup:ConfigureModelImporters (System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:215)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:52)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 215]
+
+Imported 'GUID: 83a0a6cb3352e424ba106ccaf209d0e8' -> (Import Result ID: '15c606d5f228a15bc842f7f81751cd56') in 0.050 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cfed160c7feed24f44b8ef7bc071e507 DependenciesID=b8afb6391465c394aac1b466b6280f6e StaticDependenciesID=cfbf1d2d188767e128ed5c15e777a84f 
+Refreshing native plugins compatible for Editor in 2.13 ms, found 3 plugins.
+Asset Pipeline Refresh (id=9d2084919df903847bbe335a9c035e8d): Total: 0.109 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 1f66924ffd34cec4fa5c3d12ef5df04b - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Prefabs/PlayerCar_Mercedes_F1.prefab' with importer (PrefabImporter)
+Imported 'GUID: 1f66924ffd34cec4fa5c3d12ef5df04b' -> (Import Result ID: 'b91a3803a17acc20d0466687892ddbdd') in 0.011 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=08bac5730a7dae158008735360b28e14 DependenciesID=13df21305dcc563ed65ea9aec350ef50 StaticDependenciesID=4b2c5d8c241c7b53e7172a234fb8db75 
+Asset Pipeline Refresh (id=8939cb68b28583e409b6f3d5fe85802b): Total: 0.062 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 291 unused Assets / (347.2 KB). Loaded Objects now: 5669.
+Memory consumption went from 371.4 MB to 371.1 MB.
+Total: 16.107200 ms (FindLiveObjects: 0.913200 ms CreateObjectMapping: 0.545900 ms MarkObjects: 13.739600 ms  DeleteObjects: 0.423700 ms)
+
+Detected one or more triangles where the distance between any 2 vertices is greater than 500 units. The resulting Triangle Mesh can impact simulation and query stability. It is recommended to tessellate meshes that have large triangles. Source mesh name: Grass
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MeshCollider:set_sharedMesh (UnityEngine.Mesh)
+ApexV12Setup:InstantiateTrackPiece (string,string,UnityEngine.Transform,string[],System.Collections.Generic.Dictionary`2<string, UnityEngine.Material>,bool) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:458)
+ApexV12Setup:BuildPlayableScene (UnityEngine.GameObject,System.Collections.Generic.Dictionary`2<string, UnityEngine.Material>,System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:370)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:58)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 58]
+
+Importing 'GUID: e06026f8530aa8b4bab00e737956aa72 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/TreeLight.mat' with importer (NativeFormatImporter)
+Imported 'GUID: e06026f8530aa8b4bab00e737956aa72' -> (Import Result ID: '26981ff9c260b08f0cae29adcba1c2ee') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=0d456e84ff5fee2db7b6bbcedb9b6daa DependenciesID=03fe12bb03e14da82575b177afda91f5 StaticDependenciesID=5a98aa170e59da4a8e3689f22820280e 
+Importing 'GUID: 11e206f69fac71847ac8b6e99a88bae0 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Silver.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 11e206f69fac71847ac8b6e99a88bae0' -> (Import Result ID: 'ac2c020de2d4f022f83d89b8d7351737') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=fdf998772b3483ad1f7f843239247e12 DependenciesID=74102339de152e169bd570d14da22a3b StaticDependenciesID=65b0b7e45199f09cc39171d43563c9c7 
+Importing 'GUID: 11c7adfa018a985469ce190eb3bcb706 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/AsphaltLight.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 11c7adfa018a985469ce190eb3bcb706' -> (Import Result ID: '197373804f9924eda996cef167e61a52') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=06206c803fcdb1b425630b91ad93bd5e DependenciesID=38f18210dac076e6a843324fd186125c StaticDependenciesID=e355f5338fa41fb71d17d874be9d9f84 
+Importing 'GUID: 41fbf7d54531e2e42bab017dde61ae85 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Grass.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 41fbf7d54531e2e42bab017dde61ae85' -> (Import Result ID: '327644bd25fe8c2e5a67c3ae6919ebc1') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=1e52a00bafe5680d003ee94f00d08488 DependenciesID=8692a2ff247271b4a2e8d073f3b1037e StaticDependenciesID=34442013ab74226d5a455ef2591824c8 
+Importing 'GUID: 6132107ea266cd542a821b4cb5788c50 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/GridWhite.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 6132107ea266cd542a821b4cb5788c50' -> (Import Result ID: '2c443e54768f6911d4f3cf5a49b5cba5') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=ae0e9da51681cc9c08d0c0b99ba9a8ba DependenciesID=d1cb8037aa4b3b61c8962d0a618a7c2e StaticDependenciesID=36f50ddcc98da79573fb6969e69a5b9b 
+Importing 'GUID: 6116d60dbb4f36c4782e01d89d9309dd - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/TireRubber.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 6116d60dbb4f36c4782e01d89d9309dd' -> (Import Result ID: 'f6d8dd05db0a3d6ef996a92c8cb4ae1d') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=c5d4bd331b75ab4b591d5daf8d599adb DependenciesID=f38a5df2ea7556365fc49c6f77ca4e99 StaticDependenciesID=811140ec4062e75a10cc65ae247a2c99 
+Importing 'GUID: d22af7efb8098204a81f5c3d0ef78c9c - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/TealBright.mat' with importer (NativeFormatImporter)
+Imported 'GUID: d22af7efb8098204a81f5c3d0ef78c9c' -> (Import Result ID: '2e0aa2a4c1e265a4260dc179b70a8052') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=07ceaa48e714ac93ebdc526707e3dba3 DependenciesID=0d60acd531833b2df7d653b60f97e2da StaticDependenciesID=56bcc9cc5f7994a681c5dd1dfdc2112e 
+Importing 'GUID: 3424ac8cd9e7cba4f9e5d01b0afd6452 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Window.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 3424ac8cd9e7cba4f9e5d01b0afd6452' -> (Import Result ID: '22a03b53728a96e9cabe0c9eba4f1d2a') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=1f03f7c55d2514cef78a00c427c200a4 DependenciesID=006ab01bd654ba730ca25f0ece348144 StaticDependenciesID=cc7aec92e49a365bcd49659a1341f833 
+Importing 'GUID: 355c633f76d068546aabe59f9c7a6cda - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/BarrierDark.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 355c633f76d068546aabe59f9c7a6cda' -> (Import Result ID: '62a5eebc9b8e3a711493061d6a7c3d64') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=bd650327de0b4e9b7fed4865d8dc5297 DependenciesID=05ed8d479a717c9ec33ef3702c98e4b1 StaticDependenciesID=b79d73dc1794a0aef1c40d73a1e6b532 
+Importing 'GUID: 759bdec78b6525c4d9d778eb99c3414f - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Tree.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 759bdec78b6525c4d9d778eb99c3414f' -> (Import Result ID: 'd701497ab60140f5ebf7cbac410875f2') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=62966d50c23a4d6766efbbc95d258ecc DependenciesID=0857a752a32555dafc6e3cdda2566dd4 StaticDependenciesID=73d4dd18149503e8c742d22793857838 
+Importing 'GUID: f522074332733a34fb935a3bf11af372 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/PetronasTeal.mat' with importer (NativeFormatImporter)
+Imported 'GUID: f522074332733a34fb935a3bf11af372' -> (Import Result ID: 'bee3daaa49dfbb31a655e671837776df') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=b757052fa5a3a7b37358114de629fd3c DependenciesID=744f0a1156fc2b9a6935490d89ca5360 StaticDependenciesID=3e78d3175d1a439928ff77d056c1c709 
+Importing 'GUID: 76176c326e4356140add39da877ef71a - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/LEDYellow.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 76176c326e4356140add39da877ef71a' -> (Import Result ID: '705c47c34622d37ce539c8c5b6991f12') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=6e74d89c9c2a5e5451c8ac9a167ef1eb DependenciesID=8208b762295d9fda0f5e296980db8758 StaticDependenciesID=e1474bec998838b54aca00bca7a31592 
+Importing 'GUID: 189c122e0488f31428933cba4eeca79b - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Barrier.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 189c122e0488f31428933cba4eeca79b' -> (Import Result ID: 'c955d0b7e05f26025df13ed1283c3976') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=365db4373a2ce577d839f35a0ac0a09d DependenciesID=ffdafa496a6a13e8d2f501e1e470b97e StaticDependenciesID=b84304071486be553f50b80fe1555fc4 
+Importing 'GUID: c8d10d09531bf084f994f1eb4cb3020d - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/BuildingWhite.mat' with importer (NativeFormatImporter)
+Imported 'GUID: c8d10d09531bf084f994f1eb4cb3020d' -> (Import Result ID: '3b8731bd0e01f70b80672b7fe86d64ae') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=d3f0d92c2469df1a69908e0aa63f77d3 DependenciesID=ef54cacd86f0bf1f020541a03fab8661 StaticDependenciesID=e26177101d430898bfb4eaa48467d2db 
+Importing 'GUID: e8dd3bf2086dc7049a88bfa8e0c9d432 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/WheelGunmetal.mat' with importer (NativeFormatImporter)
+Imported 'GUID: e8dd3bf2086dc7049a88bfa8e0c9d432' -> (Import Result ID: 'de6be2955f71958aededa8b3e0c49df3') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=656d307a23c3fcf68b73ed8595518c2f DependenciesID=47af4c9b2c9be5d64c24446b0c83282b StaticDependenciesID=72c6c7c78f566b07475996028a01dea6 
+Importing 'GUID: 1948d1de1aca1124f910011f2f0a589f - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Asphalt.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 1948d1de1aca1124f910011f2f0a589f' -> (Import Result ID: '4a4898c628eaa1ffca5f55a23f6b9083') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=87c04459021dbbb060ffd8b3c817f984 DependenciesID=1cdb8f26f23fe868990a3fcca5778d0e StaticDependenciesID=609e847f051c0d0bc85a8a1a12ad7879 
+Importing 'GUID: 3a9722d7515b0884ca27bc9782df9672 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/White.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 3a9722d7515b0884ca27bc9782df9672' -> (Import Result ID: '21bb7a3c43edd9101a43fb07736a4441') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=60d664bac63ac35a70056f19e235fe4c DependenciesID=cec5c641d7d44bcba1ea596363d9197d StaticDependenciesID=84cf980958d3833f60a46c6f48fabaaf 
+Importing 'GUID: 8a65edc12b6cd14488500ec597ff3cc0 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/LEDGreen.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 8a65edc12b6cd14488500ec597ff3cc0' -> (Import Result ID: '4ac7b50b259c68ff79e6317fc90d8a98') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=97565610d70e90efd722aaeed7552a64 DependenciesID=99eb8d9246cff608f7d476c291d87bef StaticDependenciesID=8a3ae9f6316042e558db50a29d208b2b 
+Importing 'GUID: aaa68c7bb887ab7409fe1994ea773625 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/LEDRed.mat' with importer (NativeFormatImporter)
+Imported 'GUID: aaa68c7bb887ab7409fe1994ea773625' -> (Import Result ID: '420b191ce8a34e502dc0e16467a9146c') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=7b7aff61b04bde8634cac4afe27aa9ed DependenciesID=2e0750f0d29fb30429883f5fd6357b5c StaticDependenciesID=e654adabc6971c63ae61608b286905fc 
+Importing 'GUID: 9ba69a5645a0c084ca5dd5176505056d - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/AMGBlack.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 9ba69a5645a0c084ca5dd5176505056d' -> (Import Result ID: '610ed02eeddc2e6659ccc6874d868b02') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=495911aed9c8d82f20e8aae56c9b29cf DependenciesID=2bc127a3fb0a800e42255570adbe71d9 StaticDependenciesID=3fa42e36efd4c72b74d9b7ff70fd88a6 
+Importing 'GUID: bb884af7bdd7daa4db4a3dd5820f2f95 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/RacingBlue.mat' with importer (NativeFormatImporter)
+Imported 'GUID: bb884af7bdd7daa4db4a3dd5820f2f95' -> (Import Result ID: '6a1bc8061f30c04f4f97da0817e469f3') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=a771b52dfeb810158462be08a7e87d55 DependenciesID=06e7087bc6988864b21e29b7bae26c94 StaticDependenciesID=1ca13c5d855f1e0dd0ed1b94a02c1072 
+Importing 'GUID: cb294e621bb5186459b637236e4024ce - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Black.mat' with importer (NativeFormatImporter)
+Imported 'GUID: cb294e621bb5186459b637236e4024ce' -> (Import Result ID: '13b0f7c916c3a59c6c509a6abc7cd6aa') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=db62f526772b92b91815fc74ffb7a45b DependenciesID=42e0615ae400037cf58a47bd8a7acaf3 StaticDependenciesID=2a5ed4cd42c2a4ab441c914a838afb6e 
+Importing 'GUID: 7c7fdb1bd5bc808499a85c5d9d03531e - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Metal.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 7c7fdb1bd5bc808499a85c5d9d03531e' -> (Import Result ID: '1292ca5e567b7074f9f79d60e4f47506') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=fd6a4834aaf576008c73e5ad74b68af0 DependenciesID=5f64dd1529b4f90915ca4ab2f18101e8 StaticDependenciesID=59ac5a7370b2b44056e744856cb8c425 
+Importing 'GUID: 0d1c1ba2ea74c654f93f04a4167265d8 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/CurbWhite.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 0d1c1ba2ea74c654f93f04a4167265d8' -> (Import Result ID: 'dbaef8d867f53dd14362d01a0f38951d') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=21164887eb009955606b6ae13c641b5d DependenciesID=e0e17518aee8aeb9db8a34b438309670 StaticDependenciesID=0352869ce316ea375f92295c5357bf64 
+Importing 'GUID: 2d145346827d9b140abafc867fde8ec0 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/BuildingBlue.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 2d145346827d9b140abafc867fde8ec0' -> (Import Result ID: 'b7e510b546cd47f52a968b07d045d8bc') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=5eb6c6d6bd7a2f25e85d2713362ea22e DependenciesID=3e1ca5bca380fd11d10106bc0dca5ff8 StaticDependenciesID=66c70268a6c86397fc0f4587f8578838 
+Importing 'GUID: 6d66ceff70542c146ad0f98b4eabcfa6 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/GridBlack.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 6d66ceff70542c146ad0f98b4eabcfa6' -> (Import Result ID: 'b224ffce19151408ff8edee8fb07e669') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=74cd4769cfca84a9e7d68bb7a0619108 DependenciesID=7af2cd1a2266984cba27898bc40a3ee5 StaticDependenciesID=42efa0027b3bd080541820db70f56a19 
+Importing 'GUID: 7d2011226bb0fdd449379695ce31c5df - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/SeatRed.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 7d2011226bb0fdd449379695ce31c5df' -> (Import Result ID: '3630b40a02a47e9ac624d0bdf97ed53f') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=81cdbbec522b9c80efd0666b769dc04d DependenciesID=6550cd44751b9378a75112c7191805eb StaticDependenciesID=8c946a7ab10a1d7f74747cd04f3f9dd4 
+Importing 'GUID: 8db0f63bd1ddeca4cb8a5392548a8991 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/AMGDark.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 8db0f63bd1ddeca4cb8a5392548a8991' -> (Import Result ID: 'bd529f958b28c0674855115c9b2eccf4') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=38ddc2ad043195f81ccf17140ff1a6ca DependenciesID=4720b312e1dcea7dd8e31b2beafe0883 StaticDependenciesID=55b66e6777db18cf3fe70d263e1dfe31 
+Importing 'GUID: cd96a881dc15500448847db0e395b7c8 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/CurbRed.mat' with importer (NativeFormatImporter)
+Imported 'GUID: cd96a881dc15500448847db0e395b7c8' -> (Import Result ID: '92a6ae1ad96a946de52f2a13491cfb71') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=f0fbbcc17465ba577c0e9511e55fcb3f DependenciesID=1bbd9ba2b8bae8204dae5896a396a4d1 StaticDependenciesID=1165721c0be1d6ebf66910162a7deade 
+Importing 'GUID: dd04e030e3c6d134fb19c12d5e4eece2 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/DarkWheel.mat' with importer (NativeFormatImporter)
+Imported 'GUID: dd04e030e3c6d134fb19c12d5e4eece2' -> (Import Result ID: '71022567afc685d58ddfc10a225aacf6') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=3356fb1052b0ec1e2ce118317adc352e DependenciesID=66ce266433cc8ff04ae26ee52a0aa6f3 StaticDependenciesID=717fd6d151156cbf3a1715b7faf6035a 
+Importing 'GUID: 7e384e305b8144544a513b163e37e044 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Concrete.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 7e384e305b8144544a513b163e37e044' -> (Import Result ID: '9c3920b0f79c845387a8721709f7ed3d') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=9bca9173533626f300998f8d9cd83bc6 DependenciesID=03f50ef7d8f8420dc5ec8f191c0f42fd StaticDependenciesID=b6b4b071b5a543486f581614f38d610d 
+Importing 'GUID: 6f920f35518141242b9c50a513dd7105 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/SilverMetal.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 6f920f35518141242b9c50a513dd7105' -> (Import Result ID: 'a762540dcabd6b4fa69179dcdcde715c') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=d5f49f30218ccd46597f9a6e90cfcf68 DependenciesID=76b43ec5b4520089d841f9eea4759af0 StaticDependenciesID=68d98655cf6430941673b1a6276dd389 
+Importing 'GUID: 6f2c8125d0f325f41a2300ed830e5029 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Carbon.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 6f2c8125d0f325f41a2300ed830e5029' -> (Import Result ID: '6c2f369973eb17f2e1ac22284185c91e') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=844fca2a1d04f8ee355d608ad1774cc9 DependenciesID=57927c5278d559bc198700f629598ff8 StaticDependenciesID=e9156670c0499b98dd9f70493410d493 
+Asset Pipeline Refresh (id=ee27270b56785534791a283f71716835): Total: 0.106 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 659b1ffdafce1b6478420eafd00de751 - Path: Assets/Scenes/APEX_V12_Race.unity' with importer (DefaultImporter)
+Imported 'GUID: 659b1ffdafce1b6478420eafd00de751' -> (Import Result ID: '2ab99461f953ef3e8b5b7ba0640304f9') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=a040a07038627b8d1815e9636e170e97 DependenciesID=389ed6e050df9a32d563ce8ef5debf08 StaticDependenciesID=d7ba1b7c3b77b0f2534671ee677e4f22 
+Asset Pipeline Refresh (id=ca046c37d65713e4b92c3f6cb73aa186): Total: 0.036 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+AcceleratorClientConnectionCallback - disconnected - :0
+Importing 'GUID: 0000000000000000b000000000000000 - Path: ProjectSettings/EditorBuildSettings.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 0000000000000000b000000000000000' -> (Import Result ID: '13bd0b91a92a64898c1069aa4de9d06e') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=0a89a5c5f492143e0fa186859e17ba6f DependenciesID=ccbfe6c36d4a3d0c00fff97a3246f8c8 StaticDependenciesID=692b4781ae594c54d564a9e5c6252cec 
+Asset Pipeline Refresh (id=6d4b7f349ba727b48bd3b89b08b4b4f6): Total: 0.042 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=32e1dad978f395d4396b3ee78b3774a9): Total: 0.010 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[APEX V12] Setup finished! Full report written to Logs/APEX_V12_Setup_Report.txt
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:81)
+
+(Filename: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs Line: 81)
+
+Batchmode quit successfully invoked - shutting down!
+Killing ADB server in 0.1260629 seconds.
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-khawarizmi-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-khawarizmi channel disconnected successfully.
+Lingering sessions upon destruction of worker manager
+Unity Data Store service was successfully shut down
+UDS shutting down local client system
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Exiting batchmode successfully now!
+[ExitDontLaunchBugReporter] Exiting without the bug reporter. Application will exit with return code 0

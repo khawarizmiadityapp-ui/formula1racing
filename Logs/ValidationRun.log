@@ -1,0 +1,408 @@
+VBCSCompilerPreWarmer: watching VBCSCompiler (PID 4280)
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 29936)
+VBCSCompiler prewarm took 18.00 ms
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.6/staging' branch; Version is '6000.6.6f1 (d20c9ac777da) revision 13765786'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-khawarizmi" at "2026-10-16T14:42:40.4100087Z"
+OS: 'Windows 11  (10.0.26200) CoreSingleLanguage' Language: 'en' Physical Memory: 16201 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-16T14:42:40Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 7000, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              ad24f483d11540b184b83a8a14dafdb2
+  Correlation Id:          7cdb493d4a6ab63745f8cac832e8e7f6
+  External correlation Id: 7992422733263743585
+  Machine Id:              GH+MFfSu6lmoygpQmGZVvfgofdM=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-khawarizmi" (connect: 0.00s, validation: 0.00s, handshake: 0.05s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-khawarizmi-notifications" at "2026-10-16T14:42:40.4617736Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 18968522328279-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.06s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.6.6f1\Editor\Unity.exe
+-batchmode
+-projectPath
+D:\game buatan sendiri\FormulaRacingMobile
+-executeMethod
+ApexV12Setup.RunValidationTests
+-quit
+-logFile
+D:\game buatan sendiri\FormulaRacingMobile\Logs\ValidationRun.log
+Successfully changed project path to: D:\game buatan sendiri\FormulaRacingMobile
+D:/game buatan sendiri/FormulaRacingMobile
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=1"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.
+Player connection [12476]  Target information:
+
+Player connection [12476]  * "[IP] 172.30.189.56 [Port] 55504 [Flags] 2 [Guid] 3123956481 [EditorId] 3123956481 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [12476] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [12476] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-11660" after 0.4 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+Launching Unity Data Store - C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/Tools/Unity.DataStore.exe 
+Unity Data Store artifact dir = Library/DataStore, working dir = D:/game buatan sendiri/FormulaRacingMobileUnity Data Store running and initialised
+[Physics::Module] Selected backend (deferred post-plugins).
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.6.6f1 (d20c9ac777da)
+[EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=1048576, entitiesPerBlock=256, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/game buatan sendiri/FormulaRacingMobile/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Vendor:          NVIDIA
+    VRAM:            6023 MB
+    App VRAM Budget: 5255 MB
+    Driver:          30.0.14.9717
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56660
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.005688 seconds.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  1.108 seconds
+Domain Reload Profiling: 1900ms
+	BeginReloadAssembly (178ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (6ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (101ms)
+	LoadAllAssembliesAndSetupDomain (479ms)
+		LoadAssemblies (157ms)
+		TypeCache.Refresh (309ms)
+			TypeCache.ScanAssembly (288ms)
+		AnalyzeDomain (1ms)
+	FinalizeReload (1110ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			BeforeProcessingInitializeOnLoad (161ms)
+			ProcessInitializeOnLoadAttributes (214ms)
+			ProcessInitializeOnLoadMethodAttributes (401ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 56 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.collab-proxy@2.13.6 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.collab-proxy@4628d2ba6ea4)
+    com.unity.ide.rider@3.0.40 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.ide.rider@e4950c6d131b)
+    com.unity.ide.visualstudio@2.0.28 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.ide.visualstudio@b5edea5f33f4)
+    com.unity.inputsystem@1.20.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.inputsystem@7a4e1a2a8194)
+    com.unity.searcher@4.9.5 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.searcher@a463122f2c00)
+    com.unity.profiling.core@1.0.3 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.profiling.core@8a49f7027d06)
+    com.unity.nuget.mono-cecil@1.11.6 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+  Built-in packages:
+    com.unity.render-pipelines.universal@17.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.render-pipelines.universal@9b1eb8be54e0)
+    com.unity.ugui@2.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.ugui@0b1771797efc)
+    com.unity.modules.accessibility@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tetgen@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.tetgen)
+    com.unity.modules.tilemap@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.timelinefoundation@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.timelinefoundation)
+    com.unity.modules.ui@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.render-pipelines.core@17.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.render-pipelines.core@e18bd88df4e3)
+    com.unity.shadergraph@17.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.shadergraph@0de771837e0e)
+    com.unity.render-pipelines.universal-config@17.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.render-pipelines.universal-config@561422b74439)
+    com.unity.test-framework@1.8.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.test-framework@80f691d4262b)
+    com.unity.ext.nunit@2.1.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.ext.nunit@0198eae3b53e)
+    com.unity.graph-authoring@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.graph-authoring@cfd2588851ee)
+    com.unity.burst@2.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.burst@626e66ab421b)
+    com.unity.collections@6.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.collections@10fff0607388)
+    com.unity.test-framework.performance@6.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.test-framework.performance@54c5bd86aedb)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.02 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.6f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: D:/game buatan sendiri/FormulaRacingMobile
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 0s997ms
+[635/805    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+[636/805    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[802/805    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 147 defines and 359 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+[803/805    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+[804/805    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+*** Tundra build success (0.96 seconds), 5 items updated, 805 evaluated
+AssetDatabase: script compilation time: 1.686247s
+Total cache size 49412748
+Total cache size after purge 49412748, took 00:00:00.1077524
+Begin MonoManager ReloadAssembly
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  1.498 seconds
+Domain Reload Profiling: 2938ms
+	BeginReloadAssembly (419ms)
+		DisableScriptedObjects (30ms)
+		CreateAndSetChildDomain (92ms)
+	RebuildCommonClasses (16ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (82ms)
+	LoadAllAssembliesAndSetupDomain (895ms)
+		LoadAssemblies (490ms)
+		TypeCache.Refresh (217ms)
+			TypeCache.ScanAssembly (199ms)
+		AnalyzeDomain (108ms)
+			BuildScriptInfoCaches (99ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1500ms)
+		SetupLoadedEditorAssemblies (0ms)
+			LogAssemblyErrors (5ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			BeforeProcessingInitializeOnLoad (180ms)
+			ProcessInitializeOnLoadAttributes (520ms)
+			ProcessInitializeOnLoadMethodAttributes (136ms)
+			AfterProcessingInitializeOnLoad (13ms)
+		AwakeInstancesAfterBackupRestoration (43ms)
+Starting new worker id: 0 with log in D:/game buatan sendiri/FormulaRacingMobile/Logs/AssetImportWorkerHW0.log
+
+Asset Pipeline Refresh (id=2ff78ab59f2d1c64185da735dd045ed8): Total: 5.632 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=2029 ms
+		Asset DB Callback time: managed=281 ms, native=32 ms
+		Scripting: domain reloads=1, domain reload time=1522 ms, compile time=1689 ms, other=76 ms
+		Project Asset Count: scripts=1087, non-scripts=2148
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 25.196ms
+	ApplyChangesToAssetFolders: 0.743ms
+	Scan: 121.693ms
+	Collect global state as custom dependencies: 24.489ms
+	OnSourceAssetsModified: 0.748ms
+	CategorizeScriptCompilationAssets: 32.371ms
+	ProcessAssetsWithTransientArtifactChanges: 77.316ms
+	CategorizeAssets: 64.212ms
+	CompileScripts: 1689.085ms
+	ImportOutOfDateAssets: 1524.406ms (1507.309ms without children)
+		UnloadImportedAssets: 3.415ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.890ms
+		ImportSchedulerStart: 12.744ms
+	PostProcessAllAssets: 284.139ms
+		VCAutoAddAssetPostprocess 1.634ms
+		XRBuildSystem.XRAssetImported 0.502ms
+		PostProcessCallbackCreateDeferredMaterials 0.053ms
+		MonoPostProcessAllAssets: 281.033ms
+			AssetPostprocessor.OnPostprocessAllAssets 164.973ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 27.789ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 21.156ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 12.482ms
+			SyncVS.PostprocessSyncProject 9.021ms
+			AssetChangedListener.OnPostprocessAllAssets 3.393ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 3.074ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 2.893ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 2.820ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 2.388ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 1.440ms
+			MaterialPostprocessor.OnPostprocessAllAssets 1.211ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 1.119ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.901ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.809ms
+			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.707ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.662ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.589ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.499ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.492ms
+			PostProcessor.OnPostprocessAllAssets 0.482ms
+			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 0.481ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.396ms
+			AssetEvents.OnPostprocessAllAssets 0.386ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.334ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.301ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.292ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.260ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.258ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.253ms
+			ThemePostprocessor.OnPostprocessAllAssets 0.243ms
+			AssetReloadNotifier.OnPostprocessAllAssets 0.202ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.145ms
+	PostAssetChangesProfiler: 6.206ms
+	UnloadStreamsBegin: 2.400ms
+	PersistCurrentRevisions: 0.175ms
+	GenerateScriptTypeHashes: 1.756ms
+	GenerateScriptTypeSerializationHashes: 3.281ms
+	Untracked: 1774.631ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Scanning for USB devices : 1.518ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-FormulaRacingMobile
+Unloading 66 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4664 unused Assets / (10.7 MB). Loaded Objects now: 5601.
+Memory consumption went from 387.9 MB to 377.2 MB.
+Total: 13.352700 ms (FindLiveObjects: 0.926000 ms CreateObjectMapping: 0.472900 ms MarkObjects: 7.774600 ms  DeleteObjects: 3.889200 ms)
+
+Opening scene 'Assets/Scenes/APEX_V12_Race.unity'
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Detected one or more triangles where the distance between any 2 vertices is greater than 500 units. The resulting Triangle Mesh can impact simulation and query stability. It is recommended to tessellate meshes that have large triangles. Source mesh name: Grass
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:OpenScene (string,UnityEditor.SceneManagement.OpenSceneMode)
+ApexV12Setup:RunValidationTests () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:653)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 653]
+
+Loaded scene 'Assets/Scenes/APEX_V12_Race.unity'
+	Deserialize:            21.426 ms
+	Integration:            49.689 ms
+	Integration of assets:  0.032 ms
+	Thread Wait Time:       0.351 ms
+	Total Operation Time:   71.497 ms
+Unloading 2 unused Assets / (7.8 KB). Loaded Objects now: 6150.
+Memory consumption went from 374.6 MB to 374.5 MB.
+Total: 9.225900 ms (FindLiveObjects: 0.686300 ms CreateObjectMapping: 0.271600 ms MarkObjects: 7.906000 ms  DeleteObjects: 0.031100 ms)
+
+[APEX V12] Validation report written to Logs/APEX_V12_Validation_Report.txt
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ApexV12Setup:RunValidationTests () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:727)
+
+(Filename: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs Line: 727)
+
+Batchmode quit successfully invoked - shutting down!
+Worker ready: AssetImportWorkerHW0 0
+Killing ADB server in 2.0749141 seconds.
+AcceleratorClientConnectionCallback - disconnected - :0
+Importing 'GUID: 00000000000000008000000000000000 - Path: ProjectSettings/DynamicsManager.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 00000000000000008000000000000000' -> (Import Result ID: 'ac64dcf33fb6960551806ea8caf35d90') in 0.007 seconds [static dependencies only]. Details - ImportResultOutputID=f4e5ea74158efa9a7415a6abc5cfeedf DependenciesID=4c5a5a5deb0f66d259666238775e8d27 StaticDependenciesID=d79f56984609b5a5daec6f6b1dc4cab5 
+Asset Pipeline Refresh (id=fda39565b4ba8e943823e38e64d4a081): Total: 0.099 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-khawarizmi-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-khawarizmi channel disconnected successfully.
+Lingering sessions upon destruction of worker manager
+Unity Data Store service was successfully shut down
+UDS shutting down local client system
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Exiting batchmode successfully now!
+[ExitDontLaunchBugReporter] Exiting without the bug reporter. Application will exit with return code 0

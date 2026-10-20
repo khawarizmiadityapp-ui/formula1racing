@@ -1,0 +1,331 @@
+=== APEX V12 RED GEOMETRY DIAGNOSTIC ===
+Total Renderers found: 278
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/StartFinish_And_StartingGrid/StartFinish_Gantry/Gantry_StartingLights_Box/StartLight_Red_5
+   Active: False, Enabled: True
+   World Pos: (2.40, 5.60, -200.64), Scale: (0.78, 0.34, 0.04)
+   Bounds Center: (2.40, 5.60, -200.64), Extents: (0.39, 0.17, 0.02)
+   Mesh: Sphere
+   Materials: LEDRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_Turn1_Azadliq/Tier_6
+   Active: False, Enabled: True
+   World Pos: (-23.42, 1.65, 364.73), Scale: (48.00, 3.30, 1.10)
+   Bounds Center: (-23.42, 1.65, 364.73), Extents: (23.15, 1.65, 7.42)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_MainStraight_PaddockView/Tier_1
+   Active: False, Enabled: True
+   World Pos: (-16.00, 0.28, -190.00), Scale: (90.00, 0.55, 1.10)
+   Bounds Center: (-16.00, 0.28, -190.00), Extents: (0.55, 0.28, 45.00)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: APEX_BakuCircuit_Generated/Environment/default
+   Active: True, Enabled: True
+   World Pos: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+   Bounds Center: (40.01, 17.49, -36.80), Extents: (1102.61, 17.49, 528.30)
+   Mesh: default
+   Materials: BuildingDark, BuildingGlass, BuildingLight, Roof, BarrierTeal, Grandstand, SeatTeal, SeatRed, FloodLight, LampGlow, BuildingSand, RoofRed, TowerStone, TowerRoof
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_Turn8_CastleView/Tier_6
+   Active: False, Enabled: True
+   World Pos: (-19.39, 5.45, 111.08), Scale: (28.00, 3.30, 1.10)
+   Bounds Center: (-19.39, 5.45, 111.08), Extents: (3.28, 1.65, 13.84)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_CastleCorner_Track/Baku_City_Buildings_And_Grandstands/Grandstand_AzizAliyev/Tier_7
+   Active: False, Enabled: True
+   World Pos: (8.15, 1.92, -20.10), Scale: (32.00, 3.85, 1.10)
+   Bounds Center: (8.15, 1.92, -20.10), Extents: (0.56, 1.93, 16.00)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_CastleCorner_Track/Baku_City_Buildings_And_Grandstands/Grandstand_AzizAliyev/Tier_6
+   Active: False, Enabled: True
+   World Pos: (9.25, 1.65, -20.10), Scale: (32.00, 3.30, 1.10)
+   Bounds Center: (9.25, 1.65, -20.10), Extents: (0.56, 1.65, 16.00)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_MainStraight_PaddockView/Tier_9
+   Active: False, Enabled: True
+   World Pos: (-7.20, 2.48, -190.00), Scale: (90.00, 4.95, 1.10)
+   Bounds Center: (-7.20, 2.48, -190.00), Extents: (0.55, 2.48, 45.00)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_MainStraight_PaddockView/Tier_11
+   Active: False, Enabled: True
+   World Pos: (-5.00, 3.03, -190.00), Scale: (90.00, 6.05, 1.10)
+   Bounds Center: (-5.00, 3.03, -190.00), Extents: (0.55, 3.03, 45.00)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/PitLane_And_Paddock_Garages/Paddock_Building_Main/TeamSign_Haas F1
+   Active: False, Enabled: True
+   World Pos: (15.12, 4.80, 44.00), Scale: (0.25, 0.90, 18.00)
+   Bounds Center: (15.12, 4.80, 44.00), Extents: (0.13, 0.45, 9.00)
+   Mesh: Cube
+   Materials: CurbRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_CastleCorner_Track/Baku_City_Buildings_And_Grandstands/Grandstand_AzizAliyev/Tier_5
+   Active: False, Enabled: True
+   World Pos: (10.35, 1.37, -20.10), Scale: (32.00, 2.75, 1.10)
+   Bounds Center: (10.35, 1.37, -20.10), Extents: (0.56, 1.38, 16.00)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_MainStraight_PaddockView/Tier_5
+   Active: False, Enabled: True
+   World Pos: (-11.60, 1.38, -190.00), Scale: (90.00, 2.75, 1.10)
+   Bounds Center: (-11.60, 1.38, -190.00), Extents: (0.55, 1.38, 45.00)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/StartFinish_And_StartingGrid/StartFinish_Gantry/Gantry_StartingLights_Box/StartLight_Red_2
+   Active: False, Enabled: True
+   World Pos: (-1.20, 5.60, -200.64), Scale: (0.78, 0.34, 0.04)
+   Bounds Center: (-1.20, 5.60, -200.64), Extents: (0.39, 0.17, 0.02)
+   Mesh: Sphere
+   Materials: LEDRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_CastleCorner_Track/Baku_City_Buildings_And_Grandstands/Grandstand_AzizAliyev/Tier_3
+   Active: False, Enabled: True
+   World Pos: (12.55, 0.82, -20.10), Scale: (32.00, 1.65, 1.10)
+   Bounds Center: (12.55, 0.82, -20.10), Extents: (0.56, 0.83, 16.00)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_Turn1_Azadliq/Tier_8
+   Active: False, Enabled: True
+   World Pos: (-22.79, 2.20, 362.62), Scale: (48.00, 4.40, 1.10)
+   Bounds Center: (-22.79, 2.20, 362.62), Extents: (23.15, 2.20, 7.42)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/StartFinish_And_StartingGrid/StartFinish_Gantry/Gantry_StartingLights_Box/StartLight_Red_1
+   Active: False, Enabled: True
+   World Pos: (-2.40, 5.60, -200.64), Scale: (0.78, 0.34, 0.04)
+   Bounds Center: (-2.40, 5.60, -200.64), Extents: (0.39, 0.17, 0.02)
+   Mesh: Sphere
+   Materials: LEDRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_CastleCorner_Track/Baku_City_Buildings_And_Grandstands/Grandstand_AzizAliyev/Tier_8
+   Active: False, Enabled: True
+   World Pos: (7.05, 2.20, -20.10), Scale: (32.00, 4.40, 1.10)
+   Bounds Center: (7.05, 2.20, -20.10), Extents: (0.56, 2.20, 16.00)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/StartFinish_And_StartingGrid/StartFinish_Gantry/Gantry_StartingLights_Box/StartLight_Red_4
+   Active: False, Enabled: True
+   World Pos: (1.20, 5.60, -200.64), Scale: (0.78, 0.34, 0.04)
+   Bounds Center: (1.20, 5.60, -200.64), Extents: (0.39, 0.17, 0.02)
+   Mesh: Sphere
+   Materials: LEDRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_MainStraight_PaddockView/Tier_12
+   Active: False, Enabled: True
+   World Pos: (-3.90, 3.30, -190.00), Scale: (90.00, 6.60, 1.10)
+   Bounds Center: (-3.90, 3.30, -190.00), Extents: (0.55, 3.30, 45.00)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_CastleCorner_Track/Baku_City_Buildings_And_Grandstands/Grandstand_AzizAliyev/Tier_1
+   Active: False, Enabled: True
+   World Pos: (14.75, 0.27, -20.10), Scale: (32.00, 0.55, 1.10)
+   Bounds Center: (14.75, 0.27, -20.10), Extents: (0.56, 0.28, 16.00)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_CastleCorner_Track/Barriers_And_CatchFences/Concrete_Barriers_Outer
+   Active: False, Enabled: True
+   World Pos: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+   Bounds Center: (-56.66, 3.85, 22.86), Extents: (65.72, 3.88, 384.61)
+   Mesh: Mesh_BakuBarriers
+   Materials: SponsorBarrier_Red
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_MainStraight_PaddockView/Tier_8
+   Active: False, Enabled: True
+   World Pos: (-8.30, 2.20, -190.00), Scale: (90.00, 4.40, 1.10)
+   Bounds Center: (-8.30, 2.20, -190.00), Extents: (0.55, 2.20, 45.00)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_CastleCorner_Track/Baku_City_Buildings_And_Grandstands/Grandstand_AzizAliyev/Tier_4
+   Active: False, Enabled: True
+   World Pos: (11.45, 1.10, -20.10), Scale: (32.00, 2.20, 1.10)
+   Bounds Center: (11.45, 1.10, -20.10), Extents: (0.56, 1.10, 16.00)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/PitLane_And_Paddock_Garages/Paddock_Building_Main/TeamSign_Scuderia Ferrari
+   Active: False, Enabled: True
+   World Pos: (15.12, 4.80, -152.00), Scale: (0.25, 0.90, 18.00)
+   Bounds Center: (15.12, 4.80, -152.00), Extents: (0.13, 0.45, 9.00)
+   Mesh: Cube
+   Materials: CurbRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_Turn8_CastleView/Tier_2
+   Active: False, Enabled: True
+   World Pos: (-15.08, 4.35, 110.22), Scale: (28.00, 1.10, 1.10)
+   Bounds Center: (-15.08, 4.35, 110.22), Extents: (3.28, 0.55, 13.84)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_Turn8_CastleView/Tier_4
+   Active: False, Enabled: True
+   World Pos: (-17.24, 4.90, 110.65), Scale: (28.00, 2.20, 1.10)
+   Bounds Center: (-17.24, 4.90, 110.65), Extents: (3.28, 1.10, 13.84)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_MainStraight_PaddockView/Tier_2
+   Active: False, Enabled: True
+   World Pos: (-14.90, 0.55, -190.00), Scale: (90.00, 1.10, 1.10)
+   Bounds Center: (-14.90, 0.55, -190.00), Extents: (0.55, 0.55, 45.00)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_Turn1_Azadliq/Tier_5
+   Active: False, Enabled: True
+   World Pos: (-23.74, 1.38, 365.79), Scale: (48.00, 2.75, 1.10)
+   Bounds Center: (-23.74, 1.38, 365.79), Extents: (23.15, 1.38, 7.42)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_CastleCorner_Track/Baku_City_Buildings_And_Grandstands/Grandstand_AzizAliyev/Tier_2
+   Active: False, Enabled: True
+   World Pos: (13.65, 0.55, -20.10), Scale: (32.00, 1.10, 1.10)
+   Bounds Center: (13.65, 0.55, -20.10), Extents: (0.56, 0.55, 16.00)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_MainStraight_PaddockView/Tier_10
+   Active: False, Enabled: True
+   World Pos: (-6.10, 2.75, -190.00), Scale: (90.00, 5.50, 1.10)
+   Bounds Center: (-6.10, 2.75, -190.00), Extents: (0.55, 2.75, 45.00)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/StartFinish_And_StartingGrid/StartFinish_Gantry/Gantry_StartingLights_Box/StartLight_Red_3
+   Active: False, Enabled: True
+   World Pos: (0.00, 5.60, -200.64), Scale: (0.78, 0.34, 0.04)
+   Bounds Center: (0.00, 5.60, -200.64), Extents: (0.39, 0.17, 0.02)
+   Mesh: Sphere
+   Materials: LEDRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_Turn1_Azadliq/Tier_2
+   Active: False, Enabled: True
+   World Pos: (-24.68, 0.55, 368.95), Scale: (48.00, 1.10, 1.10)
+   Bounds Center: (-24.68, 0.55, 368.95), Extents: (23.15, 0.55, 7.42)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/StartFinish_And_StartingGrid/StartFinish_Gantry/Gantry_SponsorBanner
+   Active: False, Enabled: True
+   World Pos: (0.00, 6.90, -200.55), Scale: (15.20, 1.60, 0.15)
+   Bounds Center: (0.00, 6.90, -200.55), Extents: (7.60, 0.80, 0.08)
+   Mesh: Cube
+   Materials: SponsorBarrier_Red
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_MainStraight_PaddockView/Tier_3
+   Active: False, Enabled: True
+   World Pos: (-13.80, 0.83, -190.00), Scale: (90.00, 1.65, 1.10)
+   Bounds Center: (-13.80, 0.83, -190.00), Extents: (0.55, 0.83, 45.00)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: APEX_BakuCircuit_Generated/Curbs/default
+   Active: True, Enabled: True
+   World Pos: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+   Bounds Center: (40.92, 0.08, -98.85), Extents: (944.01, 0.00, 411.39)
+   Mesh: default
+   Materials: CurbRed, CurbWhite
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_Turn8_CastleView/Tier_3
+   Active: False, Enabled: True
+   World Pos: (-16.16, 4.63, 110.43), Scale: (28.00, 1.65, 1.10)
+   Bounds Center: (-16.16, 4.63, 110.43), Extents: (3.28, 0.83, 13.84)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_Turn8_CastleView/Tier_5
+   Active: False, Enabled: True
+   World Pos: (-18.31, 5.18, 110.86), Scale: (28.00, 2.75, 1.10)
+   Bounds Center: (-18.31, 5.18, 110.86), Extents: (3.28, 1.38, 13.84)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Barriers_And_CatchFences/Concrete_Barriers_Outer
+   Active: False, Enabled: True
+   World Pos: (0.00, 0.00, 0.00), Scale: (1.00, 1.00, 1.00)
+   Bounds Center: (-56.66, 3.85, 22.86), Extents: (65.72, 3.88, 384.61)
+   Mesh: Mesh_BakuF1_Barriers
+   Materials: SponsorBarrier_Red
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/PitLane_And_Paddock_Garages/PitWall_Concrete
+   Active: False, Enabled: True
+   World Pos: (8.20, 0.66, -40.00), Scale: (0.55, 1.20, 360.00)
+   Bounds Center: (8.20, 0.66, -40.00), Extents: (0.28, 0.60, 180.00)
+   Mesh: Cube
+   Materials: SponsorBarrier_Red
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_Turn1_Azadliq/Tier_1
+   Active: False, Enabled: True
+   World Pos: (-25.00, 0.28, 370.00), Scale: (48.00, 0.55, 1.10)
+   Bounds Center: (-25.00, 0.28, 370.00), Extents: (23.15, 0.28, 7.42)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_MainStraight_PaddockView/Tier_7
+   Active: False, Enabled: True
+   World Pos: (-9.40, 1.93, -190.00), Scale: (90.00, 3.85, 1.10)
+   Bounds Center: (-9.40, 1.93, -190.00), Extents: (0.55, 1.93, 45.00)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_MainStraight_PaddockView/Tier_4
+   Active: False, Enabled: True
+   World Pos: (-12.70, 1.10, -190.00), Scale: (90.00, 2.20, 1.10)
+   Bounds Center: (-12.70, 1.10, -190.00), Extents: (0.55, 1.10, 45.00)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_Turn1_Azadliq/Tier_7
+   Active: False, Enabled: True
+   World Pos: (-23.10, 1.93, 363.68), Scale: (48.00, 3.85, 1.10)
+   Bounds Center: (-23.10, 1.93, 363.68), Extents: (23.15, 1.93, 7.42)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_Turn8_CastleView/Tier_1
+   Active: False, Enabled: True
+   World Pos: (-14.00, 4.08, 110.00), Scale: (28.00, 0.55, 1.10)
+   Bounds Center: (-14.00, 4.08, 110.00), Extents: (3.28, 0.28, 13.84)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_MainStraight_PaddockView/Tier_6
+   Active: False, Enabled: True
+   World Pos: (-10.50, 1.65, -190.00), Scale: (90.00, 3.30, 1.10)
+   Bounds Center: (-10.50, 1.65, -190.00), Extents: (0.55, 1.65, 45.00)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_Turn1_Azadliq/Tier_3
+   Active: False, Enabled: True
+   World Pos: (-24.37, 0.83, 367.89), Scale: (48.00, 1.65, 1.10)
+   Bounds Center: (-24.37, 0.83, 367.89), Extents: (23.15, 0.83, 7.42)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------
+Object: Baku_Track_Spline_Builder/Baku_F1_FullCircuit_Track/Baku_City_Buildings_And_Grandstands/Grandstand_Turn1_Azadliq/Tier_4
+   Active: False, Enabled: True
+   World Pos: (-24.05, 1.10, 366.84), Scale: (48.00, 2.20, 1.10)
+   Bounds Center: (-24.05, 1.10, 366.84), Extents: (23.15, 1.10, 7.42)
+   Mesh: Cube
+   Materials: SeatRed
+--------------------------------------------------

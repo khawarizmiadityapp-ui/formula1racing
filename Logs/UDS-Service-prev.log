@@ -1,0 +1,37 @@
+
+Server arguments:
+  --memory-size 1073741824
+  --shared-postfix eaa891f76b03156de8541558de79a3ac
+  --working-directory Library/DataStore
+  --silent-console
+  --shutdown-grace 0
+  --client-process-check 0
+  --uds-log-file D:/game buatan sendiri/FormulaRacingMobile/Logs/UDS-Service.log
+  --debug-log 2
+  -name
+  Unity.DataStore
+
+Initialising UDS system complete:
+  - System type: Service
+  - Resource namespace: eaa891f76b03156de8541558de79a3ac
+  - Shared memory size: 1073741824
+  - Command buffer id: 1052576
+  - Command buffer size: 8192
+  - Hashmap size: 4194304
+Starting Unity Data Store Application
+[Error] Failed to remove data for hash 3a8be7c7556efb93a4589e8f8be48388. Failure received from service
+0x00007ff63222c665 (Unity.DataStore) uds_wait_handle_complete
+0x00007ff6321efe85 (Unity.DataStore) uds_cleanup
+0x00007ff6321dee6f (Unity.DataStore) 
+0x00007ff6321e00bd (Unity.DataStore) 
+0x00007ff6321c7395 (Unity.DataStore) 
+0x00007ff6321c681a (Unity.DataStore) 
+0x00007ff6321c6aff (Unity.DataStore) 
+0x00007ff6321c28b5 (Unity.DataStore) 
+0x00007ff6322480e4 (Unity.DataStore) uds_wait_handle_complete
+0x00007ff87434dda7 (KERNEL32) BaseThreadInitThunk
+0x00007ff875a3ee4c (ntdll) RtlUserThreadStart
+
+Unity Data Store Application Complete
+[Warning] Shutting down service while there are still connected clients, client count = 2
+Shut down UDS service system complete

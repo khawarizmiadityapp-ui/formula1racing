@@ -1,0 +1,607 @@
+VBCSCompilerPreWarmer: watching VBCSCompiler (PID 8972)
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 3196)
+VBCSCompiler prewarm took 86.15 ms
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.6/staging' branch; Version is '6000.6.6f1 (d20c9ac777da) revision 13765786'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Channel LicenseClient-khawarizmi doesn't exist
+OS: 'Windows 11  (10.0.26200) CoreSingleLanguage' Language: 'en' Physical Memory: 16201 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-17T05:52:04Z
+[Licensing::Module] Successfully launched the LicensingClient (PId: 14720)
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.6.6f1\Editor\Unity.exe
+-batchmode
+-quit
+-projectPath
+D:\game buatan sendiri\FormulaRacingMobile
+-executeMethod
+F1RealismConfigurator.BuildFullBakuPlayableScene
+-logFile
+D:\game buatan sendiri\FormulaRacingMobile\Logs\unity_batch.log
+Successfully changed project path to: D:\game buatan sendiri\FormulaRacingMobile
+D:/game buatan sendiri/FormulaRacingMobile
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=1"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.
+Player connection [20136]  Target information:
+
+Player connection [20136]  * "[IP] 172.30.189.56 [Port] 55504 [Flags] 2 [Guid] 1013077553 [EditorId] 1013077553 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [20136] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [20136] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-8164" after 0.4 seconds.
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-khawarizmi" at "2026-10-17T05:52:09.0661785Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 14720, path: "C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              faac4fea24454a118bf3d1b2a8a69fda
+  Correlation Id:          ea1f4b83c18557632eba1bfdd86332ad
+  External correlation Id: 6339865167838936971
+  Machine Id:              GH+MFfSu6lmoygpQmGZVvfgofdM=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-khawarizmi" (connect: 4.37s, validation: 0.24s, handshake: 0.11s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-khawarizmi-notifications" at "2026-10-17T05:52:09.4196828Z"
+[Licensing::Module] Connected to LicensingClient (PId: 14720, launch time: 0.05, total connection time: 4.72s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 18968522328279-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 4.80s
+[Licensing::Module] Licensing is initialized (took 2.97s).
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+Initialising UDS system complete:
+  - System type: Client
+  - Resource namespace: eaa891f76b03156de8541558de79a3ac
+  - Shared memory size: 1073741824
+  - Command buffer id: 1052576
+  - Command buffer size: 8192
+  - Hashmap size: 4194304
+  - Service connected: false
+Launching Unity Data Store - C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/Tools/Unity.DataStore.exe 
+Unity Data Store artifact dir = Library/DataStore, working dir = D:/game buatan sendiri/FormulaRacingMobileUnity Data Store running and initialised
+[Physics::Module] Selected backend (deferred post-plugins).
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.6.6f1 (d20c9ac777da)
+[EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=1048576, entitiesPerBlock=256, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/game buatan sendiri/FormulaRacingMobile/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Vendor:          NVIDIA
+    VRAM:            6023 MB
+    App VRAM Budget: 5255 MB
+    Driver:          30.0.14.9717
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56164
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.008156 seconds.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  2.089 seconds
+Domain Reload Profiling: 4810ms
+	BeginReloadAssembly (453ms)
+		CreateAndSetChildDomain (9ms)
+	RebuildCommonClasses (13ms)
+	RebuildNativeTypeToScriptingClass (224ms)
+	initialDomainReloadingComplete (255ms)
+	LoadAllAssembliesAndSetupDomain (1775ms)
+		LoadAssemblies (447ms)
+		TypeCache.Refresh (1615ms)
+			TypeCache.ScanAssembly (1340ms)
+		AnalyzeDomain (1ms)
+	FinalizeReload (2091ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			BeforeProcessingInitializeOnLoad (185ms)
+			ProcessInitializeOnLoadAttributes (135ms)
+			ProcessInitializeOnLoadMethodAttributes (837ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 56 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.collab-proxy@2.13.6 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.collab-proxy@4628d2ba6ea4)
+    com.unity.ide.rider@3.0.40 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.ide.rider@e4950c6d131b)
+    com.unity.ide.visualstudio@2.0.28 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.ide.visualstudio@b5edea5f33f4)
+    com.unity.inputsystem@1.20.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.inputsystem@7a4e1a2a8194)
+    com.unity.searcher@4.9.5 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.searcher@a463122f2c00)
+    com.unity.profiling.core@1.0.3 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.profiling.core@8a49f7027d06)
+    com.unity.nuget.mono-cecil@1.11.6 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+  Built-in packages:
+    com.unity.render-pipelines.universal@17.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.render-pipelines.universal@9b1eb8be54e0)
+    com.unity.ugui@2.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.ugui@0b1771797efc)
+    com.unity.modules.accessibility@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tetgen@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.tetgen)
+    com.unity.modules.tilemap@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.timelinefoundation@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.timelinefoundation)
+    com.unity.modules.ui@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.render-pipelines.core@17.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.render-pipelines.core@e18bd88df4e3)
+    com.unity.shadergraph@17.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.shadergraph@0de771837e0e)
+    com.unity.render-pipelines.universal-config@17.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.render-pipelines.universal-config@561422b74439)
+    com.unity.test-framework@1.8.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.test-framework@80f691d4262b)
+    com.unity.ext.nunit@2.1.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.ext.nunit@0198eae3b53e)
+    com.unity.graph-authoring@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.graph-authoring@cfd2588851ee)
+    com.unity.burst@2.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.burst@626e66ab421b)
+    com.unity.collections@6.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.collections@10fff0607388)
+    com.unity.test-framework.performance@6.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.test-framework.performance@54c5bd86aedb)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.02 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.6f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: D:/game buatan sendiri/FormulaRacingMobile
+DisplayProgressbar: Compiling Scripts
+ExitCode: 4 Duration: 0s764ms
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aE-inputdata.json
+[634/805    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+[635/805    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+*** Tundra requires additional run (0.68 seconds), 2 items updated, 633 evaluated
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.6f1\Editor\Data\DotNetSdk\dotnet.exe "C:\Program Files\Unity\Hub\Editor\6000.6.6f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aE.dag.json" "Library/Bee/1900b0aE-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: D:/game buatan sendiri/FormulaRacingMobile
+ExitCode: 0 Duration: 2s887ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.6f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: D:/game buatan sendiri/FormulaRacingMobile
+[ApiUpdater] Total time: 1490ms, Parse response file: 79ms, Collect updater configs: 170ms, Update: 1238ms, Save: 3ms Files: 1 modified / 1 visited / 21 total (Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll).
+ExitCode: 0 Duration: 2s960ms
+Finished compiling graph: 808 nodes, 14976 flattened edges (12796 ToBuild, 118 ToUse), maximum node priority 857
+[461/805    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp
+[462/805    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.rsp
+[634/805    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[797/805    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+Assets\Scripts\Rendering\F1TrackEnvironmentLighting.cs(58,58): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Scripts\Rendering\F1TrackEnvironmentLighting.cs(58,26): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Scripts\Rendering\F1TrackEnvironmentLighting.cs(87,64): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\Scripts\Rendering\F1TrackEnvironmentLighting.cs(87,22): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\Scripts\Rendering\F1RearviewMirrors.cs(165,9): warning CS0618: 'Camera.fov' is obsolete: 'Property fov has been deprecated. Use Camera.fieldOfView instead (UnityUpgradable) -> UnityEngine.Camera.fieldOfView'
+
+Assets\Scripts\Garage\F1GarageSystem.cs(56,36): warning CS0414: The field 'F1GarageSystem.orbitSpeed' is assigned but its value is never used
+
+Assets\Scripts\Camera\F1CockpitCamera.cs(77,36): warning CS0414: The field 'F1CockpitCamera.kerbShakeMultiplier' is assigned but its value is never used
+
+Assets\Scripts\Core\F1CarController.cs(54,36): warning CS0414: The field 'F1CarController.finalDriveRatio' is assigned but its value is never used
+
+Assets\Scripts\Track\BakuTrackSplineBuilder.cs(70,36): warning CS0414: The field 'BakuTrackSplineBuilder.barrierThickness' is assigned but its value is never used
+
+Assets\Scripts\Track\BakuTrackSplineBuilder.cs(77,36): warning CS0414: The field 'BakuTrackSplineBuilder.castleWallThickness' is assigned but its value is never used
+[798/805    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+Assets\RacingV12Pack\UnityAssets\RacingV12Pack\Editor\F1RealismConfigurator.cs(338,54): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\RacingV12Pack\UnityAssets\RacingV12Pack\Editor\F1RealismConfigurator.cs(338,22): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\RacingV12Pack\UnityAssets\RacingV12Pack\Editor\F1RealismConfigurator.cs(371,64): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\RacingV12Pack\UnityAssets\RacingV12Pack\Editor\F1RealismConfigurator.cs(371,22): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+
+Assets\RacingV12Pack\UnityAssets\RacingV12Pack\Editor\F1RealismConfigurator.cs(464,56): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+
+Assets\RacingV12Pack\UnityAssets\RacingV12Pack\Editor\F1RealismConfigurator.cs(464,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+[799/805    1s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 147 defines and 359 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+[800/805    1s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll, with 149 defines and 338 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+[801/805    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[802/805    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[803/805    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+[804/805    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+*** Tundra build success (2.93 seconds), 11 items updated, 805 evaluated
+[API Updater] Updated Files:
+Skipping ScriptUpdater consent dialog. Consent declined based on command line parameters.
+Finished running ScriptUpdaters
+Assets\Scripts\Rendering\F1TrackEnvironmentLighting.cs(58,58): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Scripts\Rendering\F1TrackEnvironmentLighting.cs(58,26): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Scripts\Rendering\F1TrackEnvironmentLighting.cs(87,64): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\Scripts\Rendering\F1TrackEnvironmentLighting.cs(87,22): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\Scripts\Rendering\F1RearviewMirrors.cs(165,9): warning CS0618: 'Camera.fov' is obsolete: 'Property fov has been deprecated. Use Camera.fieldOfView instead (UnityUpgradable) -> UnityEngine.Camera.fieldOfView'
+Assets\Scripts\Garage\F1GarageSystem.cs(56,36): warning CS0414: The field 'F1GarageSystem.orbitSpeed' is assigned but its value is never used
+Assets\Scripts\Camera\F1CockpitCamera.cs(77,36): warning CS0414: The field 'F1CockpitCamera.kerbShakeMultiplier' is assigned but its value is never used
+Assets\Scripts\Core\F1CarController.cs(54,36): warning CS0414: The field 'F1CarController.finalDriveRatio' is assigned but its value is never used
+Assets\Scripts\Track\BakuTrackSplineBuilder.cs(70,36): warning CS0414: The field 'BakuTrackSplineBuilder.barrierThickness' is assigned but its value is never used
+Assets\Scripts\Track\BakuTrackSplineBuilder.cs(77,36): warning CS0414: The field 'BakuTrackSplineBuilder.castleWallThickness' is assigned but its value is never used
+Assets\RacingV12Pack\UnityAssets\RacingV12Pack\Editor\F1RealismConfigurator.cs(338,54): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\RacingV12Pack\UnityAssets\RacingV12Pack\Editor\F1RealismConfigurator.cs(338,22): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\RacingV12Pack\UnityAssets\RacingV12Pack\Editor\F1RealismConfigurator.cs(371,64): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\RacingV12Pack\UnityAssets\RacingV12Pack\Editor\F1RealismConfigurator.cs(371,22): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets\RacingV12Pack\UnityAssets\RacingV12Pack\Editor\F1RealismConfigurator.cs(464,56): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets\RacingV12Pack\UnityAssets\RacingV12Pack\Editor\F1RealismConfigurator.cs(464,23): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+AssetDatabase: script compilation time: 7.883024s
+Begin MonoManager ReloadAssembly
+Total cache size 49412748
+Total cache size after purge 49412748, took 00:00:00.2118520
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Importing 'GUID: c37d4d8a3fde0cc4b9a20330419a54e6 - Path: Assets/Scripts' with importer (DefaultImporter)
+Imported 'GUID: c37d4d8a3fde0cc4b9a20330419a54e6' -> (Import Result ID: '598a42a127f65a748293e31a2107e785') in 0.043 seconds [static dependencies only]. Details - ImportResultOutputID=773a672d517da7dfd0877b9a268a5420 DependenciesID=b771e8048b24d7912887fe8075409f07 StaticDependenciesID=28fa54be39f31150a25cc1b2b9ab1455 
+Importing 'GUID: 605b2fde163bf794098ee4f9d1a81f4c - Path: Assets/Scripts/Core' with importer (DefaultImporter)
+Imported 'GUID: 605b2fde163bf794098ee4f9d1a81f4c' -> (Import Result ID: '72ea781628aa5d9aaa4c1e4cb915df80') in 0.006 seconds [static dependencies only]. Details - ImportResultOutputID=c253b739c55fca0e2e0fcd80df487408 DependenciesID=238d413760c83647e02a9823bb2759b6 StaticDependenciesID=b2ec1cfbda629c6087a2d4e62f5ef360 
+Importing 'GUID: d0317687e22e5814ca61561523b016a8 - Path: Assets/Scripts/UI' with importer (DefaultImporter)
+Imported 'GUID: d0317687e22e5814ca61561523b016a8' -> (Import Result ID: 'bad795784a064e5a40b92ab6ed6e641d') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=e44595b430258e33cd205ffc888fa7b4 DependenciesID=15b2f4ac1e7277bbdd3de8221ed85d6a StaticDependenciesID=9dbf6bb0840b2772a3f6c4a7a9761aed 
+Importing 'GUID: 22ba77ce53aefb9459e9fc483b959114 - Path: Assets/Scripts/Track' with importer (DefaultImporter)
+Imported 'GUID: 22ba77ce53aefb9459e9fc483b959114' -> (Import Result ID: '5814a60319e5a21cafadd9534a314eb8') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=cca23b0f48b9d8db408565bc18f8ab5c DependenciesID=9daa8c9fe124f9f5255bcd954085c3b7 StaticDependenciesID=a9e3a0819782ed077a989fd128ca2ee6 
+Importing 'GUID: f5b643fcc4ed94c4a8a402ad621e4149 - Path: Assets/Scripts/Rendering' with importer (DefaultImporter)
+Imported 'GUID: f5b643fcc4ed94c4a8a402ad621e4149' -> (Import Result ID: '6590d3f7f93ccb476cf52965d79c9685') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=60d1e07dfa82718d1e9038aaf0f0f92c DependenciesID=f32c0e15c41ccb96cc0fed19f5d73349 StaticDependenciesID=28f8e0fba7e767cb46e428e0b2390053 
+Importing 'GUID: dc70684817c53b44db7b0f43612f8ce2 - Path: Assets/Scripts/Camera' with importer (DefaultImporter)
+Imported 'GUID: dc70684817c53b44db7b0f43612f8ce2' -> (Import Result ID: 'cd02fab7f9bc46bf9ccb384fdad6470d') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=f9ab5a6565e94828135d0b8f8005882a DependenciesID=3379bfea8c62640130fc2c1d7594328d StaticDependenciesID=a11564ed8a4d81814d3e53be98bacb60 
+Importing 'GUID: 1ea9d6e7bf472aa44b5e140c85ddc11d - Path: Assets/Scripts/Garage' with importer (DefaultImporter)
+Imported 'GUID: 1ea9d6e7bf472aa44b5e140c85ddc11d' -> (Import Result ID: '6818782215a68739c48bd883257cf17a') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=7a679197826bab6b7ce26354d09aa808 DependenciesID=d04203616330c58e6b58c4e821567138 StaticDependenciesID=8a6658d40b7782f249de5ada3a46c7db 
+Importing 'GUID: ff1cc3cb005cf1042923e956b1bc3250 - Path: Assets/Scripts/Track/Editor' with importer (DefaultImporter)
+Imported 'GUID: ff1cc3cb005cf1042923e956b1bc3250' -> (Import Result ID: 'f298ae42cd7771aa840a18842ad1d5d8') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=ebd3dbef405be8aafe1849910350b022 DependenciesID=777b819c428e38a6e9fd64e4aa267eca StaticDependenciesID=4cd99dcb722ffeedf012acbf1f9f824e 
+Refreshing native plugins compatible for Editor in 2.61 ms, found 3 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  1.466 seconds
+Domain Reload Profiling: 4467ms
+	BeginReloadAssembly (444ms)
+		DisableScriptedObjects (49ms)
+		CreateAndSetChildDomain (76ms)
+	RebuildCommonClasses (15ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (89ms)
+	LoadAllAssembliesAndSetupDomain (2423ms)
+		LoadAssemblies (1854ms)
+		TypeCache.Refresh (412ms)
+			TypeCache.ScanAssembly (394ms)
+		AnalyzeDomain (95ms)
+			BuildScriptInfoCaches (85ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1468ms)
+		SetupLoadedEditorAssemblies (0ms)
+			LogAssemblyErrors (4ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			BeforeProcessingInitializeOnLoad (193ms)
+			ProcessInitializeOnLoadAttributes (398ms)
+			ProcessInitializeOnLoadMethodAttributes (129ms)
+			AfterProcessingInitializeOnLoad (13ms)
+		AwakeInstancesAfterBackupRestoration (37ms)
+Starting new worker id: 0 with log in D:/game buatan sendiri/FormulaRacingMobile/Logs/AssetImportWorkerHW0.log
+
+Asset Pipeline Refresh (id=60f4f76a088bbb1498ad9cc164d011fd): Total: 13.674 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=8 (actual=8, local cache=0, cache server=0)
+		Asset DB Process Time: managed=5 ms, native=2081 ms
+		Asset DB Callback time: managed=482 ms, native=47 ms
+		Scripting: domain reloads=1, domain reload time=3095 ms, compile time=7886 ms, other=76 ms
+		Project Asset Count: scripts=1096, non-scripts=2156
+		Asset File Changes: new=24, changed=24, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 36.671ms
+	ApplyChangesToAssetFolders: 0.932ms
+	Scan: 123.906ms
+	Collect global state as custom dependencies: 29.414ms
+	OnSourceAssetsModified: 1.858ms
+	CategorizeScriptCompilationAssets: 36.860ms
+	ProcessAssetsWithTransientArtifactChanges: 71.211ms
+	CategorizeAssets: 60.965ms
+	CompileScripts: 7885.780ms
+	ImportOutOfDateAssets: 1558.429ms (1477.522ms without children)
+		ImportManagerImport: 62.958ms (4.909ms without children)
+			UpdateCategorizedAssets: 0.076ms
+		ReloadNativeAssets: 0.271ms
+		UnloadImportedAssets: 3.386ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.829ms
+		ImportSchedulerStart: 13.460ms
+	PostProcessAllAssets: 487.478ms
+		VCAutoAddAssetPostprocess 3.560ms
+		VersionControlSettings.HiddenFilePostprocess 0.321ms
+		XRBuildSystem.XRAssetImported 0.264ms
+		WindowTitlePostprocess 0.225ms
+		PostProcessCallbackCreateDeferredMaterials 0.119ms
+		RaytracingShaderImportPostprocess 0.075ms
+		ShaderAssetModifiedCallback 0.070ms
+		MonoPostProcessAllAssets: 480.129ms
+			SyncVS.PostprocessSyncProject 267.401ms
+			AssetPostprocessor.OnPostprocessAllAssets 126.649ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 21.436ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 18.896ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 8.281ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 3.038ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 2.914ms
+			AssetChangedListener.OnPostprocessAllAssets 2.691ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 2.254ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 1.669ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 1.267ms
+			MaterialPostprocessor.OnPostprocessAllAssets 1.119ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 1.075ms
+			PostProcessor.OnPostprocessAllAssets 0.778ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.751ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.678ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.509ms
+			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.472ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.468ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.450ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.450ms
+			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 0.414ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.380ms
+			AssetEvents.OnPostprocessAllAssets 0.320ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.251ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.226ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.226ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.184ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.165ms
+			ThemePostprocessor.OnPostprocessAllAssets 0.161ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.159ms
+			AssetReloadNotifier.OnPostprocessAllAssets 0.157ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.116ms
+	PostAssetChangesProfiler: 5.830ms
+	UnloadStreamsBegin: 2.265ms
+	PersistCurrentRevisions: 0.368ms
+	GenerateScriptTypeHashes: 1.930ms
+	GenerateScriptTypeSerializationHashes: 3.461ms
+	Untracked: 3368.043ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Scanning for USB devices : 2.031ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-FormulaRacingMobile
+Unloading 66 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4680 unused Assets / (10.0 MB). Loaded Objects now: 5620.
+Memory consumption went from 384.3 MB to 374.3 MB.
+Total: 13.559100 ms (FindLiveObjects: 0.783800 ms CreateObjectMapping: 0.414400 ms MarkObjects: 7.781500 ms  DeleteObjects: 4.072700 ms)
+
+<color=#00D2BE><b>[F1 Baku Circuit] Building full 3D playable Baku City Circuit scene...</b></color>
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+F1RealismConfigurator:BuildFullBakuPlayableScene () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/F1RealismConfigurator.cs:30)
+
+(Filename: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/F1RealismConfigurator.cs Line: 30)
+
+Importing 'GUID: a7d31a8e350a7e946b7c30985fe22cae - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Textures/Tex_Tire_Soft_Red.png' with importer (TextureImporter)
+Imported 'GUID: a7d31a8e350a7e946b7c30985fe22cae' -> (Import Result ID: '7b6e00cb24ef80c2997e24ab6d4c8655') in 0.030 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d28fb2bf009abec7c128664527ba0859 DependenciesID=6f9d45ce2b7a35d6507393d08a04dbec StaticDependenciesID=fc32f56be4b0a420ab3be65e266d4489 
+Asset Pipeline Refresh (id=35cd7badfa78cca4cb00cf5ceb775860): Total: 0.108 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 314f170f9b9f0d84381cc06aba55728d - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Textures/Tex_Castle_Stone.png' with importer (TextureImporter)
+Imported 'GUID: 314f170f9b9f0d84381cc06aba55728d' -> (Import Result ID: '4ab188a448a4865435baf2ec3a16a3e8') in 0.008 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e1f4290ffe3c53129e964890f60eda54 DependenciesID=8db307e51962a403db170be4f58ef1e9 StaticDependenciesID=4d20216f360803a6a1ef492109fb1786 
+Asset Pipeline Refresh (id=5ff79329098a4b845a1a8ad610bd82e8): Total: 0.052 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 84f36c6bf5fdd53459e0f45d5e52d26d - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Textures/Tex_Sponsor_Baku.png' with importer (TextureImporter)
+Imported 'GUID: 84f36c6bf5fdd53459e0f45d5e52d26d' -> (Import Result ID: 'ecee1b34e673c2c3d395cd94bdea59bb') in 0.008 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1e895aca17b32aac6f1c53546316df5a DependenciesID=278536ad58a2d7a57774545df1c75f36 StaticDependenciesID=74a8256148e047e9c4b959b434a7ec73 
+Asset Pipeline Refresh (id=9ea6be52a10e67b4ea51a7099e5961f5): Total: 0.058 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 09f54c9f7ac3bb342b9d929da127a094 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Asphalt_RacingLine.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 09f54c9f7ac3bb342b9d929da127a094' -> (Import Result ID: '85b76688b67aeca0d3c848fe08e52683') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=449d98f3d84e695377b6abec8b2ee011 DependenciesID=dd3ac937ba65863c0b0b0d1e5962ae33 StaticDependenciesID=d6a18c052acb3cb9bfd6c6e8ecc08b89 
+Asset Pipeline Refresh (id=184543cf47066394592c025e1a2d04ac): Total: 0.048 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 2fdddbb50f623be45a4711b05bb4f6d9 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/CurbYellow.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 2fdddbb50f623be45a4711b05bb4f6d9' -> (Import Result ID: '98082964da553de169915fe3f0e926bd') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=2b5db7e17add6d73c1820ba79c16be94 DependenciesID=b1f9ac5933b32d17975730421ac3f024 StaticDependenciesID=8bf3a73ed3d3f76d8a3d33a52a0c6453 
+Asset Pipeline Refresh (id=5fb437d8945cd51459318b89875ba5e7): Total: 0.045 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[F1 Realism] PBR Materials created/configured successfully.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+F1RealismConfigurator:ConfigurePBRMaterials () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/F1RealismConfigurator.cs:330)
+F1RealismConfigurator:BuildFullBakuPlayableScene () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/F1RealismConfigurator.cs:34)
+
+(Filename: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/F1RealismConfigurator.cs Line: 330)
+
+[F1 Realism] Post-Processing Volume profile configured with ACES, Bloom, Motion Blur, and Golden Hour grading.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+F1RealismConfigurator:ConfigurePostProcessingProfile () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/F1RealismConfigurator.cs:458)
+F1RealismConfigurator:BuildFullBakuPlayableScene () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/F1RealismConfigurator.cs:35)
+
+(Filename: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/F1RealismConfigurator.cs Line: 458)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12 unused Assets / (64.3 KB). Loaded Objects now: 5636.
+Memory consumption went from 354.3 MB to 354.3 MB.
+Total: 8.821000 ms (FindLiveObjects: 0.526600 ms CreateObjectMapping: 0.183300 ms MarkObjects: 7.702400 ms  DeleteObjects: 0.037900 ms)
+
+<color=#00D2BE><b>[Baku Track] Successfully generated Castle Corner with 133 spline nodes!</b></color>
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+BakuTrackSplineBuilder:BuildBakuTrack () (at Assets/Scripts/Track/BakuTrackSplineBuilder.cs:291)
+F1RealismConfigurator:BuildFullBakuPlayableScene () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/F1RealismConfigurator.cs:52)
+
+(Filename: Assets/Scripts/Track/BakuTrackSplineBuilder.cs Line: 291)
+
+[F1 Realism] F1RearviewMirrors configured on player car with left & right camera anchors.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+F1RealismConfigurator:SetupRearviewMirrorsOnPlayerCar () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/F1RealismConfigurator.cs:540)
+F1RealismConfigurator:BuildFullBakuPlayableScene () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/F1RealismConfigurator.cs:87)
+
+(Filename: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/F1RealismConfigurator.cs Line: 540)
+
+Importing 'GUID: d22af7efb8098204a81f5c3d0ef78c9c - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/TealBright.mat' with importer (NativeFormatImporter)
+Imported 'GUID: d22af7efb8098204a81f5c3d0ef78c9c' -> (Import Result ID: '0594682a03e42bb20b4e8684f1829995') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=07ceaa48e714ac93ebdc526707e3dba3 DependenciesID=857c011f13da1bb5537ce75aae89388c StaticDependenciesID=96bf1e18b7aa8fa39a75232ed1d00c20 
+Importing 'GUID: f522074332733a34fb935a3bf11af372 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/PetronasTeal.mat' with importer (NativeFormatImporter)
+Imported 'GUID: f522074332733a34fb935a3bf11af372' -> (Import Result ID: '553477981f66113d622f5a446d71dd6e') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=b757052fa5a3a7b37358114de629fd3c DependenciesID=b685549c98f5ad6f831eade12e884674 StaticDependenciesID=79758c05a3ab71fce9eeb52b6364089b 
+Importing 'GUID: 09f54c9f7ac3bb342b9d929da127a094 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Asphalt_RacingLine.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 09f54c9f7ac3bb342b9d929da127a094' -> (Import Result ID: 'a2d8fb8c6c2546a85f3f8c419d17db72') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=449d98f3d84e695377b6abec8b2ee011 DependenciesID=4c70cd5e69f43b6646eca94428f2f6f0 StaticDependenciesID=f5b4f9e5a90f0a53789da4f75091697d 
+Importing 'GUID: 1948d1de1aca1124f910011f2f0a589f - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Asphalt.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 1948d1de1aca1124f910011f2f0a589f' -> (Import Result ID: '05b60496e33c4138bd92ed6440a1c65a') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=87c04459021dbbb060ffd8b3c817f984 DependenciesID=095d405d1e7aa5c2c981a8eb0257ea82 StaticDependenciesID=200b16a797bde68565efadc94aee72fa 
+Importing 'GUID: 9ba69a5645a0c084ca5dd5176505056d - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/AMGBlack.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 9ba69a5645a0c084ca5dd5176505056d' -> (Import Result ID: '9d63009809050ed7a54f8f7d209dcc12') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=495911aed9c8d82f20e8aae56c9b29cf DependenciesID=2362c882dfe16f7420ca7ce7e3704d02 StaticDependenciesID=03491e9da412c8349b2f294badcecc0e 
+Importing 'GUID: 0d1c1ba2ea74c654f93f04a4167265d8 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/CurbWhite.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 0d1c1ba2ea74c654f93f04a4167265d8' -> (Import Result ID: 'd4265c320e26b44a9bc7b878083b0c0e') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=21164887eb009955606b6ae13c641b5d DependenciesID=faf366003990c64a3ceab85043285e38 StaticDependenciesID=999bfb8f73a013cac59577edeb68e339 
+Importing 'GUID: cd96a881dc15500448847db0e395b7c8 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/CurbRed.mat' with importer (NativeFormatImporter)
+Imported 'GUID: cd96a881dc15500448847db0e395b7c8' -> (Import Result ID: 'e2de3d04474dee288c7f83d09d186456') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=f0fbbcc17465ba577c0e9511e55fcb3f DependenciesID=c0f13403cbc2170c9cf485c9ee0918ce StaticDependenciesID=e27e7bc3871ae147faf2befc5c97be49 
+Importing 'GUID: 2fdddbb50f623be45a4711b05bb4f6d9 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/CurbYellow.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 2fdddbb50f623be45a4711b05bb4f6d9' -> (Import Result ID: '62aac98bc5fdc0e9387d58367168e358') in 0.000 seconds [static dependencies only]. Details - ImportResultOutputID=2b5db7e17add6d73c1820ba79c16be94 DependenciesID=0c04c12bf16813d129e7ded11a829e47 StaticDependenciesID=310db10625915eae42f568340a416035 
+Importing 'GUID: 6f2c8125d0f325f41a2300ed830e5029 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Carbon.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 6f2c8125d0f325f41a2300ed830e5029' -> (Import Result ID: '61b2cc78551cff80cee9bcb128fbea97') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=844fca2a1d04f8ee355d608ad1774cc9 DependenciesID=e2cc6c57415ad02387e7c62e319607e3 StaticDependenciesID=2956fd5fd0e6c731bba8d3edf55d92c1 
+Importing 'GUID: 998c0e17ec935e94393f7b48301f4348 - Path: Assets/Settings/APEX_V12_RaceProfile.asset' with importer (NativeFormatImporter)
+Imported 'GUID: 998c0e17ec935e94393f7b48301f4348' -> (Import Result ID: '35ea8f7abafd0fbedfc99fa6c45f96b6') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=d8ebf045db04e3793d71cc357df23316 DependenciesID=73bafff4ef9bad86fe5923a3179116c8 StaticDependenciesID=b7cf3674d182f0fb8b5b99c1485bc68f 
+Asset Pipeline Refresh (id=0313af7b64d90bc40a70ff7fed73c6fb): Total: 0.054 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 1a11d2be830a0924fb40328dbbf64b87 - Path: Assets/Scenes/Baku_City_Circuit.unity' with importer (DefaultImporter)
+Imported 'GUID: 1a11d2be830a0924fb40328dbbf64b87' -> (Import Result ID: '1569ce4551b8fd530c1eb5b88b67c0ac') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=3bb691ccda51c7c78f3ceeeb715b110f DependenciesID=f7a9c8dc3cc3d5ce69d6a371af2be79a StaticDependenciesID=f746817db9e3116b44c75625a215b05c 
+Asset Pipeline Refresh (id=89065654175d87948b28f6a73ae4bae3): Total: 0.037 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 659b1ffdafce1b6478420eafd00de751 - Path: Assets/Scenes/APEX_V12_Race.unity' with importer (DefaultImporter)
+Imported 'GUID: 659b1ffdafce1b6478420eafd00de751' -> (Import Result ID: 'f9e0963f5be81a463a574b4110504480') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=a040a07038627b8d1815e9636e170e97 DependenciesID=ae98ac75bdffcafccb8869bb4e1807e9 StaticDependenciesID=19b0619f1e600e3dc5ef8c52f583184c 
+Asset Pipeline Refresh (id=f7b02f4db73dde146bb0d160c46d585b): Total: 0.036 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+AcceleratorClientConnectionCallback - disconnected - :0
+Importing 'GUID: 0000000000000000b000000000000000 - Path: ProjectSettings/EditorBuildSettings.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 0000000000000000b000000000000000' -> (Import Result ID: '8fd4ff422aaa85de5d1276e2fc0f5627') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=0a89a5c5f492143e0fa186859e17ba6f DependenciesID=94050c5b5a65b54276cc084529f033f7 StaticDependenciesID=ed6096dac01f3f5992306727f5a9226d 
+Worker ready: AssetImportWorkerHW0 0
+Asset Pipeline Refresh (id=5ad963ecef9db1a4f8c225b251e06183): Total: 0.052 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=285c0f395b07c3c498ba09deadcfecb6): Total: 0.008 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+<color=#00FF66><b>[F1 Baku Circuit] Baku Castle Corner scene built and saved to Assets/Scenes/Baku_City_Circuit.unity & APEX_V12_Race.unity!</b></color>
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+F1RealismConfigurator:BuildFullBakuPlayableScene () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/F1RealismConfigurator.cs:171)
+
+(Filename: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/F1RealismConfigurator.cs Line: 171)
+
+Batchmode quit successfully invoked - shutting down!
+Killing ADB server in 2.1182314 seconds.
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-khawarizmi-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-khawarizmi channel disconnected successfully.
+Lingering sessions upon destruction of worker manager
+Unity Data Store service was successfully shut down
+UDS shutting down local client system
+Shut down UDS service system complete
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Exiting batchmode successfully now!
+[ExitDontLaunchBugReporter] Exiting without the bug reporter. Application will exit with return code 0

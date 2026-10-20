@@ -1,0 +1,474 @@
+VBCSCompilerPreWarmer: watching VBCSCompiler (PID 9380)
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 15648)
+VBCSCompiler prewarm took 19.22 ms
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.6/staging' branch; Version is '6000.6.6f1 (d20c9ac777da) revision 13765786'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-khawarizmi" at "2026-10-16T14:47:00.1462481Z"
+OS: 'Windows 11  (10.0.26200) CoreSingleLanguage' Language: 'en' Physical Memory: 16201 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-16T14:47:00Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 7000, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              0e27eb5bdee14ce5966de071a45b50df
+  Correlation Id:          7cdb493d4a6ab63745f8cac832e8e7f6
+  External correlation Id: 647182405823690830
+  Machine Id:              GH+MFfSu6lmoygpQmGZVvfgofdM=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-khawarizmi" (connect: 0.00s, validation: 0.00s, handshake: 0.05s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-khawarizmi-notifications" at "2026-10-16T14:47:00.2029817Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 18968522328279-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.06s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.6.6f1\Editor\Unity.exe
+-batchmode
+-projectPath
+D:\game buatan sendiri\FormulaRacingMobile
+-executeMethod
+ApexV12Setup.RunFullSetup
+-quit
+-logFile
+D:\game buatan sendiri\FormulaRacingMobile\Logs\BatchSetup3.log
+Successfully changed project path to: D:\game buatan sendiri\FormulaRacingMobile
+D:/game buatan sendiri/FormulaRacingMobile
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=1"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.
+Player connection [15164]  Target information:
+
+Player connection [15164]  * "[IP] 172.30.189.56 [Port] 55504 [Flags] 2 [Guid] 629304303 [EditorId] 629304303 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [15164] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [15164] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-32700" after 0.4 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+Launching Unity Data Store - C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/Tools/Unity.DataStore.exe 
+Unity Data Store artifact dir = Library/DataStore, working dir = D:/game buatan sendiri/FormulaRacingMobileUnity Data Store running and initialised
+[Physics::Module] Selected backend (deferred post-plugins).
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.6.6f1 (d20c9ac777da)
+[EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=1048576, entitiesPerBlock=256, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/game buatan sendiri/FormulaRacingMobile/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Vendor:          NVIDIA
+    VRAM:            6023 MB
+    App VRAM Budget: 5255 MB
+    Driver:          30.0.14.9717
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56700
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.005381 seconds.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  1.093 seconds
+Domain Reload Profiling: 1940ms
+	BeginReloadAssembly (181ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (6ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (96ms)
+	LoadAllAssembliesAndSetupDomain (538ms)
+		LoadAssemblies (161ms)
+		TypeCache.Refresh (354ms)
+			TypeCache.ScanAssembly (331ms)
+		AnalyzeDomain (1ms)
+	FinalizeReload (1094ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			BeforeProcessingInitializeOnLoad (164ms)
+			ProcessInitializeOnLoadAttributes (200ms)
+			ProcessInitializeOnLoadMethodAttributes (413ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 56 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.collab-proxy@2.13.6 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.collab-proxy@4628d2ba6ea4)
+    com.unity.ide.rider@3.0.40 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.ide.rider@e4950c6d131b)
+    com.unity.ide.visualstudio@2.0.28 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.ide.visualstudio@b5edea5f33f4)
+    com.unity.inputsystem@1.20.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.inputsystem@7a4e1a2a8194)
+    com.unity.searcher@4.9.5 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.searcher@a463122f2c00)
+    com.unity.profiling.core@1.0.3 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.profiling.core@8a49f7027d06)
+    com.unity.nuget.mono-cecil@1.11.6 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+  Built-in packages:
+    com.unity.render-pipelines.universal@17.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.render-pipelines.universal@9b1eb8be54e0)
+    com.unity.ugui@2.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.ugui@0b1771797efc)
+    com.unity.modules.accessibility@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tetgen@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.tetgen)
+    com.unity.modules.tilemap@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.timelinefoundation@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.timelinefoundation)
+    com.unity.modules.ui@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.render-pipelines.core@17.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.render-pipelines.core@e18bd88df4e3)
+    com.unity.shadergraph@17.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.shadergraph@0de771837e0e)
+    com.unity.render-pipelines.universal-config@17.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.render-pipelines.universal-config@561422b74439)
+    com.unity.test-framework@1.8.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.test-framework@80f691d4262b)
+    com.unity.ext.nunit@2.1.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.ext.nunit@0198eae3b53e)
+    com.unity.graph-authoring@1.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.graph-authoring@cfd2588851ee)
+    com.unity.burst@2.0.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.burst@626e66ab421b)
+    com.unity.collections@6.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.collections@10fff0607388)
+    com.unity.test-framework.performance@6.6.0 (location: D:\game buatan sendiri\FormulaRacingMobile\Library\PackageCache\com.unity.test-framework.performance@54c5bd86aedb)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.03 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.6f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: D:/game buatan sendiri/FormulaRacingMobile
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 2s138ms
+[635/805    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[801/805    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+[802/805    1s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 147 defines and 359 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+[803/805    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+[804/805    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+*** Tundra build success (2.08 seconds), 5 items updated, 805 evaluated
+AssetDatabase: script compilation time: 2.812316s
+Total cache size 49412748
+Total cache size after purge 49412748, took 00:00:00.0932628
+Begin MonoManager ReloadAssembly
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  1.441 seconds
+Domain Reload Profiling: 2834ms
+	BeginReloadAssembly (359ms)
+		DisableScriptedObjects (38ms)
+		CreateAndSetChildDomain (65ms)
+	RebuildCommonClasses (16ms)
+	RebuildNativeTypeToScriptingClass (29ms)
+	initialDomainReloadingComplete (90ms)
+	LoadAllAssembliesAndSetupDomain (898ms)
+		LoadAssemblies (465ms)
+		TypeCache.Refresh (216ms)
+			TypeCache.ScanAssembly (198ms)
+		AnalyzeDomain (106ms)
+			BuildScriptInfoCaches (95ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1442ms)
+		SetupLoadedEditorAssemblies (0ms)
+			LogAssemblyErrors (4ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			BeforeProcessingInitializeOnLoad (189ms)
+			ProcessInitializeOnLoadAttributes (427ms)
+			ProcessInitializeOnLoadMethodAttributes (127ms)
+			AfterProcessingInitializeOnLoad (13ms)
+		AwakeInstancesAfterBackupRestoration (41ms)
+Starting new worker id: 0 with log in D:/game buatan sendiri/FormulaRacingMobile/Logs/AssetImportWorkerHW0.log
+
+Asset Pipeline Refresh (id=ea2915819e1ba9448a6a336f6c887694): Total: 6.726 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=2000 ms
+		Asset DB Callback time: managed=320 ms, native=40 ms
+		Scripting: domain reloads=1, domain reload time=1477 ms, compile time=2815 ms, other=72 ms
+		Project Asset Count: scripts=1087, non-scripts=2148
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 31.151ms
+	ApplyChangesToAssetFolders: 0.977ms
+	Scan: 134.197ms
+	Collect global state as custom dependencies: 28.673ms
+	OnSourceAssetsModified: 0.831ms
+	CategorizeScriptCompilationAssets: 31.771ms
+	ProcessAssetsWithTransientArtifactChanges: 80.519ms
+	CategorizeAssets: 70.487ms
+	CompileScripts: 2815.081ms
+	ImportOutOfDateAssets: 1468.161ms (1449.394ms without children)
+		UnloadImportedAssets: 3.365ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.855ms
+		ImportSchedulerStart: 14.502ms
+	PostProcessAllAssets: 322.346ms
+		VCAutoAddAssetPostprocess 1.356ms
+		XRBuildSystem.XRAssetImported 0.469ms
+		PostProcessCallbackCreateDeferredMaterials 0.066ms
+		MonoPostProcessAllAssets: 319.655ms
+			AssetPostprocessor.OnPostprocessAllAssets 184.679ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 32.203ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 26.320ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 12.325ms
+			SyncVS.PostprocessSyncProject 6.027ms
+			AssetChangedListener.OnPostprocessAllAssets 4.424ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 4.013ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 3.683ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 3.566ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 3.449ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 2.054ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 1.851ms
+			MaterialPostprocessor.OnPostprocessAllAssets 1.575ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 1.203ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.953ms
+			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.916ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.824ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.740ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.689ms
+			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 0.641ms
+			PostProcessor.OnPostprocessAllAssets 0.635ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.585ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.564ms
+			AssetEvents.OnPostprocessAllAssets 0.441ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.416ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.408ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.359ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.328ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.315ms
+			ThemePostprocessor.OnPostprocessAllAssets 0.298ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.254ms
+			AssetReloadNotifier.OnPostprocessAllAssets 0.183ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.165ms
+	PostAssetChangesProfiler: 8.296ms
+	UnloadStreamsBegin: 3.009ms
+	PersistCurrentRevisions: 0.192ms
+	GenerateScriptTypeHashes: 1.895ms
+	GenerateScriptTypeSerializationHashes: 3.437ms
+	Untracked: 1727.052ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Scanning for USB devices : 1.448ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-FormulaRacingMobile
+Unloading 66 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4664 unused Assets / (10.1 MB). Loaded Objects now: 5601.
+Memory consumption went from 380.7 MB to 370.5 MB.
+Total: 14.387900 ms (FindLiveObjects: 0.957200 ms CreateObjectMapping: 0.457900 ms MarkObjects: 8.719700 ms  DeleteObjects: 3.924400 ms)
+
+Asset Pipeline Refresh (id=8ff271daa359a1b48ae1129c2409cecf): Total: 0.073 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Importing 'GUID: 1f66924ffd34cec4fa5c3d12ef5df04b - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Prefabs/PlayerCar_Mercedes_F1.prefab' with importer (PrefabImporter)
+Imported 'GUID: 1f66924ffd34cec4fa5c3d12ef5df04b' -> (Import Result ID: '20b586ffee7ffec2bb77118949e4bd82') in 0.012 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=52cc7f03e778328fc14436f109ad8c45 DependenciesID=29563a40cb7187c2882e8454de4c48dd StaticDependenciesID=74df36e7b1f3585c4ba6e72f41a2311f 
+Asset Pipeline Refresh (id=5f8392664e604aa44bfa93552d35bf49): Total: 0.071 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 263 unused Assets / (302.0 KB). Loaded Objects now: 5636.
+Memory consumption went from 353.9 MB to 353.6 MB.
+Total: 8.690500 ms (FindLiveObjects: 0.560000 ms CreateObjectMapping: 0.222900 ms MarkObjects: 7.393000 ms  DeleteObjects: 0.212000 ms)
+
+Detected one or more triangles where the distance between any 2 vertices is greater than 500 units. The resulting Triangle Mesh can impact simulation and query stability. It is recommended to tessellate meshes that have large triangles. Source mesh name: Grass
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MeshCollider:set_sharedMesh (UnityEngine.Mesh)
+ApexV12Setup:InstantiateTrackPiece (string,string,UnityEngine.Transform,string[],System.Collections.Generic.Dictionary`2<string, UnityEngine.Material>,bool) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:479)
+ApexV12Setup:BuildPlayableScene (UnityEngine.GameObject,System.Collections.Generic.Dictionary`2<string, UnityEngine.Material>,System.Text.StringBuilder) (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:391)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:58)
+
+[Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs line 58]
+
+Importing 'GUID: e06026f8530aa8b4bab00e737956aa72 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/TreeLight.mat' with importer (NativeFormatImporter)
+Imported 'GUID: e06026f8530aa8b4bab00e737956aa72' -> (Import Result ID: '0649c3261528e83942dddd06c699eeb3') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=0d456e84ff5fee2db7b6bbcedb9b6daa DependenciesID=428ab56a92179c6557f7c315fd19f1f5 StaticDependenciesID=6df70bda21aac7a10ae049028438f5e5 
+Importing 'GUID: 11e206f69fac71847ac8b6e99a88bae0 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Silver.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 11e206f69fac71847ac8b6e99a88bae0' -> (Import Result ID: '1c2bc4d671c03259b2683f16563693f5') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=fdf998772b3483ad1f7f843239247e12 DependenciesID=bb112e0f5e454616ed27c41368caf9f7 StaticDependenciesID=6ada7bfe3a3d1b9ba6a61fe64f18d367 
+Importing 'GUID: 11c7adfa018a985469ce190eb3bcb706 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/AsphaltLight.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 11c7adfa018a985469ce190eb3bcb706' -> (Import Result ID: '80f1525be3a32a0f315d39869743963b') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=06206c803fcdb1b425630b91ad93bd5e DependenciesID=f90e23147d05abfe6c2e1b8b3ce11bdc StaticDependenciesID=d2fa514449248f3a9af46797c834e8bb 
+Importing 'GUID: 41fbf7d54531e2e42bab017dde61ae85 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Grass.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 41fbf7d54531e2e42bab017dde61ae85' -> (Import Result ID: 'a4a8373b302c2518c93f1b7300341b88') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=1e52a00bafe5680d003ee94f00d08488 DependenciesID=172d5165b757b0ff152d0741c1c4f214 StaticDependenciesID=0b1e6b0e3d80377b439d697ff2c48c61 
+Importing 'GUID: 6132107ea266cd542a821b4cb5788c50 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/GridWhite.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 6132107ea266cd542a821b4cb5788c50' -> (Import Result ID: 'ae8734d22aec839829318a44912c534f') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=ae0e9da51681cc9c08d0c0b99ba9a8ba DependenciesID=274162cd2969ad91db9f939d1ec91875 StaticDependenciesID=48f42d00e821d5bea36269bfc1dbe9f6 
+Importing 'GUID: 6116d60dbb4f36c4782e01d89d9309dd - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/TireRubber.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 6116d60dbb4f36c4782e01d89d9309dd' -> (Import Result ID: 'bf73d53344af80dbc5a0d8208d5b2dc4') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=c5d4bd331b75ab4b591d5daf8d599adb DependenciesID=63738d50e03c495dba04860a5dbfd2ec StaticDependenciesID=40b58b2cdd3e7cfd0e3045ef82fadc99 
+Importing 'GUID: d22af7efb8098204a81f5c3d0ef78c9c - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/TealBright.mat' with importer (NativeFormatImporter)
+Imported 'GUID: d22af7efb8098204a81f5c3d0ef78c9c' -> (Import Result ID: 'cc78c6ede20a4ce552530ceef29f6ee5') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=07ceaa48e714ac93ebdc526707e3dba3 DependenciesID=6540250657497070880e6579316a003a StaticDependenciesID=04d0be2243b85417c961f227c13c1f49 
+Importing 'GUID: 3424ac8cd9e7cba4f9e5d01b0afd6452 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Window.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 3424ac8cd9e7cba4f9e5d01b0afd6452' -> (Import Result ID: '7d9cfa3cf91c8d39a26381b0c2557998') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=1f03f7c55d2514cef78a00c427c200a4 DependenciesID=3545e9d7f666cb0f07e39b8742f78079 StaticDependenciesID=450d59c728b0385178564784e4391c0b 
+Importing 'GUID: 355c633f76d068546aabe59f9c7a6cda - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/BarrierDark.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 355c633f76d068546aabe59f9c7a6cda' -> (Import Result ID: '53770e9a722bd33b197565d3a17d4672') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=bd650327de0b4e9b7fed4865d8dc5297 DependenciesID=321c0adf9d26e68f23c85451de7143af StaticDependenciesID=5495a196781a4851a03f6c346f656cfd 
+Importing 'GUID: 759bdec78b6525c4d9d778eb99c3414f - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Tree.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 759bdec78b6525c4d9d778eb99c3414f' -> (Import Result ID: '6b4a951f90bd544891c1fe9eea3952d3') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=62966d50c23a4d6766efbbc95d258ecc DependenciesID=838a2a334bc0cab5351008c3f7437f3b StaticDependenciesID=7a6a42cea0d8452adc3bcd84d1eaa20c 
+Importing 'GUID: f522074332733a34fb935a3bf11af372 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/PetronasTeal.mat' with importer (NativeFormatImporter)
+Imported 'GUID: f522074332733a34fb935a3bf11af372' -> (Import Result ID: '9b3ecf9e7738aae9cabcdcb9ed098713') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=b757052fa5a3a7b37358114de629fd3c DependenciesID=889eebf02fbf9615098a6d0c17510dc6 StaticDependenciesID=fac4740acde7985fc0fa36f9106ba42a 
+Importing 'GUID: 76176c326e4356140add39da877ef71a - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/LEDYellow.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 76176c326e4356140add39da877ef71a' -> (Import Result ID: 'a3da98fd162735d14dfb679f83ae799d') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=6e74d89c9c2a5e5451c8ac9a167ef1eb DependenciesID=ddedec1e96b665dd097baad67ca2b4b6 StaticDependenciesID=c91ed82c6af8b7fe52f5f138381b165d 
+Importing 'GUID: 189c122e0488f31428933cba4eeca79b - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Barrier.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 189c122e0488f31428933cba4eeca79b' -> (Import Result ID: '24833ce913fa55fac74cf8b39fd12a3a') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=365db4373a2ce577d839f35a0ac0a09d DependenciesID=ca0b4d673199b821c89cbbaf93131aab StaticDependenciesID=09a9cd7c1b15a2b88ff0e5f6c1b50c56 
+Importing 'GUID: c8d10d09531bf084f994f1eb4cb3020d - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/BuildingWhite.mat' with importer (NativeFormatImporter)
+Imported 'GUID: c8d10d09531bf084f994f1eb4cb3020d' -> (Import Result ID: 'b4faaca4ab1854ceec78af6e80a43452') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=d3f0d92c2469df1a69908e0aa63f77d3 DependenciesID=df95e4a6d7a9f446dfbb704b6bd4d28a StaticDependenciesID=53ef831c238e4a7f30ead14fef518c8f 
+Importing 'GUID: e8dd3bf2086dc7049a88bfa8e0c9d432 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/WheelGunmetal.mat' with importer (NativeFormatImporter)
+Imported 'GUID: e8dd3bf2086dc7049a88bfa8e0c9d432' -> (Import Result ID: '441dbadd14c52753fd7b67627577b0f8') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=656d307a23c3fcf68b73ed8595518c2f DependenciesID=e53ff90f13815d56a475b81cb05743cf StaticDependenciesID=1e68025a7a67ef3194b0bff0a6cd3d09 
+Importing 'GUID: 1948d1de1aca1124f910011f2f0a589f - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Asphalt.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 1948d1de1aca1124f910011f2f0a589f' -> (Import Result ID: '37325aa7e8a2ef510e1e42bb61495b00') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=87c04459021dbbb060ffd8b3c817f984 DependenciesID=4940d88bfa0d92211fdd4d9f61e8c70a StaticDependenciesID=f2116e141deeb64e62658a3efc85bfa1 
+Importing 'GUID: 3a9722d7515b0884ca27bc9782df9672 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/White.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 3a9722d7515b0884ca27bc9782df9672' -> (Import Result ID: 'dd2351e014294aa09bac05db49b68373') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=60d664bac63ac35a70056f19e235fe4c DependenciesID=20c496964287ba02dd5b444694f0b949 StaticDependenciesID=a595d62fca6d81cdaa1f0800ec5b1ab4 
+Importing 'GUID: 8a65edc12b6cd14488500ec597ff3cc0 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/LEDGreen.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 8a65edc12b6cd14488500ec597ff3cc0' -> (Import Result ID: '2c555821a6f0e62e44f7493ed4747596') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=97565610d70e90efd722aaeed7552a64 DependenciesID=3022e5ff051f05543dfd7cf31459a993 StaticDependenciesID=4052115aee4397e6c13f6f0f527b8c8b 
+Importing 'GUID: aaa68c7bb887ab7409fe1994ea773625 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/LEDRed.mat' with importer (NativeFormatImporter)
+Imported 'GUID: aaa68c7bb887ab7409fe1994ea773625' -> (Import Result ID: 'cca001ec69e3b2262c92ad292c49714b') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=7b7aff61b04bde8634cac4afe27aa9ed DependenciesID=5ddffa91e4df7548c68fcb1cf9cd2a47 StaticDependenciesID=dbe96c5b8b60f2c0349974da25a0300f 
+Importing 'GUID: 9ba69a5645a0c084ca5dd5176505056d - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/AMGBlack.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 9ba69a5645a0c084ca5dd5176505056d' -> (Import Result ID: '406c82d04131d72bf8b016c8151a47f4') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=495911aed9c8d82f20e8aae56c9b29cf DependenciesID=515f9d0e243328e969e70bc0e2be976b StaticDependenciesID=b4ee4dbb719fab68116755fba04ca53e 
+Importing 'GUID: bb884af7bdd7daa4db4a3dd5820f2f95 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/RacingBlue.mat' with importer (NativeFormatImporter)
+Imported 'GUID: bb884af7bdd7daa4db4a3dd5820f2f95' -> (Import Result ID: 'ac29e0bd8b6e0e6fb2835d531188daca') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=a771b52dfeb810158462be08a7e87d55 DependenciesID=86c542cd167b661301e0220974541dcb StaticDependenciesID=96bf5612eb92cae2efaf488f7ca2cf65 
+Importing 'GUID: cb294e621bb5186459b637236e4024ce - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Black.mat' with importer (NativeFormatImporter)
+Imported 'GUID: cb294e621bb5186459b637236e4024ce' -> (Import Result ID: '9ba9098bb929dc3cfca7fdd73eb8fdd4') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=db62f526772b92b91815fc74ffb7a45b DependenciesID=01e105167e64c073f290189a60f56551 StaticDependenciesID=807624e1937600ffc1cdb1576d85eecd 
+Importing 'GUID: 7c7fdb1bd5bc808499a85c5d9d03531e - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Metal.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 7c7fdb1bd5bc808499a85c5d9d03531e' -> (Import Result ID: '40ed8afda842b76d07c1b91686863fe9') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=fd6a4834aaf576008c73e5ad74b68af0 DependenciesID=6746b235d57b19137dc0aadfbc2de815 StaticDependenciesID=d515ab75489ee27e7033b756aab62112 
+Importing 'GUID: 0d1c1ba2ea74c654f93f04a4167265d8 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/CurbWhite.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 0d1c1ba2ea74c654f93f04a4167265d8' -> (Import Result ID: '3e9ad2bfb87ca20f037ccf7427021b3d') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=21164887eb009955606b6ae13c641b5d DependenciesID=85a518fc2a5381e0cbdac53ddf9c64fb StaticDependenciesID=cc1e4dfaf0c1c139c9f1a2f3f9d1f40f 
+Importing 'GUID: 2d145346827d9b140abafc867fde8ec0 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/BuildingBlue.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 2d145346827d9b140abafc867fde8ec0' -> (Import Result ID: '60cdf0ce7547b13cbe583f8409865150') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=5eb6c6d6bd7a2f25e85d2713362ea22e DependenciesID=4bacffa3399e028b507687b3db8bc2e6 StaticDependenciesID=4e17efa1b6c2309e57b4be5af6ed1a0f 
+Importing 'GUID: 6d66ceff70542c146ad0f98b4eabcfa6 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/GridBlack.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 6d66ceff70542c146ad0f98b4eabcfa6' -> (Import Result ID: 'f0ca18ce58f90c8f10117a7fbc6e9a25') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=74cd4769cfca84a9e7d68bb7a0619108 DependenciesID=1d0883812a197fc5f4a854f04c151c2e StaticDependenciesID=34153083a89393fd10aeec0182a5818b 
+Importing 'GUID: 7d2011226bb0fdd449379695ce31c5df - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/SeatRed.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 7d2011226bb0fdd449379695ce31c5df' -> (Import Result ID: '911eede7941ec2efedf7836bf8119cf2') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=81cdbbec522b9c80efd0666b769dc04d DependenciesID=bf304ca8fcebce233e54617df5fd130d StaticDependenciesID=85fc86b7c034b1ae8db82183a85cc745 
+Importing 'GUID: 8db0f63bd1ddeca4cb8a5392548a8991 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/AMGDark.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 8db0f63bd1ddeca4cb8a5392548a8991' -> (Import Result ID: '7cc1aa1b4e2d5b7c0c0635946932da84') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=38ddc2ad043195f81ccf17140ff1a6ca DependenciesID=32bab3f45075ba56c8c258549490c4b7 StaticDependenciesID=0b72bc4239879edbc2829eee9f3ef11c 
+Importing 'GUID: cd96a881dc15500448847db0e395b7c8 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/CurbRed.mat' with importer (NativeFormatImporter)
+Imported 'GUID: cd96a881dc15500448847db0e395b7c8' -> (Import Result ID: 'e66fbdcb4ecfcf5ed743304ac9bff5df') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=f0fbbcc17465ba577c0e9511e55fcb3f DependenciesID=2645afc39812eb1dab47f0f09f2e9e25 StaticDependenciesID=21e32fb4c0bb94c4a7eba7eebceae394 
+Importing 'GUID: dd04e030e3c6d134fb19c12d5e4eece2 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/DarkWheel.mat' with importer (NativeFormatImporter)
+Imported 'GUID: dd04e030e3c6d134fb19c12d5e4eece2' -> (Import Result ID: '1e21fe653002bb8959dd7db1e68dd65e') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=3356fb1052b0ec1e2ce118317adc352e DependenciesID=759f8f46bbf94b82486c18f6aa84233a StaticDependenciesID=1ffea6ae93ae5991e05ab4cd83f3bce9 
+Importing 'GUID: 7e384e305b8144544a513b163e37e044 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Concrete.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 7e384e305b8144544a513b163e37e044' -> (Import Result ID: '97f40b60785b7e7457040f8c15782463') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=9bca9173533626f300998f8d9cd83bc6 DependenciesID=cb72d052d91dbb64d3263bee2fcc79ec StaticDependenciesID=800e886b846ba0bbaa9e39b46daa6b5d 
+Importing 'GUID: 6f920f35518141242b9c50a513dd7105 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/SilverMetal.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 6f920f35518141242b9c50a513dd7105' -> (Import Result ID: '88b3ab43c1d59ce77d5842f6be2b4c0b') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=d5f49f30218ccd46597f9a6e90cfcf68 DependenciesID=095a39c57b8b83b6dcd4d0a1ea2ebe6f StaticDependenciesID=92a65946e747ea112d342792f7e14386 
+Importing 'GUID: 6f2c8125d0f325f41a2300ed830e5029 - Path: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Materials/Carbon.mat' with importer (NativeFormatImporter)
+Imported 'GUID: 6f2c8125d0f325f41a2300ed830e5029' -> (Import Result ID: 'e7239e33f9ba969e98a60eb0a79a7c74') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=844fca2a1d04f8ee355d608ad1774cc9 DependenciesID=16c514efc102a19bfb7c320a5674e0cb StaticDependenciesID=4a785943856437d6442ab44d5796d94b 
+Asset Pipeline Refresh (id=d7a5e809a61bb664ba33e7be1ea98a4a): Total: 0.100 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 659b1ffdafce1b6478420eafd00de751 - Path: Assets/Scenes/APEX_V12_Race.unity' with importer (DefaultImporter)
+Imported 'GUID: 659b1ffdafce1b6478420eafd00de751' -> (Import Result ID: '20ba51f02e2dacfc04be813d5837e8f1') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=a040a07038627b8d1815e9636e170e97 DependenciesID=03cc623b25dd9d010d968cedc87e8a39 StaticDependenciesID=07459682c0f6f8304f181780b5a067c8 
+Asset Pipeline Refresh (id=406d0e681ca48e446b878ce3b3cd51c2): Total: 0.043 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=f931e5351e457844b84376b9ff2b1178): Total: 0.011 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[APEX V12] Setup finished! Full report written to Logs/APEX_V12_Setup_Report.txt
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ApexV12Setup:RunFullSetup () (at Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs:81)
+
+(Filename: Assets/RacingV12Pack/UnityAssets/RacingV12Pack/Editor/ApexV12Setup.cs Line: 81)
+
+Batchmode quit successfully invoked - shutting down!
+Worker ready: AssetImportWorkerHW0 0
+Killing ADB server in 2.1051287 seconds.
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-khawarizmi-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-khawarizmi channel disconnected successfully.
+Lingering sessions upon destruction of worker manager
+Unity Data Store service was successfully shut down
+UDS shutting down local client system
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Exiting batchmode successfully now!
+[ExitDontLaunchBugReporter] Exiting without the bug reporter. Application will exit with return code 0

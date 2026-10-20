@@ -1,0 +1,6 @@
+D:\game buatan sendiri\FormulaRacingMobile\Temp\bin\Debug\Assembly-CSharp.dll
+D:\game buatan sendiri\FormulaRacingMobile\Temp\bin\Debug\Assembly-CSharp.pdb
+D:\game buatan sendiri\FormulaRacingMobile\obj\Debug\Assembly-CSharp.csproj.AssemblyReference.cache
+D:\game buatan sendiri\FormulaRacingMobile\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+D:\game buatan sendiri\FormulaRacingMobile\obj\Debug\Assembly-CSharp.dll
+D:\game buatan sendiri\FormulaRacingMobile\obj\Debug\Assembly-CSharp.pdb

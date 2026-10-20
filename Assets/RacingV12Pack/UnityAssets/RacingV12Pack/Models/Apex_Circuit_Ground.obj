@@ -1,0 +1,13 @@
+# Original procedural mesh asset: Apex_Circuit_Grass_Ground
+# Coordinate convention: Y up, Unity scale target approximately 1 unit = 1 meter.
+mtllib Apex_Circuit_Ground.mtl
+o Apex_Circuit_Grass_Ground
+v -275.00000 -0.24000 -225.00000
+v -275.00000 -0.24000 225.00000
+v 275.00000 -0.24000 225.00000
+v 275.00000 -0.24000 -225.00000
+
+g Grass
+usemtl Grass
+s off
+f 1 2 3 4

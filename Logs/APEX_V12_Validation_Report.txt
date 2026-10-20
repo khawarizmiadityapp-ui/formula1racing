@@ -1,0 +1,14 @@
+=== APEX V12 VALIDATION TEST REPORT ===
+Timestamp: 2026-10-16 23:25:18
+[PASS] Scene Assets/Scenes/APEX_V12_Race.unity opened successfully.
+[PASS] Track verified with static MeshCollider and 4 perimeter boundary walls.
+[PASS] Wheel 'FrontLeft' verified at local pos (-1.02, 0.40, 1.46) with physical SphereCollider.
+[PASS] Wheel 'FrontRight' verified at local pos (1.02, 0.40, 1.46) with physical SphereCollider.
+[PASS] Wheel 'RearLeft' verified at local pos (-1.02, 0.40, -1.48) with physical SphereCollider.
+[PASS] Wheel 'RearRight' verified at local pos (1.02, 0.40, -1.48) with physical SphereCollider.
+[PASS] All vehicle components (Controller, WheelVisuals, Audio) present.
+[PASS] MainCamera verified with camera follow and Volume Profile: 'APEX_V12_RaceProfile'.
+[PASS] RacingHUD verified with Speedometer, Gear, RPM, Touch Pedals, and Reset button.
+[PASS] Physics simulation test: Car moved 0.03 meters forward. Ground contact stable at Y = 0.020.
+
+=== ALL REALISM & BOUNDARY VALIDATION CHECKS PASSED ===

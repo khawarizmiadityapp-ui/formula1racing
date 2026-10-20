@@ -1,0 +1,216 @@
+newmtl Asphalt
+Ka 0.15 0.15 0.15
+Kd 0.0750 0.0850 0.0950
+Ks 0.0200 0.0200 0.0200
+Ns 8
+d 1.0
+illum 2
+
+newmtl CurbRed
+Ka 0.15 0.15 0.15
+Kd 0.7800 0.0550 0.0450
+Ks 0.0400 0.0100 0.0100
+Ns 12
+d 1.0
+illum 2
+
+newmtl CurbWhite
+Ka 0.15 0.15 0.15
+Kd 0.8800 0.8800 0.8200
+Ks 0.0300 0.0300 0.0300
+Ns 12
+d 1.0
+illum 2
+
+newmtl RoadWhite
+Ka 0.15 0.15 0.15
+Kd 0.9500 0.9500 0.8800
+Ks 0.0200 0.0200 0.0200
+Ns 8
+d 1.0
+illum 2
+
+newmtl RoadYellow
+Ka 0.15 0.15 0.15
+Kd 0.9700 0.6800 0.0800
+Ks 0.0200 0.0200 0.0200
+Ns 8
+d 1.0
+illum 2
+
+newmtl Concrete
+Ka 0.15 0.15 0.15
+Kd 0.3600 0.3900 0.4100
+Ks 0.0300 0.0300 0.0300
+Ns 10
+d 1.0
+illum 2
+
+newmtl BarrierDark
+Ka 0.15 0.15 0.15
+Kd 0.0550 0.0650 0.0750
+Ks 0.0200 0.0200 0.0200
+Ns 12
+d 1.0
+illum 2
+
+newmtl BarrierTeal
+Ka 0.15 0.15 0.15
+Kd 0.0000 0.6800 0.6200
+Ks 0.0300 0.0300 0.0300
+Ns 20
+d 1.0
+illum 2
+
+newmtl BarrierWhite
+Ka 0.15 0.15 0.15
+Kd 0.8400 0.8600 0.8500
+Ks 0.0300 0.0300 0.0300
+Ns 12
+d 1.0
+illum 2
+
+newmtl Land
+Ka 0.15 0.15 0.15
+Kd 0.2200 0.2800 0.2300
+Ks 0.0100 0.0100 0.0100
+Ns 3
+d 1.0
+illum 2
+
+newmtl Water
+Ka 0.15 0.15 0.15
+Kd 0.0250 0.2200 0.3100
+Ks 0.0800 0.0800 0.0800
+Ns 50
+d 1.0
+illum 2
+
+newmtl Promenade
+Ka 0.15 0.15 0.15
+Kd 0.4500 0.4600 0.4300
+Ks 0.0200 0.0200 0.0200
+Ns 8
+d 1.0
+illum 2
+
+newmtl BuildingSand
+Ka 0.15 0.15 0.15
+Kd 0.6900 0.5800 0.4300
+Ks 0.0200 0.0200 0.0200
+Ns 10
+d 1.0
+illum 2
+
+newmtl BuildingLight
+Ka 0.15 0.15 0.15
+Kd 0.7200 0.7400 0.7200
+Ks 0.0200 0.0200 0.0200
+Ns 12
+d 1.0
+illum 2
+
+newmtl BuildingDark
+Ka 0.15 0.15 0.15
+Kd 0.2000 0.2500 0.2900
+Ks 0.0300 0.0300 0.0300
+Ns 18
+d 1.0
+illum 2
+
+newmtl BuildingGlass
+Ka 0.15 0.15 0.15
+Kd 0.0800 0.3000 0.3800
+Ks 0.1600 0.1600 0.1600
+Ns 35
+d 1.0
+illum 2
+
+newmtl Roof
+Ka 0.15 0.15 0.15
+Kd 0.2700 0.2200 0.1800
+Ks 0.0100 0.0100 0.0100
+Ns 5
+d 1.0
+illum 2
+
+newmtl RoofRed
+Ka 0.15 0.15 0.15
+Kd 0.4800 0.1300 0.1000
+Ks 0.0100 0.0100 0.0100
+Ns 5
+d 1.0
+illum 2
+
+newmtl Grandstand
+Ka 0.15 0.15 0.15
+Kd 0.2400 0.2800 0.3100
+Ks 0.0200 0.0200 0.0200
+Ns 10
+d 1.0
+illum 2
+
+newmtl SeatRed
+Ka 0.15 0.15 0.15
+Kd 0.7200 0.0600 0.0600
+Ks 0.0200 0.0200 0.0200
+Ns 8
+d 1.0
+illum 2
+
+newmtl SeatTeal
+Ka 0.15 0.15 0.15
+Kd 0.0000 0.5800 0.5300
+Ks 0.0200 0.0200 0.0200
+Ns 8
+d 1.0
+illum 2
+
+newmtl PitBlue
+Ka 0.15 0.15 0.15
+Kd 0.0550 0.1300 0.1900
+Ks 0.0400 0.0400 0.0400
+Ns 20
+d 1.0
+illum 2
+
+newmtl TowerStone
+Ka 0.15 0.15 0.15
+Kd 0.7100 0.6100 0.4700
+Ks 0.0200 0.0200 0.0200
+Ns 9
+d 1.0
+illum 2
+
+newmtl TowerRoof
+Ka 0.15 0.15 0.15
+Kd 0.3000 0.1800 0.1100
+Ks 0.0100 0.0100 0.0100
+Ns 5
+d 1.0
+illum 2
+
+newmtl FloodLight
+Ka 0.15 0.15 0.15
+Kd 0.1200 0.1500 0.1700
+Ks 0.0800 0.0800 0.0800
+Ns 15
+d 1.0
+illum 2
+
+newmtl LampGlow
+Ka 0.15 0.15 0.15
+Kd 0.9600 0.8400 0.5400
+Ks 0.2500 0.2500 0.2500
+Ns 40
+d 1.0
+illum 2
+
+newmtl PaintBlack
+Ka 0.15 0.15 0.15
+Kd 0.0350 0.0400 0.0450
+Ks 0.0100 0.0100 0.0100
+Ns 4
+d 1.0
+illum 2
+

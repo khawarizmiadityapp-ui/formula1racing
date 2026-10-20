@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/Scenes/APEX_V12_Race.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0

@@ -1,0 +1,34 @@
+Path,Type,Description
+Audio/Gear_Shift_Click.wav,Audio,
+Audio/Tire_Scrub_Squeal.wav,Audio,
+Audio/Turbo_Wastegate_Hiss.wav,Audio,
+Audio/V12_Engine_High_Loop.wav,Audio,
+Audio/V12_Engine_Idle_Loop.wav,Audio,
+Audio/V12_Engine_Mid_Loop.wav,Audio,
+Audio/V12_Turbo_Rev_Up.wav,Audio,
+Docs/README_Unity_Integration.md,Documentation,
+Docs/Racing_V12_FullPack_Preview.png,Asset,
+LICENSE.txt,Documentation,
+Models/Apex_Circuit_Details.mtl,3D model,
+Models/Apex_Circuit_Details.obj,3D model,
+Models/Apex_Circuit_Environment.mtl,3D model,
+Models/Apex_Circuit_Environment.obj,3D model,
+Models/Apex_Circuit_Ground.mtl,3D model,
+Models/Apex_Circuit_Ground.obj,3D model,
+Models/Apex_Circuit_Road.mtl,3D model,
+Models/Apex_Circuit_Road.obj,3D model,
+Models/Apex_Formula_Wheel_Assembly.mtl,3D model,
+Models/Apex_Formula_Wheel_Assembly.obj,3D model,
+Models/Apex_V12_Formula_Car.mtl,3D model,
+Models/Apex_V12_Formula_Car.obj,3D model,
+Models/Mercedes_AMG_F1_Inspired_Car.mtl,3D model,Black/silver/turquoise Mercedes-inspired fictional formula chassis; front faces +Z.
+Models/Mercedes_AMG_F1_Inspired_Car.obj,3D model,Black/silver/turquoise Mercedes-inspired fictional formula chassis; front faces +Z.
+Models/Mercedes_F1_Livery_Details.mtl,3D model,"Separate nose stripe, sidepod pinstripes, wing accents and generic three-spoke emblem overlay."
+Models/Mercedes_F1_Livery_Details.obj,3D model,"Separate nose stripe, sidepod pinstripes, wing accents and generic three-spoke emblem overlay."
+Models/Mercedes_F1_Wheel_Assembly.mtl,3D model,Matching dark slick wheel assembly with turquoise hub accent; duplicate four times.
+Models/Mercedes_F1_Wheel_Assembly.obj,3D model,Matching dark slick wheel assembly with turquoise hub accent; duplicate four times.
+README.md,Documentation,
+Scripts/FormulaCarArcadeController.cs,Unity script,
+Scripts/FormulaWheelVisuals.cs,Unity script,
+Scripts/RacingCameraFollow.cs,Unity script,
+Scripts/V12EngineAudio.cs,Unity script,

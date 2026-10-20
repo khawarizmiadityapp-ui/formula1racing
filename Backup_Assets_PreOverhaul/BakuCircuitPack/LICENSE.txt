@@ -1,0 +1,1 @@
+Original procedural geometry and setup code generated for this project. You may use, modify, and redistribute these assets as part of your game or project. The circuit is fictional and Baku-inspired; this package is not affiliated with or endorsed by Formula 1, FIA, Baku City Circuit, or any team/brand owner.
